@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   Select,
@@ -9,7 +11,7 @@ import {
 
 export function Header() {
   return (
-    <header className="md:flex md:h-20 md:items-center md:justify-center shadow-[0px_-5px_12px_1px_#C8C9C5]">
+    <header className="shadow-[0px_-5px_12px_1px_#C8C9C5] md:flex md:h-20 md:items-center md:justify-center">
       <nav className="md:mx-auto md:flex md:w-[92%] md:items-center md:justify-between">
         <div>
           <a href="#">
@@ -17,29 +19,29 @@ export function Header() {
           </a>
         </div>
 
-        <div className="">
-          <ul className="md:flex md:items-center gap-[4vh]">
-            <li className="my-4 mx-4 md:my-0 md:mx-0">
+        <div>
+          <ul className="gap-[4vh] md:flex md:items-center">
+            <li className="mx-4 my-4 md:mx-0 md:my-0">
               <a className="text-xl font-medium" href="">
                 Início
               </a>
             </li>
-            <li className="my-4 mx-4 md:my-0 md:mx-0">
+            <li className="mx-4 my-4 md:mx-0 md:my-0">
               <a className="text-xl font-medium" href="">
                 Sobre mim
               </a>
             </li>
-            <li className="my-4 mx-4 md:my-0 md:mx-0">
+            <li className="mx-4 my-4 md:mx-0 md:my-0">
               <a className="text-xl font-medium" href="">
                 Habilidades
               </a>
             </li>
-            <li className="my-4 mx-4 md:my-0 md:mx-0">
+            <li className="mx-4 my-4 md:mx-0 md:my-0">
               <a className="text-xl font-medium" href="">
                 Projetos
               </a>
             </li>
-            <li className="my-4 mx-4 md:my-0 md:mx-0">
+            <li className="mx-4 my-4 md:mx-0 md:my-0">
               <a className="text-xl font-medium" href="">
                 Contato
               </a>
@@ -47,9 +49,9 @@ export function Header() {
           </ul>
         </div>
 
-        <div className="md:flex md:gap-3 my-4 mx-4 md:my-0 md:mx-0">
+        <div className="mx-4 my-4 md:mx-0 md:my-0 md:flex md:gap-3">
           <Select>
-            <SelectTrigger className="w-[100px] rounded-lg outline-none border-none">
+            <SelectTrigger className="w-[100px] rounded-lg border-none outline-none">
               <SelectValue placeholder="Idioma" />
             </SelectTrigger>
             <SelectContent className="rounded-lg">
