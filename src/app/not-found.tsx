@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Notfound() {
   return (
@@ -15,9 +16,9 @@ export default function Notfound() {
         <div className="items-center justify-center text-center">
           <p className="text-lg">
             Go back to{" "}
-            <a href="/" className="font-semibold text-blue-500">
+            <Link href="/" className="font-semibold text-blue-500">
               MyPortfolio
-            </a>{" "}
+            </Link>{" "}
             :&#41;
           </p>
         </div>
