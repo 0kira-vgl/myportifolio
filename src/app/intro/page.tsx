@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Projects } from "@/components/projects";
+import { Skills } from "@/components/skills";
 
 export default function Introduction() {
   return (
@@ -75,6 +76,7 @@ export default function Introduction() {
         </div>
       </section>
 
+      <Skills />
       <Projects />
     </>
   );
