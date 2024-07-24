@@ -1,6 +1,7 @@
 import { IconsCard } from "../projects/card";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
+import { CertificatesCarousel } from "./certificatesCarousel";
 
 export function Skills() {
   return (
@@ -11,6 +12,7 @@ export function Skills() {
             <TabsList>
               <TabsTrigger value="aboutMe">Sobre mim</TabsTrigger>
               <TabsTrigger value="skills">Habilidades</TabsTrigger>
+              <TabsTrigger value="certificates">Certificados</TabsTrigger>
               <TabsTrigger value="hardSkills">Hard Skills</TabsTrigger>
               <TabsTrigger value="softSkills">Soft Skills</TabsTrigger>
             </TabsList>
@@ -154,6 +156,13 @@ export function Skills() {
                   </div>
                 </div>
               </div>
+            </TabsContent>
+
+            <TabsContent
+              value="certificates"
+              className="flex items-center justify-center"
+            >
+              <CertificatesCarousel />
             </TabsContent>
           </CardContent>
         </Tabs>

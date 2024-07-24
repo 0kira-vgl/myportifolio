@@ -9,6 +9,8 @@ import {
   RepoButtonCard,
 } from "./card";
 
+import pic1 from "@public/thumbnailPlanner.png";
+
 export function Projects() {
   return (
     <div className="pt- max-w-7xlp-6 container mx-auto h-screen w-full">
@@ -26,10 +28,9 @@ export function Projects() {
           <div className="relative p-2">
             <div className="relative z-20 aspect-video w-full overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image
-                src="https://github.com/0kira-vgl/nlwNotes/raw/main/src/assets/thumbnail.png?raw=true"
+                src={pic1}
                 alt="ExplorerNotes Project"
-                layout="fill"
-                objectFit="cover"
+                placeholder="blur"
               />
             </div>
             <div className="flex grow flex-col p-3">
@@ -74,12 +75,7 @@ export function Projects() {
           <div className="relative p-2">
             <div className="relative z-20 aspect-video w-full overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <div>
-                <Image
-                  src="/thumbnailPlanner.png"
-                  alt="Planner Project"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <Image src={pic1} placeholder="blur" alt="" />
               </div>
             </div>
             <div className="flex grow flex-col p-3">
@@ -124,12 +120,7 @@ export function Projects() {
         <div className="relative flex h-full flex-col rounded-xl shadow-lg outline-accent transition-transform duration-500 hover:scale-[1.03]">
           <div className="relative p-2">
             <div className="relative z-20 aspect-video w-full overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image
-                src="https://github.com/0kira-vgl/nlwNotes/raw/main/src/assets/thumbnail.png?raw=true"
-                alt=""
-                layout="fill"
-                objectFit="cover"
-              />
+              <Image src={pic1} placeholder="blur" alt="" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
@@ -172,12 +163,7 @@ export function Projects() {
         <div className="relative flex h-full flex-col rounded-xl shadow-lg outline-accent transition-transform duration-500 hover:scale-[1.03]">
           <div className="relative p-2">
             <div className="relative z-20 aspect-video w-full overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image
-                src="https://github.com/0kira-vgl/nlwNotes/raw/main/src/assets/thumbnail.png?raw=true"
-                alt=""
-                layout="fill"
-                objectFit="cover"
-              />
+              <Image src={pic1} placeholder="blur" alt="" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
@@ -220,12 +206,7 @@ export function Projects() {
         <div className="relative flex h-full flex-col rounded-xl shadow-lg outline-accent transition-transform duration-500 hover:scale-[1.03]">
           <div className="relative p-2">
             <div className="relative z-20 aspect-video w-full overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image
-                src="https://github.com/0kira-vgl/nlwNotes/raw/main/src/assets/thumbnail.png?raw=true"
-                alt=""
-                layout="fill"
-                objectFit="cover"
-              />
+              <Image src={pic1} placeholder="blur" alt="" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
