@@ -7,6 +7,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  CarouselIndicators,
 } from "../ui/carousel";
 import Image from "next/image";
 
@@ -55,6 +56,7 @@ export function CertificatesCarousel() {
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
+      <CarouselIndicators />
     </Carousel>
   );
 }

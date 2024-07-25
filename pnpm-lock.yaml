@@ -32,6 +32,9 @@ dependencies:
   embla-carousel-autoplay:
     specifier: ^8.1.7
     version: 8.1.7(embla-carousel@8.1.7)
+  embla-carousel-class-names:
+    specifier: ^8.1.7
+    version: 8.1.7(embla-carousel@8.1.7)
   embla-carousel-react:
     specifier: ^8.1.7
     version: 8.1.7(react@18.3.1)
@@ -1772,6 +1775,14 @@ packages:
 
   /embla-carousel-autoplay@8.1.7(embla-carousel@8.1.7):
     resolution: {integrity: sha512-UXt1XvCNwzC/Sqd7iU8nYd1CjuDLweIwJClfBL3gVTzHQBVwb68GBBfC/oPFsEeIWNUZe8NO5xDQSI9aTnYO7Q==}
+    peerDependencies:
+      embla-carousel: 8.1.7
+    dependencies:
+      embla-carousel: 8.1.7
+    dev: false
+
+  /embla-carousel-class-names@8.1.7(embla-carousel@8.1.7):
+    resolution: {integrity: sha512-vg6HlUmyW3Md7tlV46GkX/Ko9q3tEnu+vySqLqe8lu6gGNvGeDODXV0njyQDECSumvnCCo+9QdamkAg/ur+fpw==}
     peerDependencies:
       embla-carousel: 8.1.7
     dependencies:

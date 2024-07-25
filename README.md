@@ -10,6 +10,7 @@
 [] Por uma setinha animada par a pessoa poder descer na página;
 [] Metodos ageis;
 [] Por o curriculo em Contato;
+[] Trocar os links dentro do site de "a" para "Link" do NextJs;
 
 ## Header - NavLink
 
