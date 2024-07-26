@@ -75,6 +75,10 @@
   }
 }
 
+body {
+  min-width: 0;
+}
+
 /* toggle mode */
 .switch {
   font-size: 17px;

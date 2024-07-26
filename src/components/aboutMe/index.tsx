@@ -3,24 +3,22 @@ import { Card, CardContent, CardHeader } from "../ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { CertificatesCarousel } from "./certificatesCarousel";
 
-export function Skills() {
+export function AboutMe() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <Card className="mx-10 w-full">
+    <div className="flex items-center justify-center py-6">
+      <Card className="mx-16 w-full">
         <Tabs defaultValue="aboutMe">
           <CardHeader>
-            <TabsList>
+            <TabsList className="max-w-max">
               <TabsTrigger value="aboutMe">Sobre mim</TabsTrigger>
               <TabsTrigger value="skills">Habilidades</TabsTrigger>
               <TabsTrigger value="certificates">Certificados</TabsTrigger>
-              <TabsTrigger value="hardSkills">Hard Skills</TabsTrigger>
-              <TabsTrigger value="softSkills">Soft Skills</TabsTrigger>
             </TabsList>
           </CardHeader>
 
           <CardContent>
             <TabsContent value="aboutMe">
-              <div className="mr-96 text-start">
+              <div className="text-start">
                 <p>
                   {" "}
                   Olá, sou Matheus Tiburcio, de Sorocaba-SP. Estou no ensino

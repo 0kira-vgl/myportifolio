@@ -11,6 +11,7 @@
 [] Metodos ageis;
 [] Por o curriculo em Contato;
 [] Trocar os links dentro do site de "a" para "Link" do NextJs;
+[] Add text animation;
 
 ## Header - NavLink
 

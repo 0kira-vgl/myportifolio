@@ -13,7 +13,7 @@ import pic1 from "@public/thumbnailPlanner.png";
 
 export function Projects() {
   return (
-    <div className="pt- max-w-7xlp-6 container mx-auto h-screen w-full">
+    <div className="container mx-auto w-full max-w-7xl pb-10">
       <div className="items-center justify-center pb-5">
         <h2 className="relative z-10 pb-2 text-center text-4xl font-extrabold text-[#1E293B]">
           Projetos

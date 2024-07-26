@@ -62,7 +62,7 @@ export function SiteButtonCard(props: ButtonCardProps) {
       target="_blank"
       className="flex h-9 items-center justify-center rounded-full border border-slate-700 px-8 py-1 text-sm text-slate-700 shadow-md outline-accent"
     >
-      Ver site
+      Acessar
     </a>
   );
 }

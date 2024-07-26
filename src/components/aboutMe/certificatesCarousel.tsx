@@ -54,8 +54,8 @@ export function CertificatesCarousel() {
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden lg:block" />
+      <CarouselNext className="hidden lg:block" />
       <CarouselIndicators />
     </Carousel>
   );
