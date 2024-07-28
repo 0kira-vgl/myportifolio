@@ -7,7 +7,7 @@ import { RxDoubleArrowDown } from "react-icons/rx";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <section
         className="h-screen w-full bg-cover"

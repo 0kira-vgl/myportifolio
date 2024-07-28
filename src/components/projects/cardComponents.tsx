@@ -1,12 +1,13 @@
 import Image, { ImageProps } from "next/image";
 import { ComponentProps, ReactNode } from "react";
-import { buttonVariants } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+// import { ArrowUpRight } from "lucide-react";
 
 interface TitleCardProps extends ComponentProps<"h2"> {
   children?: ReactNode;
@@ -14,7 +15,10 @@ interface TitleCardProps extends ComponentProps<"h2"> {
 
 export function TitleCard(props: TitleCardProps) {
   return (
-    <h2 {...props} className="text-lg font-bold text-slate-700">
+    <h2
+      {...props}
+      className="text-lg font-bold text-slate-700 dark:text-neutral-50"
+    >
       {props.children}
     </h2>
   );
@@ -26,7 +30,10 @@ interface DescriptionCardProps extends ComponentProps<"p"> {
 
 export function DescriptionCard(props: DescriptionCardProps) {
   return (
-    <p {...props} className="mb-3 text-sm text-neutral-500">
+    <p
+      {...props}
+      className="mb-3 text-sm text-neutral-500 dark:text-neutral-400"
+    >
       {props.children}
     </p>
   );
@@ -51,30 +58,35 @@ export function IconsCard(props: IconsCardProps) {
   );
 }
 
-interface ButtonCardProps extends ComponentProps<"a"> {
+interface ButtonsCardProps extends ComponentProps<"a"> {
   hrefLink: string;
 }
 
-export function SiteButtonCard(props: ButtonCardProps) {
+export function SiteButtonCard(props: ButtonsCardProps) {
   return (
     <a
       href={props.hrefLink}
       target="_blank"
-      className="flex h-9 items-center justify-center rounded-full border border-slate-700 px-8 py-1 text-sm text-slate-700 shadow-md outline-accent"
+      // className={buttonVariants({ className: "gap-1", variant: "outline" })}
+
+      className="flex h-9 items-center justify-center rounded-full border border-slate-700 px-8 py-1 text-sm text-slate-700 shadow-md outline-accent dark:border-neutral-400 dark:text-muted-foreground"
     >
       Acessar
+      {/* <ArrowUpRight className="size-5" /> */}
     </a>
   );
 }
 
-export function RepoButtonCard(props: ButtonCardProps) {
+export function RepoButtonCard(props: ButtonsCardProps) {
   return (
-    <a
-      href={props.hrefLink}
-      target="_blank"
-      className={buttonVariants({ className: "cursor-pointer" })}
+    <Button
+      className={buttonVariants({
+        className: "rounded-full lg:rounded-md",
+      })}
     >
-      Repositorio
-    </a>
+      <a href={props.hrefLink} target="_blank">
+        Repositório
+      </a>
+    </Button>
   );
 }
