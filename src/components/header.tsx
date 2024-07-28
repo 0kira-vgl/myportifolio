@@ -9,6 +9,9 @@ import {
   SelectItem,
 } from "./ui/select";
 
+import BrazilFlag from "@public/brazilFlag.svg";
+import EuaFlag from "@public/euaFlag.svg";
+
 export function Header() {
   return (
     <header className="shadow-[0px_-5px_12px_1px_#C8C9C5] md:flex md:h-20 md:items-center md:justify-center">
@@ -56,10 +59,16 @@ export function Header() {
             </SelectTrigger>
             <SelectContent className="rounded-lg">
               <SelectItem className="rounded-lg" value="pt">
-                PT-BR
+                <div className="flex items-center justify-center gap-1">
+                  <Image src={BrazilFlag} alt="." className="size-5" />
+                  PT-BR
+                </div>
               </SelectItem>
               <SelectItem className="rounded-lg" value="us">
-                US
+                <div className="flex items-center justify-center gap-1">
+                  <Image src={EuaFlag} alt="." className="size-5" />
+                  US
+                </div>
               </SelectItem>
             </SelectContent>
           </Select>
