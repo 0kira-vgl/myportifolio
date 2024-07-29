@@ -1,8 +1,8 @@
-import { Foother } from "@/components/foother";
 import { Header } from "@/components/header";
 import { Projects } from "@/components/projects";
 import { AboutMe } from "@/components/aboutMe";
 import { RxDoubleArrowDown } from "react-icons/rx";
+import { Foother } from "@/components/foother";
 
 export default function Home() {
   return (

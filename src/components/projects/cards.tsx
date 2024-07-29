@@ -5,6 +5,7 @@ import {
   SiteButtonCard,
   RepoButtonCard,
 } from "./cardComponents";
+
 import Image from "next/image";
 
 import pic1 from "@public/thumbnailPlanner.png";
