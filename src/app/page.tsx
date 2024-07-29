@@ -2,44 +2,40 @@ import { Header } from "@/components/header";
 import { Projects } from "@/components/projects";
 import { AboutMe } from "@/components/aboutMe";
 import { RxDoubleArrowDown } from "react-icons/rx";
-import { Foother } from "@/components/foother";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
     <>
       {/* <Header /> */}
 
-      <section
-        className="h-screen w-full bg-cover"
-        style={{
-          backgroundImage: `url(${"./background.svg"})`,
-        }}
-      >
+      <section className="bg-linear dark:bg-pattern h-screen w-full bg-cover dark:bg-zinc-950 dark:bg-center dark:bg-no-repeat">
         <div className="flex-col items-center justify-center lg:flex lg:pt-16">
-          <div className="text-center">
-            <p className="hidden text-slate-800 lg:block lg:text-left lg:text-2xl">
+          <div className="space-y-2 text-center">
+            <p className="dark:bg-gradient-text-dark hidden text-slate-800 dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:block lg:text-left lg:text-2xl">
               &lt;Hello World! /&gt;
             </p>
-            <h1 className="hidden font-semibold text-slate-800 lg:block lg:text-8xl">
+            <h1 className="dark:bg-gradient-text-dark hidden font-semibold text-slate-800 dark:bg-clip-text dark:text-transparent lg:block lg:text-7xl">
               Olá, eu sou o Matheus...
             </h1>
-            <h2 className="text-5xl font-semibold leading-tight text-slate-800 lg:text-6xl lg:font-normal">
+            <h2 className="dark:bg-gradient-text-dark text-5xl font-semibold leading-tight text-slate-800 dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:text-6xl">
               Seu próximo desenvolvedor{" "}
-              <span className="front font-extrabold">Front-end ;)</span>
+              <span className="dark:bg-gradient-dark bg-gradient-light bg-clip-text font-extrabold text-transparent">
+                Front-end ;)
+              </span>
             </h2>
           </div>
 
           <div className="flex flex-col items-center justify-center pt-4 text-center">
-            <p className="relative z-10 mb-8 mt-2 max-w-[32rem] text-center text-base text-zinc-500 lg:mt-4 lg:text-xl">
-              Me chamo Matheus Tiburcio, um dedicado desenvolvedor Front-end com
-              foco em ReactJS.
+            <p className="mx-8 mb-8 mt-2 max-w-[32rem] text-center text-base text-zinc-500 lg:mt-4 lg:text-xl">
+              Me chamo Matheus Tiburcio, um dedicado desenvolvedor Front-end.
             </p>
 
             <div className="w-min gap-4 space-y-4 pt-3 lg:flex lg:space-y-0">
               <a
                 href="https://github.com/0kira-vgl"
                 target="_blank"
-                className="flex min-w-0 flex-1 items-center justify-center gap-3 rounded-full border border-gray-600 bg-gradient-to-r from-gray-800 to-black px-7 py-3 font-semibold text-white duration-200 hover:scale-105 hover:border-gray-800 hover:from-black hover:to-gray-900 hover:text-gray-300"
+                className="flex min-w-0 flex-1 items-center justify-center gap-3 rounded-full border border-gray-700 bg-gradient-to-r from-gray-800 to-black px-7 py-3 font-semibold text-white duration-200 hover:scale-105 hover:border-gray-800 hover:from-black hover:to-gray-900 hover:text-gray-300"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -85,7 +81,7 @@ export default function Home() {
 
       <AboutMe />
       <Projects />
-      <Foother />
+      <Footer />
     </>
   );
 }

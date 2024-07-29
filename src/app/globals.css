@@ -186,14 +186,6 @@ body {
   transform: translateX(30px);
 }
 
-/* front-end text */
-.front {
-  background: #cf0c13;
-  background: repeating-linear-gradient(90deg, #cf0c13 0, #ff0a95 50%, #ff5724);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* cv */
 .btn-shine {
   top: 50%;
