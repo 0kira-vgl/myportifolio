@@ -73,7 +73,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center space-y-2 pt-28 font-light text-zinc-600 lg:pt-16">
+        <div className="flex flex-col items-center justify-center space-y-2 pt-28 font-light text-zinc-600 dark:text-zinc-500 lg:pt-16">
           <span className="animate-bounce">Deslize para baixo...</span>
           <RxDoubleArrowDown className="size-5 animate-bounce" />
         </div>
