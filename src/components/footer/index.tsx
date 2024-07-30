@@ -7,8 +7,10 @@ import { SocialLinks } from "./socialLinks";
 export function Footer() {
   return (
     <footer className="mx-auto flex h-full w-full flex-col bg-purple-700 lg:h-screen">
-      <div className="bg-pattern mx-5 -translate-y-1/2 space-y-4 rounded-2xl border bg-slate-50 bg-center bg-no-repeat p-5 py-10 text-center text-slate-800 shadow-lg dark:bg-zinc-950 dark:text-neutral-100 lg:mx-16 lg:p-16 lg:py-12">
-        <h1 className="text-3xl font-semibold">Vamos começar?</h1>
+      <div className="mx-5 -translate-y-1/2 space-y-4 rounded-2xl border bg-slate-50 bg-pattern bg-center bg-no-repeat p-5 py-10 text-center text-slate-800 shadow-lg dark:bg-zinc-950 dark:text-zinc-500 lg:mx-16 lg:p-16 lg:py-12">
+        <h1 className="text-3xl font-semibold dark:bg-gradient-text-dark dark:bg-clip-text dark:text-transparent">
+          Vamos começar?
+        </h1>
         <p className="text-2xl">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, ut
           rem? Vero, tempore! Architecto voluptas sunt accusantium eos eum in?

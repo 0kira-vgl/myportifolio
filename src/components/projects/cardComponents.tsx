@@ -17,7 +17,7 @@ export function TitleCard(props: TitleCardProps) {
   return (
     <h2
       {...props}
-      className="text-lg font-bold text-slate-700 dark:text-neutral-50"
+      className="text-lg font-bold text-slate-700 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-50 dark:text-transparent"
     >
       {props.children}
     </h2>
@@ -30,10 +30,7 @@ interface DescriptionCardProps extends ComponentProps<"p"> {
 
 export function DescriptionCard(props: DescriptionCardProps) {
   return (
-    <p
-      {...props}
-      className="mb-3 text-sm text-neutral-500 dark:text-neutral-400"
-    >
+    <p {...props} className="mb-3 text-sm text-neutral-500 dark:text-[#888888]">
       {props.children}
     </p>
   );

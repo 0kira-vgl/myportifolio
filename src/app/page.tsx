@@ -9,18 +9,18 @@ export default function Home() {
     <>
       {/* <Header /> */}
 
-      <section className="bg-linear dark:bg-pattern h-screen w-full bg-cover dark:bg-zinc-950 dark:bg-center dark:bg-no-repeat">
+      <section className="h-screen w-full bg-linear bg-cover dark:bg-zinc-950 dark:bg-pattern dark:bg-center dark:bg-no-repeat">
         <div className="flex-col items-center justify-center lg:flex lg:pt-16">
           <div className="space-y-2 text-center">
-            <p className="dark:bg-gradient-text-dark hidden text-slate-800 dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:block lg:text-left lg:text-2xl">
+            <p className="hidden text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:block lg:text-left lg:text-2xl">
               &lt;Hello World! /&gt;
             </p>
-            <h1 className="dark:bg-gradient-text-dark hidden font-semibold text-slate-800 dark:bg-clip-text dark:text-transparent lg:block lg:text-7xl">
+            <h1 className="hidden font-semibold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-transparent lg:block lg:text-7xl">
               Olá, eu sou o Matheus...
             </h1>
-            <h2 className="dark:bg-gradient-text-dark text-5xl font-semibold leading-tight text-slate-800 dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:text-6xl">
+            <h2 className="text-5xl font-semibold leading-tight text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:text-6xl">
               Seu próximo desenvolvedor{" "}
-              <span className="dark:bg-gradient-dark bg-gradient-light bg-clip-text font-extrabold text-transparent">
+              <span className="bg-gradient-light bg-clip-text font-extrabold text-transparent dark:bg-gradient-dark">
                 Front-end ;)
               </span>
             </h2>
