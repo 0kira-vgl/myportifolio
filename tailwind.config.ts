@@ -82,6 +82,10 @@ const config = {
           "repeating-linear-gradient(90deg, #a8c0ff 0%, #fbc2eb 50%, #a8c0ff)",
         "gradient-text-dark": "linear-gradient(to bottom, #e5e5e5, #c7c7c7)",
       },
+
+      fontFamily: {
+        code: ["var(--font-code)"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -185,3 +185,8 @@ body {
 .input:checked + .slider:before {
   transform: translateX(30px);
 }
+
+/* text shadow */
+.text-shadow {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}

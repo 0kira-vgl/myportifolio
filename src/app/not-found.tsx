@@ -11,8 +11,12 @@ export default function Notfound() {
     <div className="flex h-screen flex-col items-center justify-center">
       <div className="w-full max-w-xl px-6 lg:px-0">
         <div className="space-y-6 text-center">
-          <span className="font-semibold">404</span>
-          <h2 className="text-5xl font-semibold">This page does not exist</h2>
+          <span className="font-semibold text-slate-800 dark:text-zinc-50">
+            404
+          </span>
+          <h2 className="text-5xl font-semibold text-slate-800 dark:text-zinc-50">
+            This page does not exist
+          </h2>
 
           <p className="text-base text-zinc-500">
             Sorry, we couldn’t find the page you’re looking for.
@@ -25,7 +29,7 @@ export default function Notfound() {
             className="flex justify-between gap-x-6 py-5 lg:items-center"
           >
             <div>
-              <CgWebsite className="size-10 rounded-lg border p-2 dark:text-zinc-50" />
+              <CgWebsite className="size-10 rounded-lg border p-2 shadow-md dark:text-zinc-50" />
             </div>
             <div className="flex-auto">
               <h2 className="mb-1.5 text-base font-semibold leading-6">
@@ -45,7 +49,7 @@ export default function Notfound() {
             className="flex justify-between gap-x-6 py-5 lg:items-center"
           >
             <div>
-              <FaGithub className="size-10 rounded-lg border p-2 dark:text-zinc-50" />
+              <FaGithub className="size-10 rounded-lg border p-2 shadow-md dark:text-zinc-50" />
             </div>
             <div className="flex-auto">
               <h2 className="mb-1.5 text-base font-semibold leading-6">
@@ -65,7 +69,7 @@ export default function Notfound() {
             className="flex justify-between gap-x-6 py-5 lg:items-center"
           >
             <div>
-              <FaLinkedinIn className="size-10 rounded-lg border p-2 dark:text-zinc-50" />
+              <FaLinkedinIn className="size-10 rounded-lg border p-2 shadow-md dark:text-zinc-50" />
             </div>
             <div className="flex-auto">
               <h2 className="mb-1.5 text-base font-semibold leading-6">

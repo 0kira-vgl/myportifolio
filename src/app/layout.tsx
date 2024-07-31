@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Inconsolata } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const inconsolata = Inconsolata({
+  subsets: ["latin"],
+  variable: "--font-code",
+});
 
 export const metadata: Metadata = {
   title: "Matheus Tiburcio | My Portfolio",
@@ -14,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="dark h-screen antialiased" lang="en">
+    <html className={`dark antialiased ${inconsolata.variable}`} lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );
