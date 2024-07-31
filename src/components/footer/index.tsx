@@ -4,6 +4,7 @@ import { SocialLinks } from "./socialLinks";
 import { buttonVariants } from "../ui/button";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { FooterCard } from "./footerCard";
+import { ScrollUpButton } from "../scrollUpButton";
 
 export function Footer() {
   return (
@@ -45,7 +46,7 @@ export function Footer() {
       <div className="flex flex-col items-center justify-center text-center lg:mt-auto">
         <Separator />
 
-        <span className="font-code py-3 text-sm text-zinc-800 lg:text-lg">
+        <span className="py-3 font-code text-sm text-zinc-800 lg:text-lg">
           © 2024 - Design and Code by Matheus Tiburcio.
         </span>
       </div>

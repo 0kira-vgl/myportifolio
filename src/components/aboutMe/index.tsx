@@ -1,7 +1,10 @@
 import { IconsCard } from "../projects/cardComponents";
+import { buttonVariants } from "../ui/button";
 import { Card, CardContent, CardHeader } from "../ui/card";
+import { Separator } from "../ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { CertificatesCarousel } from "./certificatesCarousel";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export function AboutMe() {
   return (
@@ -18,34 +21,65 @@ export function AboutMe() {
 
           <CardContent>
             <TabsContent value="aboutMe">
-              <div className="text-start">
-                <p>
-                  {" "}
-                  Olá, sou Matheus Tiburcio, de Sorocaba-SP. Estou no ensino
-                  médio e curso{" "}
-                  <span className="text-purple-600">
-                    técnico em Desenvolvimento de Sistemas
-                  </span>{" "}
-                  na Escola Técnica Estadual Rubens de Faria e Souza. Tenho uma
-                  grande paixão por tecnologia, e meu trabalho se concentra em
-                  desenvolvimento front-end com ferramentas como{" "}
-                  <span className="text-purple-600">
-                    ReactJS, Next.js, Tailwind CSS
-                  </span>
-                  , entre outras.
-                </p>
-                <br />
-                <p>
-                  Já fiz freelance para o exterior usando SquareSpace e,
-                  pessoalmente, criei meu próprio portfólio, do qual me orgulho
-                  muito. Nos próximos anos, planejo seguir carreira como
-                  programador e também explorar a área de cibersegurança,
-                  motivado pela constante evolução da tecnologia e suas
-                  infinitas possibilidades. Fora do trabalho, gosto de cozinhar,
-                  ler mangás e livros, e ir à academia. Meu pai foi uma grande
-                  influência para eu seguir nessa área, e estou animado para ver
-                  onde essa jornada me levará.
-                </p>
+              <div>
+                <h2 className="mb-2 text-3xl">Olá, sou Matheus Tiburcio,</h2>
+                <div className="mb-3 text-xl">
+                  <p>
+                    {" "}
+                    de Sorocaba-SP. Estou no ensino médio e curso{" "}
+                    <span className="rounded-lg bg-purple-400/40 p-1 text-purple-600">
+                      Técnico em Desenvolvimento de Sistemas
+                    </span>{" "}
+                    na Escola Técnica Estadual Rubens de Faria e Souza. Tenho
+                    uma grande paixão por tecnologia, e meu trabalho se
+                    concentra em desenvolvimento front-end com ferramentas como{" "}
+                    <span className="text-purple-600">
+                      ReactJS, Next.js, Tailwind CSS
+                    </span>
+                    , entre outras.
+                  </p>
+                  <br />
+                  <p>
+                    Já fiz freelance para o exterior usando SquareSpace e,
+                    pessoalmente, criei meu próprio portfólio, do qual me
+                    orgulho muito. Nos próximos anos, planejo seguir carreira
+                    como programador e também explorar a área de cibersegurança,
+                    motivado pela constante evolução da tecnologia e suas
+                    infinitas possibilidades. Fora do trabalho, gosto de
+                    cozinhar, ler mangás e livros, e ir à academia. Meu pai foi
+                    uma grande influência para eu seguir nessa área, e estou
+                    animado para ver onde essa jornada me levará.
+                  </p>
+                </div>
+
+                <Separator />
+
+                <div className="mt-3 flex gap-3">
+                  <a
+                    href="#"
+                    target="_blank"
+                    className={buttonVariants({
+                      variant: "secondary",
+                      className:
+                        "flex items-center justify-center gap-2 font-semibold",
+                    })}
+                  >
+                    GitHub
+                    <FaGithub className="size-5" />
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    className={buttonVariants({
+                      variant: "outline",
+                      className:
+                        "flex items-center justify-center gap-2 font-semibold",
+                    })}
+                  >
+                    LinkediIn
+                    <FaLinkedinIn className="size-5" />
+                  </a>
+                </div>
               </div>
             </TabsContent>
 
@@ -115,8 +149,8 @@ export function AboutMe() {
                       />
                       <IconsCard
                         className="size-14"
-                        titleIcon="Github"
-                        alt="Github Icon"
+                        titleIcon="GitHub"
+                        alt="GitHub Icon"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
                       />
                       <IconsCard

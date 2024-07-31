@@ -23,7 +23,7 @@ export function SocialLinks() {
             </div>
           </TooltipTrigger>
           <TooltipContent className="bg-[#161B22]">
-            <p className="text-sm font-semibold text-zinc-50">Github</p>
+            <p className="text-sm font-semibold text-zinc-50">GitHub</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
