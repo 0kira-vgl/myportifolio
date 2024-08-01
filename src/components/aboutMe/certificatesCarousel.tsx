@@ -60,5 +60,3 @@ export function CertificatesCarousel() {
     </Carousel>
   );
 }
-
-// hidden lg:block

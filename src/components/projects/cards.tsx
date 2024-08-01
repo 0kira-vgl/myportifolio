@@ -12,7 +12,7 @@ import pic1 from "@public/thumbnailPlanner.png";
 
 export function Cards() {
   return (
-    <>
+    <main>
       <div className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0">
         <div className="flex rounded-xl border bg-slate-50 shadow-lg transition-transform duration-500 hover:scale-[1.03] dark:border dark:bg-zinc-950">
           <div className="p-2">
@@ -241,6 +241,6 @@ export function Cards() {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 }

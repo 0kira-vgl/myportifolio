@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export function AboutMe() {
   return (
-    <div id="aboutMe" className="flex items-center justify-center py-6">
+    <section id="aboutMe" className="flex items-center justify-center py-6">
       <Card className="mx-16 h-screen w-full">
         <Tabs defaultValue="aboutMe">
           <CardHeader>
@@ -211,6 +211,6 @@ export function AboutMe() {
           </CardContent>
         </Tabs>
       </Card>
-    </div>
+    </section>
   );
 }

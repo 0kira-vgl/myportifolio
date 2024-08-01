@@ -13,7 +13,7 @@ import Link from "next/link";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 flex h-14 items-center justify-center bg-white/5 backdrop-blur-sm">
-      <div className="flex w-[92%] items-center justify-between">
+      <main className="flex w-[92%] items-center justify-between">
         <div>
           <Link href="#home">
             <h3 className="text-shadow font-mono text-4xl">
@@ -81,7 +81,7 @@ export function Header() {
             <span className="slider"></span>
           </label>
         </div>
-      </div>
+      </main>
     </header>
   );
 }

@@ -7,13 +7,13 @@ import { FooterCard } from "./footerCard";
 
 export function Footer() {
   return (
-    <footer
+    <section
       id="footer"
       className="mx-auto flex h-full w-full flex-col lg:h-screen"
     >
       <FooterCard />
 
-      <div className="flex -translate-y-1/4 flex-col items-center justify-center space-y-10 text-center lg:-translate-y-5">
+      <main className="flex -translate-y-1/4 flex-col items-center justify-center space-y-10 text-center lg:-translate-y-5">
         <Link href="#home">
           <h3 className="text-shadow font-mono text-4xl">&lt;Matheus /&gt;</h3>
         </Link>
@@ -44,14 +44,14 @@ export function Footer() {
             <LuFileSpreadsheet className="size-4" />
           </a>
         </div>
-      </div>
-      <div className="flex flex-col items-center justify-center text-center lg:mt-auto">
+      </main>
+      <footer className="flex flex-col items-center justify-center text-center lg:mt-auto">
         <Separator />
 
         <span className="py-3 font-code text-sm text-zinc-800 lg:text-lg">
           © 2024 - Design and Code by Matheus Tiburcio.
         </span>
-      </div>
-    </footer>
+      </footer>
+    </section>
   );
 }

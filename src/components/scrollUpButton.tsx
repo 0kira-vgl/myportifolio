@@ -13,7 +13,7 @@ export function ScrollUpButton() {
       <Tooltip>
         <TooltipTrigger>
           <Link
-            href="/"
+            href="#home"
             className="flex cursor-pointer items-center justify-center rounded-full border bg-background p-2 shadow-md hover:bg-accent hover:duration-300"
           >
             <RxDoubleArrowUp className="size-10 text-accent-foreground" />
