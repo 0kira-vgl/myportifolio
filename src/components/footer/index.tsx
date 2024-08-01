@@ -4,15 +4,17 @@ import { SocialLinks } from "./socialLinks";
 import { buttonVariants } from "../ui/button";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { FooterCard } from "./footerCard";
-import { ScrollUpButton } from "../scrollUpButton";
 
 export function Footer() {
   return (
-    <footer className="mx-auto flex h-full w-full flex-col lg:h-screen">
+    <footer
+      id="footer"
+      className="mx-auto flex h-full w-full flex-col lg:h-screen"
+    >
       <FooterCard />
 
-      <div className="flex -translate-y-1/3 flex-col items-center justify-center space-y-12 text-center lg:-translate-y-5">
-        <Link href="/">
+      <div className="flex -translate-y-1/4 flex-col items-center justify-center space-y-10 text-center lg:-translate-y-5">
+        <Link href="#home">
           <h3 className="text-shadow font-mono text-4xl">&lt;Matheus /&gt;</h3>
         </Link>
 
@@ -29,7 +31,7 @@ export function Footer() {
           <SocialLinks />
         </div>
 
-        <div className="mb-10">
+        <div>
           <a
             href="#"
             target="_blank"

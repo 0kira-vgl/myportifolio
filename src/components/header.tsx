@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import {
   Select,
@@ -8,53 +6,43 @@ import {
   SelectContent,
   SelectItem,
 } from "./ui/select";
-
 import BrazilFlag from "@public/brazilFlag.svg";
 import EuaFlag from "@public/euaFlag.svg";
+import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="shadow-[0px_-5px_12px_1px_#C8C9C5] md:flex md:h-20 md:items-center md:justify-center">
-      <nav className="md:mx-auto md:flex md:w-[92%] md:items-center md:justify-between">
+    <header className="sticky top-0 z-50 flex h-14 items-center justify-center bg-white/5 backdrop-blur-sm">
+      <div className="flex w-[92%] items-center justify-between">
         <div>
-          <a href="#">
-            <Image src="/text.svg" alt="." width={100} height={100} />
-          </a>
+          <Link href="#home">
+            <h3 className="text-shadow font-mono text-4xl">
+              &lt;Matheus /&gt;
+            </h3>
+          </Link>
         </div>
 
-        <div>
-          <ul className="gap-[4vh] md:flex md:items-center">
-            <li className="mx-4 my-4 md:mx-0 md:my-0">
-              <a className="text-xl font-medium" href="">
-                Início
-              </a>
-            </li>
-            <li className="mx-4 my-4 md:mx-0 md:my-0">
-              <a className="text-xl font-medium" href="">
-                Sobre mim
-              </a>
-            </li>
-            <li className="mx-4 my-4 md:mx-0 md:my-0">
-              <a className="text-xl font-medium" href="">
-                Habilidades
-              </a>
-            </li>
-            <li className="mx-4 my-4 md:mx-0 md:my-0">
-              <a className="text-xl font-medium" href="">
-                Projetos
-              </a>
-            </li>
-            <li className="mx-4 my-4 md:mx-0 md:my-0">
-              <a className="text-xl font-medium" href="">
-                Contato
-              </a>
-            </li>
-          </ul>
+        <div className="flex items-center gap-x-8">
+          <Link className="text-xl font-medium" href="#home">
+            Início
+          </Link>
+
+          <Link className="text-xl font-medium" href="#aboutMe">
+            Sobre mim
+          </Link>
+
+          <Link className="text-xl font-medium" href="#projects">
+            Projetos
+          </Link>
+
+          <Link className="text-xl font-medium" href="#footer">
+            Contato
+          </Link>
         </div>
 
-        <div className="mx-4 my-4 md:mx-0 md:my-0 md:flex md:gap-3">
+        <div className="flex gap-3">
           <Select>
-            <SelectTrigger className="w-[100px] rounded-lg border-none outline-none">
+            <SelectTrigger className="w-[110px] rounded-lg outline-none">
               <SelectValue placeholder="Idioma" />
             </SelectTrigger>
             <SelectContent className="rounded-lg">
@@ -73,9 +61,9 @@ export function Header() {
             </SelectContent>
           </Select>
 
-          <div className="md:w-px md:bg-zinc-200" />
+          <div className="w-px bg-zinc-200 dark:bg-zinc-500" />
 
-          <label className="switch my-4 md:my-0">
+          <label className="switch">
             <span className="sun">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <g fill="#ffd43b">
@@ -93,7 +81,7 @@ export function Header() {
             <span className="slider"></span>
           </label>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }

@@ -1,17 +1,19 @@
 ## Afazeres
 
-[] Fazer o responsivo;
-[] Deixar ele com o efeito de blur (backdrop-blur);
-[] Fazer com que o header suba e desça conforme a tela (fixa ao topo);
+[X] Fazer o responsivo;
+[X] Deixar o Header com o efeito de blur (backdrop-blur);
+[x] Fazer com que o header suba e desça conforme a tela (fixa ao topo);
 [] Botão do header responsivo;
 [] Hover nos botões;
 [] Por animação no responsivo;
-[] Colocar uma aba de certificados em "Habilidades";
-[] Por uma setinha animada par a pessoa poder descer na página;
+[x] Colocar uma aba de certificados em "Habilidades";
+[x] Por uma setinha animada par a pessoa poder descer na página;
 [] Metodos ageis;
-[] Por o curriculo em Contato;
-[] Trocar os links dentro do site de "a" para "Link" do NextJs;
+[x] Por o curriculo em Contato;
+[x] Trocar os links dentro do site de "a" para "Link" do NextJs;
 [] Add text animation;
+[x] Trocar cor do bg do Footer;
+[] Arrumar fundo do Header;
 
 ## Header - NavLink
 

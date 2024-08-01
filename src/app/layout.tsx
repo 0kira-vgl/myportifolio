@@ -18,7 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`dark antialiased ${inconsolata.variable}`} lang="en">
+    <html
+      className={`scroll-smooth antialiased ${inconsolata.variable}`}
+      lang="en"
+    >
       <body className={inter.className}>{children}</body>
     </html>
   );

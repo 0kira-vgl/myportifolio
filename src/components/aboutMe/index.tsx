@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export function AboutMe() {
   return (
-    <div className="flex items-center justify-center py-6">
+    <div id="aboutMe" className="flex items-center justify-center py-6">
       <Card className="mx-16 h-screen w-full">
         <Tabs defaultValue="aboutMe">
           <CardHeader>
@@ -22,8 +22,10 @@ export function AboutMe() {
           <CardContent>
             <TabsContent value="aboutMe">
               <div>
-                <h2 className="mb-2 text-3xl">Olá, sou Matheus Tiburcio,</h2>
-                <div className="mb-3 text-xl">
+                <h2 className="mb-2 text-xl lg:text-3xl">
+                  Olá, sou Matheus Tiburcio,
+                </h2>
+                <div className="mb-3 lg:text-xl">
                   <p>
                     {" "}
                     de Sorocaba-SP. Estou no ensino médio e curso{" "}

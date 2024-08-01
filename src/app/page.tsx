@@ -7,9 +7,12 @@ import { Footer } from "@/components/footer";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
-      <section className="h-screen w-full bg-linear bg-cover dark:bg-zinc-950 dark:bg-pattern dark:bg-center dark:bg-no-repeat">
+      <section
+        id="home"
+        className="h-screen w-full bg-linear bg-cover dark:bg-zinc-950 dark:bg-pattern dark:bg-center dark:bg-no-repeat"
+      >
         <div className="flex-col items-center justify-center lg:flex lg:pt-16">
           <div className="space-y-2 text-center">
             <p className="hidden text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:block lg:text-left lg:text-2xl">
