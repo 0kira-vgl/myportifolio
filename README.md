@@ -14,6 +14,8 @@
 [] Add text animation;
 [x] Trocar cor do bg do Footer;
 [] Arrumar fundo do Header;
+[] Arrumar ScrollTop no responsivo;
+[] Arrumar padding do Header;
 
 ## Header - NavLink
 

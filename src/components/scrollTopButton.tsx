@@ -17,7 +17,7 @@ export function ScrollTopButton() {
           <Tooltip>
             <TooltipTrigger>
               <div className="flex items-center justify-center rounded-full border bg-zinc-50 p-1 shadow-sm dark:bg-zinc-950">
-                <RxDoubleArrowUp className="size-9 text-slate-800 dark:text-zinc-50" />
+                <RxDoubleArrowUp className="size-8 text-slate-800 dark:text-zinc-50 lg:size-9" />
               </div>
             </TooltipTrigger>
             <TooltipContent className="mb-1">
