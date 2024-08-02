@@ -2,36 +2,37 @@
 
 [X] Fazer o responsivo;
 [X] Deixar o Header com o efeito de blur (backdrop-blur);
-[x] Fazer com que o header suba e desça conforme a tela (fixa ao topo);
+[X] Fazer com que o header suba e desça conforme a tela (fixa ao topo);
 [] Botão do header responsivo;
 [] Hover nos botões;
 [] Por animação no responsivo;
-[x] Colocar uma aba de certificados em "Habilidades";
-[x] Por uma setinha animada par a pessoa poder descer na página;
+[X] Colocar uma aba de certificados em "Habilidades";
+[X] Por uma setinha animada par a pessoa poder descer na página;
 [] Metodos ageis;
-[x] Por o curriculo em Contato;
-[x] Trocar os links dentro do site de "a" para "Link" do NextJs;
+[X] Por o curriculo em Contato;
+[X] Trocar os links dentro do site de "a" para "Link" do NextJs;
 [] Add text animation;
-[x] Trocar cor do bg do Footer;
+[X] Trocar cor do bg do Footer;
 [] Arrumar fundo do Header;
-[] Arrumar ScrollTop no responsivo;
+[X] Arrumar ScrollTop no responsivo;
 [] Arrumar padding do Header;
+[] Add bg do Footer;
 
 ## Header - NavLink
 
 - Home
 - Sobre Mim
-- Habilidades (por curriculo)
+- Habilidades (por certificado)
 - Projetos
 - Contato
 
 ## Projetos
 
-- Notes;
-- PizzaShop;
-- Planner;
-- ToDoList;
-- Pomodoro;
+- Notes: react, tailwindCSS, typescript, viteJS, radix UI;
+- PizzaShop: react, tailwindCSS, typescript, viteJS, shadcn IU;
+- Planner: react, tailwindCSS, typescript, viteJS;
+- ToDoList: react, CSS, typescript, viteJS;
+- Pomodoro: typescript, viteJS, react, vercel;
 
 ## As 3 Perguntas
 

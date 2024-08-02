@@ -5,8 +5,15 @@ import {
   SiteButtonCard,
   RepoButtonCard,
 } from "./cardComponents";
-
+import { SiRadixui } from "react-icons/si";
 import Image from "next/image";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { SiShadcnui } from "react-icons/si";
 
 import pic1 from "@public/thumbnailPlanner.png";
 
@@ -52,6 +59,16 @@ export function Cards() {
                     alt="ViteJs Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
                   />
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <SiRadixui className="size-6" />
+                      </TooltipTrigger>
+                      <TooltipContent side="top">
+                        <span className="font-semibold">Radix UI</span>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
                 <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
                   <SiteButtonCard hrefLink="https://github.com/" />
@@ -100,6 +117,16 @@ export function Cards() {
                     alt="ViteJs Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
                   />
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <SiShadcnui className="size-5" />
+                      </TooltipTrigger>
+                      <TooltipContent side="top">
+                        <span className="font-semibold">Shadcn UI</span>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
                 <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
                   <SiteButtonCard hrefLink="https://github.com/" />

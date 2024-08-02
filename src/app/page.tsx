@@ -8,7 +8,7 @@ import { ScrollTopButton } from "@/components/scrollTopButton";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <section
         id="home"

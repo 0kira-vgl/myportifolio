@@ -1,0 +1,62 @@
+<svg width="1162" height="682" viewBox="0 0 1162 682" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_6_1204" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1208" height="682">
+<g opacity="0.1" clip-path="url(#clip0_6_1204)">
+<path d="M1150.32 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1108.76 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1067.2 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1025.64 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M984.075 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M942.516 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M900.956 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M859.396 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M817.833 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M776.273 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M734.713 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M693.149 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M651.583 681.353V0.0888672" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M610.003 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M568.442 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M526.879 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M485.319 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M443.758 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M402.195 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M360.635 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M319.069 681.363L319.07 0.0993652" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M277.512 681.363V0.0993652" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M235.955 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M194.386 681.363L194.387 0.0993652" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M152.823 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M111.262 681.363V0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M69.7023 681.363L69.7024 0.0993652" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M28.1472 681.363L28.1473 0.0991211" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 651.841L1304.52 651.841" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 610.3H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 568.759H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 527.218L1304.52 527.219" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 485.678H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 444.138H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 402.595L1304.52 402.596" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 361.055H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 319.516H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 277.974L1304.52 277.975" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 236.434H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 194.895H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 153.354L1304.52 153.355" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 111.813H1304.52" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.325226 70.2723L1304.52 70.2725" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.32489 28.7333L1304.52 28.7335" stroke="#727272" stroke-dasharray="6 6"/>
+</g>
+</mask>
+<g mask="url(#mask0_6_1204)">
+<ellipse cx="561.379" cy="337.923" rx="521.194" ry="308.698" fill="url(#paint0_radial_6_1204)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_6_1204" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(561.379 337.923) rotate(90) scale(399.077 673.786)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_6_1204">
+<rect width="1208" height="681.935" fill="white"/>
+</clipPath>
+</defs>
+</svg>

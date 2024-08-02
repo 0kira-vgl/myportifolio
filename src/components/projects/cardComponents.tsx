@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-// import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 interface TitleCardProps extends ComponentProps<"h2"> {
   children?: ReactNode;
@@ -49,7 +49,9 @@ export function IconsCard(props: IconsCardProps) {
         <TooltipTrigger>
           <Image {...props} width={25} height={25} alt={props.alt} />
         </TooltipTrigger>
-        <TooltipContent side="top">{props.titleIcon}</TooltipContent>
+        <TooltipContent side="top">
+          <span className="font-semibold">{props.titleIcon}</span>
+        </TooltipContent>
       </Tooltip>
     </TooltipProvider>
   );
@@ -64,23 +66,19 @@ export function SiteButtonCard(props: ButtonsCardProps) {
     <a
       href={props.hrefLink}
       target="_blank"
-      // className={buttonVariants({ className: "gap-1", variant: "outline" })}
+      className={buttonVariants({ className: "gap-1", variant: "outline" })}
 
-      className="flex h-9 items-center justify-center rounded-full border border-slate-700 px-8 py-1 text-sm text-slate-700 shadow-md outline-accent dark:border-neutral-400 dark:text-muted-foreground"
+      // className="flex h-9 items-center justify-center rounded-full border border-slate-700 px-8 py-1 text-sm text-slate-700 shadow-md outline-accent dark:border-neutral-400 dark:text-muted-foreground"
     >
-      Acessar
-      {/* <ArrowUpRight className="size-5" /> */}
+      Deploy
+      <ArrowUpRight className="size-5" />
     </a>
   );
 }
 
 export function RepoButtonCard(props: ButtonsCardProps) {
   return (
-    <Button
-      className={buttonVariants({
-        className: "rounded-full lg:rounded-md",
-      })}
-    >
+    <Button className={buttonVariants()}>
       <a href={props.hrefLink} target="_blank">
         Repositório
       </a>
