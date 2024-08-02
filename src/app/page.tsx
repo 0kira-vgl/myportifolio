@@ -3,6 +3,8 @@ import { Projects } from "@/components/projects";
 import { AboutMe } from "@/components/aboutMe";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { Footer } from "@/components/footer";
+import { ScrollDownButton } from "@radix-ui/react-select";
+import { ScrollTopButton } from "@/components/scrollTopButton";
 
 export default function Home() {
   return (
@@ -82,6 +84,7 @@ export default function Home() {
         </footer>
       </section>
 
+      <ScrollTopButton />
       <AboutMe />
       <Projects />
       <Footer />
