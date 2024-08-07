@@ -4,6 +4,7 @@ import { SocialLinks } from "./socialLinks";
 import { buttonVariants } from "../ui/button";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { FooterCard } from "./footerCard";
+import { NameLogo } from "../nameLogo";
 
 export function Footer() {
   return (
@@ -14,9 +15,7 @@ export function Footer() {
       <FooterCard />
 
       <main className="flex -translate-y-1/4 flex-col items-center justify-center space-y-10 text-center lg:-translate-y-5">
-        <Link href="#home">
-          <h3 className="text-shadow font-mono text-4xl">&lt;Matheus /&gt;</h3>
-        </Link>
+        <NameLogo />
 
         <span className="px-10 text-xl font-medium lg:max-w-sm lg:px-0">
           <span className="italic">

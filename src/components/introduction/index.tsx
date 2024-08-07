@@ -5,7 +5,7 @@ export function Introduction() {
   return (
     <section
       id="home"
-      className="h-screen w-full bg-white bg-pattern bg-center bg-no-repeat dark:bg-zinc-950"
+      className="h-screen w-full bg-white bg-pattern bg-center bg-no-repeat pt-8 dark:bg-zinc-950"
     >
       <main className="flex-col items-center justify-center lg:flex lg:pt-16">
         <div className="space-y-2 text-center">
@@ -32,7 +32,7 @@ export function Introduction() {
         </div>
       </main>
 
-      <footer className="flex flex-col items-center justify-center space-y-2 pt-28 font-light text-zinc-600 dark:text-zinc-500 lg:pt-16">
+      <footer className="flex flex-col items-center justify-center space-y-2 pt-16 font-light text-zinc-600 dark:text-zinc-500 lg:pt-16">
         <span className="animate-bounce">Deslize para baixo...</span>
         <RxDoubleArrowDown className="size-5 animate-bounce" />
       </footer>

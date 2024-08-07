@@ -9,17 +9,14 @@ import {
 import BrazilFlag from "@public/brazilFlag.svg";
 import EuaFlag from "@public/euaFlag.svg";
 import Link from "next/link";
+import { NameLogo } from "./nameLogo";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center bg-white/5 backdrop-blur-sm dark:bg-black/5 lg:flex">
+    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center bg-white/5 py-8 backdrop-blur-sm dark:bg-black/5 lg:flex">
       <main className="flex w-[92%] items-center justify-between">
         <div>
-          <Link href="#home">
-            <h3 className="text-shadow font-mono text-4xl">
-              &lt;Matheus /&gt;
-            </h3>
-          </Link>
+          <NameLogo />
         </div>
 
         <div className="flex items-center gap-x-8">
