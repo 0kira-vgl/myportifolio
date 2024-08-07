@@ -23,19 +23,19 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-x-8">
-          <Link className="text-xl font-medium" href="#home">
+          <Link className="nav text-xl font-medium" href="#home">
             Início
           </Link>
 
-          <Link className="text-xl font-medium" href="#aboutMe">
+          <Link className="nav text-xl font-medium" href="#aboutMe">
             Sobre mim
           </Link>
 
-          <Link className="text-xl font-medium" href="#projects">
+          <Link className="nav text-xl font-medium" href="#projects">
             Projetos
           </Link>
 
-          <Link className="text-xl font-medium" href="#footer">
+          <Link className="nav text-xl font-medium" href="#footer">
             Contato
           </Link>
         </div>

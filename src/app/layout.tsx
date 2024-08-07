@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      className={`dark scroll-smooth antialiased ${inconsolata.variable}`}
+      className={`scroll-smooth antialiased ${inconsolata.variable}`}
       lang="en"
     >
       <body className={inter.className}>{children}</body>

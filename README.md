@@ -4,7 +4,7 @@
 [X] Deixar o Header com o efeito de blur (backdrop-blur);
 [X] Fazer com que o header suba e desça conforme a tela (fixa ao topo);
 [] Botão do header responsivo;
-[] Hover nos botões;
+[X] Hover nos botões;
 [] Por animação no responsivo;
 [X] Colocar uma aba de certificados em "Habilidades";
 [X] Por uma setinha animada par a pessoa poder descer na página;
@@ -16,7 +16,8 @@
 [] Arrumar fundo do Header;
 [X] Arrumar ScrollTop no responsivo;
 [] Arrumar padding do Header;
-[] Add bg do Footer;
+[X] Add bg do Footer;
+[] Melhorar a animação do darkMode and LightMode;
 
 ## Header - NavLink
 
