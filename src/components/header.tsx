@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 flex h-14 items-center justify-center bg-white/5 backdrop-blur-sm dark:bg-black/5">
+    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center bg-white/5 backdrop-blur-sm dark:bg-black/5 lg:flex">
       <main className="flex w-[92%] items-center justify-between">
         <div>
           <Link href="#home">

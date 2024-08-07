@@ -18,6 +18,7 @@
 [] Arrumar padding do Header;
 [X] Add bg do Footer;
 [] Melhorar a animação do darkMode and LightMode;
+[] Trocar a cor dos cards de Projects;
 
 ## Header - NavLink
 
