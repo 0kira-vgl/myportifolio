@@ -22,6 +22,7 @@
 [] Arrumar bugs do responsivo (header and scrollopButton);
 [] Arrumar questão das imagens por link, melhor baixa-las;
 [] Arrumar o "Deslize para baixo";
+[] Arrumar bug de animation de troca de tema do Header;
 
 ## Header - NavLink
 

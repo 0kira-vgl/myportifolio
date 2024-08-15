@@ -5,7 +5,6 @@ import { Footer } from "@/components/footer";
 import { ScrollTopButton } from "@/components/scrollTopButton";
 import { Introduction } from "@/components/introduction";
 import { MobileNavBar } from "@/components/mobileNavBar";
-import SwitchTheme from "@/components/switchTheme";
 
 export default function Home() {
   return (
@@ -17,8 +16,6 @@ export default function Home() {
       <Projects />
       <Footer />
       <ScrollTopButton />
-
-      <SwitchTheme />
     </>
   );
 }
