@@ -19,6 +19,9 @@
 [X] Add bg do Footer;
 [] Melhorar a animação do darkMode and LightMode;
 [] Trocar a cor dos cards de Projects;
+[] Arrumar bugs do responsivo (header and scrollopButton);
+[] Arrumar questão das imagens por link, melhor baixa-las;
+[] Arrumar o "Deslize para baixo";
 
 ## Header - NavLink
 

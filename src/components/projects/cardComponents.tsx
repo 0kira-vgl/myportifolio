@@ -30,7 +30,10 @@ interface DescriptionCardProps extends ComponentProps<"p"> {
 
 export function DescriptionCard(props: DescriptionCardProps) {
   return (
-    <p {...props} className="mb-3 text-sm text-neutral-500 dark:text-[#888888]">
+    <p
+      {...props}
+      className="dark:text-description mb-3 text-sm text-neutral-500"
+    >
       {props.children}
     </p>
   );
@@ -70,7 +73,7 @@ export function SiteButtonCard(props: ButtonsCardProps) {
 
       // className="flex h-9 items-center justify-center rounded-full border border-slate-700 px-8 py-1 text-sm text-slate-700 shadow-md outline-accent dark:border-neutral-400 dark:text-muted-foreground"
     >
-      Deploy
+      Demo
       <ArrowUpRight className="size-5" />
     </a>
   );

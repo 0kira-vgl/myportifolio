@@ -11,7 +11,7 @@ export function SocialLinks() {
   return (
     <>
       <TooltipProvider>
-        <Tooltip>
+        <Tooltip delayDuration={300}>
           <TooltipTrigger>
             <div className="cursor-pointer rounded-full bg-white p-2 shadow-md drop-shadow-md hover:bg-[#161B22] hover:transition hover:duration-300">
               <a
@@ -29,7 +29,7 @@ export function SocialLinks() {
       </TooltipProvider>
 
       <TooltipProvider>
-        <Tooltip>
+        <Tooltip delayDuration={300}>
           <TooltipTrigger>
             <div className="cursor-pointer rounded-full bg-white p-2 shadow-md drop-shadow-md hover:bg-[#0077B5] hover:transition hover:duration-300">
               <a
@@ -47,7 +47,7 @@ export function SocialLinks() {
       </TooltipProvider>
 
       <TooltipProvider>
-        <Tooltip>
+        <Tooltip delayDuration={300}>
           <TooltipTrigger>
             <div className="cursor-pointer rounded-full bg-white p-2 shadow-md drop-shadow-md hover:bg-[#EB4336] hover:transition hover:duration-300">
               <a

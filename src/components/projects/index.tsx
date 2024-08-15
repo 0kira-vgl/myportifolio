@@ -4,7 +4,10 @@ import { Cards } from "./cards";
 
 export function Projects() {
   return (
-    <section id="projects" className="container mx-auto w-full max-w-7xl pb-64">
+    <section
+      id="projects"
+      className="mx-5 pb-64 lg:container lg:w-full lg:max-w-7xl"
+    >
       <header className="items-center justify-center pb-5">
         <h2 className="pb-2 text-center text-4xl font-extrabold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
           Projetos

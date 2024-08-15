@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Inconsolata } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 const inconsolata = Inconsolata({
@@ -19,10 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      className={`dark scroll-smooth antialiased ${inconsolata.variable}`}
+      className={`scroll-smooth antialiased ${inconsolata.variable}`}
       lang="en"
     >
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" enableSystem defaultTheme="light">
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
