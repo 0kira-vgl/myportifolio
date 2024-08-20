@@ -29,7 +29,7 @@ export function Projects() {
           })}
         >
           Ver mais repositórios
-          <ArrowRight className="duration-[0.3s] ease-[ease] group size-5 -translate-x-2 transition-all group-hover:translate-x-0" />
+          <ArrowRight className="group size-5 -translate-x-2 transition-all group-hover:translate-x-0" />
         </a>
       </footer>
     </section>

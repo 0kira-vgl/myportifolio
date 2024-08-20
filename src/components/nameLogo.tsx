@@ -1,10 +1,21 @@
 import Link from "next/link";
+import { ComponentProps } from "react";
+import { twMerge } from "tailwind-merge";
 
-export function NameLogo() {
+interface NameLogoProps extends ComponentProps<"h3"> {
+  children?: string;
+}
+
+export function NameLogo(props: NameLogoProps) {
   return (
     <>
       <Link href="#home">
-        <h3 className="text-shadow font-mono text-4xl">&lt;Matheus /&gt;</h3>
+        <h3
+          {...props}
+          className={twMerge("text-shadow font-mono text-4xl", props.className)}
+        >
+          &lt;Matheus /&gt;
+        </h3>
       </Link>
     </>
   );

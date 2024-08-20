@@ -33,7 +33,7 @@ export function Header() {
             Projetos
           </Link>
 
-          <Link className="nav text-xl font-medium" href="#footer">
+          <Link className="nav text-xl font-medium" href="#contact">
             Contato
           </Link>
         </div>

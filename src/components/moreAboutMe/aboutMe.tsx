@@ -47,7 +47,7 @@ export function AboutMe() {
             <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight">
               Founded company
             </h3>
-            <p className="text-description mt-1 leading-7">
+            <p className="mt-1 leading-7 text-description">
               Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur
               asperiores et dolorem dolorem optio voluptate repudiandae.
             </p>
@@ -62,7 +62,7 @@ export function AboutMe() {
             <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight">
               Founded company
             </h3>
-            <p className="text-description mt-1 leading-7">
+            <p className="mt-1 leading-7 text-description">
               Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur
               asperiores et dolorem dolorem optio voluptate repudiandae.
             </p>
@@ -77,7 +77,7 @@ export function AboutMe() {
             <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight">
               Founded company
             </h3>
-            <p className="text-description mt-1 leading-7">
+            <p className="mt-1 leading-7 text-description">
               Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur
               asperiores et dolorem dolorem optio voluptate repudiandae.
             </p>
@@ -92,7 +92,7 @@ export function AboutMe() {
             <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight">
               Founded company
             </h3>
-            <p className="text-description mt-1 leading-7">
+            <p className="mt-1 leading-7 text-description">
               Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur
               asperiores et dolorem dolorem optio voluptate repudiandae.
             </p>

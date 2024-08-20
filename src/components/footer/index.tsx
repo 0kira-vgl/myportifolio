@@ -9,7 +9,7 @@ import { NameLogo } from "../nameLogo";
 export function Footer() {
   return (
     <section
-      id="footer"
+      id="contact"
       className="mx-auto flex h-full w-full flex-col lg:h-screen"
     >
       <FooterCard />
