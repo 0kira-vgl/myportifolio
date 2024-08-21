@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ComponentProps } from "react";
+import { ComponentProps, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface NameLogoProps extends ComponentProps<"h3"> {

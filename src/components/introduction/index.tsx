@@ -32,7 +32,7 @@ export function Introduction() {
         </div>
       </main>
 
-      <footer className="flex flex-col items-center justify-center space-y-2 pt-16 font-light text-zinc-600 dark:text-zinc-500 lg:pt-16">
+      <footer className="flex flex-col items-center justify-center space-y-2 pt-16 font-light text-zinc-600 dark:text-zinc-500 lg:pt-14">
         <span className="animate-bounce">Deslize para baixo...</span>
         <RxDoubleArrowDown className="size-5 animate-bounce" />
       </footer>
