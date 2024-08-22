@@ -40,7 +40,7 @@ export function Header() {
 
         <div className="flex gap-3">
           <Select>
-            <SelectTrigger className="w-[110px] rounded-lg outline-none">
+            <SelectTrigger className="w-[110px] rounded-lg bg-white outline-none dark:bg-zinc-950">
               <SelectValue placeholder="Idioma" />
             </SelectTrigger>
             <SelectContent className="rounded-lg">

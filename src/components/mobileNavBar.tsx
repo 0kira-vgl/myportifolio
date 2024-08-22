@@ -21,6 +21,7 @@ import {
   SelectContent,
   SelectItem,
 } from "./ui/select";
+import { GoArrowUpRight } from "react-icons/go";
 
 export function MobileNavBar() {
   return (
@@ -37,18 +38,18 @@ export function MobileNavBar() {
 
           <SheetContent side="left">
             <SheetHeader>
-              <div className="py-7">
+              <div className="py-5">
                 <SheetClose asChild>
                   <NameLogo className="text-3xl" />
                 </SheetClose>
               </div>
             </SheetHeader>
 
-            <div className="mb-4 text-xl">
-              <h2 className="font-medium">Navegue</h2>
+            <div className="mb-4 px-3 text-xl">
+              <h2 className="font-semibold">Navegue</h2>
             </div>
 
-            <div className="flex flex-col space-y-4 text-2xl">
+            <div className="flex flex-col space-y-4 px-3 text-2xl">
               <SheetClose asChild>
                 <Link href="#home">Início</Link>
               </SheetClose>
@@ -66,10 +67,10 @@ export function MobileNavBar() {
               </SheetClose>
             </div>
 
-            <SheetFooter className="mt-4">
+            <SheetFooter className="mt-4 px-3">
               <div className="flex space-x-2">
                 <Select>
-                  <SelectTrigger className="w-[110px] rounded-lg outline-none">
+                  <SelectTrigger className="w-[110px] rounded-lg text-xl outline-none">
                     <SelectValue placeholder="Idioma" />
                   </SelectTrigger>
                   <SelectContent className="rounded-lg">

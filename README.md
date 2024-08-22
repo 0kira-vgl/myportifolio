@@ -3,12 +3,12 @@
 [X] Fazer o responsivo;
 [X] Deixar o Header com o efeito de blur (backdrop-blur);
 [X] Fazer com que o header suba e desça conforme a tela (fixa ao topo);
-[] Botão do header responsivo;
+[X] Botão do header responsivo;
 [X] Hover nos botões;
 [] Por animação no responsivo;
 [X] Colocar uma aba de certificados em "Habilidades";
 [X] Por uma setinha animada par a pessoa poder descer na página;
-[] Metodos ageis;
+[X] Metodos ageis;
 [X] Por o curriculo em Contato;
 [X] Trocar os links dentro do site de "a" para "Link" do NextJs;
 [] Add text animation;
@@ -21,7 +21,7 @@
 [] Trocar a cor dos cards de Projects;
 [] Arrumar bugs do responsivo (header and scrollopButton);
 [] Arrumar questão das imagens por link, melhor baixa-las;
-[] Arrumar o "Deslize para baixo";
+[X] Arrumar o "Deslize para baixo";
 
 ## Header - NavLink
 
