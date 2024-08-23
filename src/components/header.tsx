@@ -29,6 +29,10 @@ export function Header() {
             Sobre mim
           </Link>
 
+          <Link className="nav text-xl font-medium" href="#skills">
+            Habilidades
+          </Link>
+
           <Link className="nav text-xl font-medium" href="#projects">
             Projetos
           </Link>

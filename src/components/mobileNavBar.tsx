@@ -59,6 +59,10 @@ export function MobileNavBar() {
               </SheetClose>
 
               <SheetClose asChild>
+                <Link href="#skills">Habilidades</Link>
+              </SheetClose>
+
+              <SheetClose asChild>
                 <Link href="#projects">Projetos</Link>
               </SheetClose>
 

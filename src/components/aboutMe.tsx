@@ -1,9 +1,9 @@
-import { Separator } from "../ui/separator";
 import { FaCircle } from "react-icons/fa6";
+import { Separator } from "./ui/separator";
 
 export function AboutMe() {
   return (
-    <div className="space-y-4">
+    <section className="mx-5 space-y-4 pb-64 lg:container lg:w-full lg:max-w-7xl">
       <h2 className="mb-2 text-xl lg:text-3xl">Olá, sou Matheus Tiburcio,</h2>
       <div className="mb-3 lg:text-xl">
         <p>
@@ -99,6 +99,6 @@ export function AboutMe() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
