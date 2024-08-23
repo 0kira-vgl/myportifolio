@@ -13,7 +13,7 @@ export function SocialLinks() {
       <TooltipProvider>
         <Tooltip delayDuration={300}>
           <TooltipTrigger>
-            <div className="cursor-pointer rounded-full bg-white p-2 shadow-md drop-shadow-md hover:bg-[#161B22] hover:transition hover:duration-300">
+            <div className="cursor-pointer rounded-full border bg-white p-2 shadow-md drop-shadow-md hover:bg-[#161B22] hover:transition hover:duration-300">
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
@@ -31,7 +31,7 @@ export function SocialLinks() {
       <TooltipProvider>
         <Tooltip delayDuration={300}>
           <TooltipTrigger>
-            <div className="cursor-pointer rounded-full bg-white p-2 shadow-md drop-shadow-md hover:bg-[#0077B5] hover:transition hover:duration-300">
+            <div className="cursor-pointer rounded-full border bg-white p-2 shadow-md drop-shadow-md hover:bg-[#0077B5] hover:transition hover:duration-300">
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
@@ -49,7 +49,7 @@ export function SocialLinks() {
       <TooltipProvider>
         <Tooltip delayDuration={300}>
           <TooltipTrigger>
-            <div className="cursor-pointer rounded-full bg-white p-2 shadow-md drop-shadow-md hover:bg-[#EB4336] hover:transition hover:duration-300">
+            <div className="cursor-pointer rounded-full border bg-white p-2 shadow-md drop-shadow-md hover:bg-[#EB4336] hover:transition hover:duration-300">
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"

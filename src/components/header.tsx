@@ -14,7 +14,7 @@ import { ModeToggle } from "./modeToggle";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center py-9 backdrop-blur-sm lg:flex">
+    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center py-9 backdrop-blur-sm lg:flex lg:items-center lg:justify-center">
       <main className="flex w-[92%] items-center justify-between">
         <div>
           <NameLogo />

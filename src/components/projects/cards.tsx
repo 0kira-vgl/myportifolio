@@ -21,7 +21,7 @@ export function Cards() {
   return (
     <main>
       <div className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0">
-        <div className="flex rounded-xl border bg-slate-50 shadow-lg transition-transform duration-500 hover:scale-[1.03] dark:border dark:bg-zinc-950">
+        <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image
@@ -79,7 +79,7 @@ export function Cards() {
           </div>
         </div>
 
-        <div className="flex rounded-xl border bg-slate-50 shadow-lg transition-transform duration-500 hover:scale-[1.03] dark:border dark:bg-zinc-950">
+        <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image
@@ -139,7 +139,7 @@ export function Cards() {
       </div>
 
       <div className="gap-8 space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0">
-        <div className="flex flex-col rounded-xl border bg-slate-50 shadow-lg transition-transform duration-500 hover:scale-[1.03] dark:border dark:bg-zinc-950">
+        <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image src={pic1} placeholder="blur" alt="" />
@@ -182,7 +182,7 @@ export function Cards() {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-xl border bg-slate-50 shadow-lg transition-transform duration-500 hover:scale-[1.03] dark:border dark:bg-zinc-950">
+        <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image src={pic1} placeholder="blur" alt="" />
@@ -225,7 +225,7 @@ export function Cards() {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-xl border bg-slate-50 shadow-lg transition-transform duration-500 hover:scale-[1.03] dark:border dark:bg-zinc-950">
+        <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image src={pic1} placeholder="blur" alt="" />

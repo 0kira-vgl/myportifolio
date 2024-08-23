@@ -27,7 +27,7 @@ export function CertificatesCarousel() {
       ]}
       className="w-full max-w-xl"
     >
-      <CarouselContent>
+      <CarouselContent className="">
         <CarouselItem className="md:basis-1/2 lg:basis-3/4">
           <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
             <Image className="rounded-xl p-1.5" src={pic} alt="." />

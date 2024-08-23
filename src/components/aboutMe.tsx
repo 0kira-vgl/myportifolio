@@ -3,7 +3,10 @@ import { Separator } from "./ui/separator";
 
 export function AboutMe() {
   return (
-    <section className="mx-5 space-y-4 pb-64 lg:container lg:w-full lg:max-w-7xl">
+    <section
+      id="aboutMe"
+      className="mx-5 space-y-4 pb-64 lg:container lg:w-full lg:max-w-7xl"
+    >
       <h2 className="mb-2 text-xl lg:text-3xl">Olá, sou Matheus Tiburcio,</h2>
       <div className="mb-3 lg:text-xl">
         <p>
