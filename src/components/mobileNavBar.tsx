@@ -21,7 +21,6 @@ import {
   SelectContent,
   SelectItem,
 } from "./ui/select";
-import { GoArrowUpRight } from "react-icons/go";
 
 export function MobileNavBar() {
   return (
@@ -35,6 +34,8 @@ export function MobileNavBar() {
           </SheetTrigger>
 
           <NameLogo />
+
+          <ModeToggle />
 
           <SheetContent side="left">
             <SheetHeader>
@@ -92,10 +93,6 @@ export function MobileNavBar() {
                     </SelectItem>
                   </SelectContent>
                 </Select>
-
-                <div className="w-px bg-zinc-200 dark:bg-zinc-500" />
-
-                <ModeToggle />
               </div>
             </SheetFooter>
           </SheetContent>

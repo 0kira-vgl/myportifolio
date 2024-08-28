@@ -18,13 +18,15 @@
 [] Arrumar padding do Header;
 [X] Add bg do Footer;
 [] Melhorar a animação do darkMode and LightMode;
-[] Trocar a cor dos cards de Projects;
+[X] Trocar a cor dos cards de Projects;
 [] Arrumar bugs do responsivo (header and scrollopButton);
 [] Arrumar questão das imagens por link, melhor baixa-las;
 [X] Arrumar o "Deslize para baixo";
 [] Por uma setinha para baixo em Skiils para descer pros certificados;
 [] Por mais links no navBarMobile;
 [] Por os demais botoes (thema e idioma) do navBarMobile antes da navegação;
+[X] Talvez por os demais botoes (thema e idioma) a direita no proprio Header Mobile;
+[] Fazer o sublinhado (hover) do Header desaparecer;
 
 ## Header - NavLink
 
