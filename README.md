@@ -24,6 +24,7 @@
 [X] Arrumar o "Deslize para baixo";
 [] Por uma setinha para baixo em Skiils para descer pros certificados;
 [] Por mais links no navBarMobile;
+[] Por os demais botoes (thema e idioma) do navBarMobile antes da navegação;
 
 ## Header - NavLink
 
