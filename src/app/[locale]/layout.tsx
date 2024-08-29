@@ -15,13 +15,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
     <html
       className={`scroll-smooth antialiased ${inconsolata.variable}`}
-      lang="en"
+      lang={locale}
     >
       <body className={inter.className}>
         <ThemeProvider attribute="class" enableSystem defaultTheme="light">

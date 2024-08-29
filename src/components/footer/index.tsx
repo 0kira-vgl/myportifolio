@@ -5,8 +5,11 @@ import { buttonVariants } from "../ui/button";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { FooterCard } from "./footerCard";
 import { NameLogo } from "../nameLogo";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <section
       id="contact"
@@ -18,10 +21,7 @@ export function Footer() {
         <NameLogo />
 
         <span className="px-10 text-xl font-medium lg:max-w-sm lg:px-0">
-          <span className="italic">
-            &quot;A mente deve ser flexível como a água, para se adaptar e
-            superar.&quot;
-          </span>
+          <span className="italic">&quot;{t("quote")}&quot;</span>
           <br />
           <span>- Musashi Miyamoto</span>
         </span>
@@ -39,7 +39,7 @@ export function Footer() {
               className: "flex items-center justify-center gap-2",
             })}
           >
-            Veja meu currículo
+            {t("button")}
             <LuFileSpreadsheet className="size-4" />
           </a>
         </div>

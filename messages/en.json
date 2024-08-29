@@ -1,0 +1,61 @@
+{
+  "Header": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+
+    "navegationTitle": "Browse"
+  },
+
+  "Introduction": {
+    "titleName": "Hello, I'm Matheus...",
+    "titleDev": "Your next developer",
+    "subtitle": "My name is Matheus Tiburcio, a dedicated Front-end developer.",
+    "down": "Swipe down..."
+  },
+
+  "AboutMe": {},
+
+  "Skills": {
+    "title": "Skills",
+    "subtitle": "See the skills that bring my projects to life and make me stand out.",
+
+    "SkillsCard": {
+      "languagesAndFrameworks": "Languages and Frameworks",
+      "devTools": "Development Tools",
+
+      "languages": {
+        "title": "Languages",
+
+        "pt": "Portuguese (Brazil)",
+        "en": "English",
+
+        "level": {
+          "pt": "Fluent",
+          "en": "Basic"
+        }
+      }
+    },
+
+    "certificatesSubtitle": "Also check out some of my certificates..."
+  },
+
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Check out the projects where I put my knowledge into practice.",
+
+    "button": "See more repositories"
+  },
+
+  "Footer": {
+    "FooterCard": {
+      "title": "Shall we make a difference?",
+      "subtitle": "Together, let's create interfaces that set trends and shape the future!"
+    },
+
+    "quote": "The mind should be as flexible as water, to adapt and overcome.",
+    "button": "View my resume"
+  }
+}

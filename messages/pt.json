@@ -1,0 +1,61 @@
+{
+  "Header": {
+    "home": "Início",
+    "aboutMe": "Sobre mim",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato",
+
+    "navegationTitle": "Navegue"
+  },
+
+  "Introduction": {
+    "titleName": "Olá, eu sou o Matheus...",
+    "titleDev": "Seu próximo desenvolvedor",
+    "subtitle": "Me chamo Matheus Tiburcio, um dedicado desenvolvedor Front-end.",
+    "down": "Deslize para baixo..."
+  },
+
+  "AboutMe": {},
+
+  "Skills": {
+    "title": "Habilidades",
+    "subtitle": "Veja as habilidades que dão vida aos meus projetos e que me destacam.",
+
+    "SkillsCard": {
+      "languagesAndFrameworks": "Linguagens e Frameworks",
+      "devTools": "Ferramentas de Desenvolvimento",
+
+      "languages": {
+        "title": "Idiomas",
+
+        "pt": "Português (Brasil)",
+        "en": "Inglês",
+
+        "level": {
+          "pt": "Fluente",
+          "en": "Básico"
+        }
+      }
+    },
+
+    "certificatesSubtitle": "Veja também alguns dos meus certificados..."
+  },
+
+  "Projects": {
+    "title": "Projetos",
+    "subtitle": "Veja os projetos onde coloquei meus conhecimentos em prática.",
+
+    "button": "Ver mais repositórios"
+  },
+
+  "Footer": {
+    "FooterCard": {
+      "title": "Vamos fazer a diferença?",
+      "subtitle": "Juntos, vamos criar interfaces que definem tendências e moldam o futuro!"
+    },
+
+    "quote": "A mente deve ser flexível como a água, para se adaptar e superar.",
+    "button": "Veja meu currículo"
+  }
+}

@@ -3,8 +3,11 @@ import { LiaLanguageSolid } from "react-icons/lia";
 import { LuLanguages } from "react-icons/lu";
 import { VscTools } from "react-icons/vsc";
 import { IconsCard } from "../projects/cardComponents";
+import { useTranslations } from "next-intl";
 
 export function SkillsCard() {
+  const t = useTranslations("Skills.SkillsCard");
+
   return (
     <main className="flex flex-col space-y-12 lg:space-y-16">
       <div className="space-y-12 text-center lg:grid lg:grid-cols-2 lg:space-y-0">
@@ -14,7 +17,7 @@ export function SkillsCard() {
           </div>
 
           <h2 className="text-2xl font-extrabold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
-            Linguagens e Frameworks
+            {t("languagesAndFrameworks")}
           </h2>
 
           <div className="flex items-center gap-2">
@@ -63,7 +66,7 @@ export function SkillsCard() {
           </div>
 
           <h2 className="text-2xl font-extrabold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
-            Ferramentas de Desenvolvimento
+            {t("devTools")}
           </h2>
 
           <div className="flex items-center gap-2">
@@ -114,15 +117,16 @@ export function SkillsCard() {
           </div>
 
           <h2 className="text-2xl font-extrabold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
-            Idiomas
+            {t("languages.title")}
           </h2>
           <div className="flex flex-col text-center text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
             <span className="font-semibold">
-              <span className="font-extrabold">Português (Brasil) / </span>
-              fluente
+              <span className="font-extrabold">{t("languages.pt")} / </span>
+              {t("languages.level.pt")}
             </span>
             <span className="font-semibold">
-              <span className="font-extrabold">Inglês / </span> Básico
+              <span className="font-extrabold">{t("languages.en")} / </span>{" "}
+              {t("languages.level.en")}
             </span>
           </div>
         </div>

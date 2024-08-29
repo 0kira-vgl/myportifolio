@@ -1,8 +1,11 @@
 import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "../ui/button";
 import { Cards } from "./cards";
+import { useTranslations } from "next-intl";
 
 export function Projects() {
+  const t = useTranslations("Projects");
+
   return (
     <section
       id="projects"
@@ -10,10 +13,10 @@ export function Projects() {
     >
       <header className="items-center justify-center pb-5">
         <h2 className="pb-2 text-center text-4xl font-extrabold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
-          Projetos
+          {t("title")}
         </h2>
         <p className="mx-auto mb-3 max-w-[17rem] text-center text-sm text-slate-800 dark:text-zinc-500">
-          Veja os projetos onde coloquei meus conhecimentos em prática.
+          {t("subtitle")}
         </p>
       </header>
 
@@ -28,7 +31,7 @@ export function Projects() {
             variant: "outline",
           })}
         >
-          Ver mais repositórios
+          {t("button")}
           <ArrowRight className="group size-5 -translate-x-2 transition-all group-hover:translate-x-0" />
         </a>
       </footer>

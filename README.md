@@ -27,6 +27,9 @@
 [] Por os demais botoes (thema e idioma) do navBarMobile antes da navegação;
 [X] Talvez por os demais botoes (thema e idioma) a direita no proprio Header Mobile;
 [] Fazer o sublinhado (hover) do Header desaparecer;
+[] Por um padding no Header mobile;
+[] Trocar o Footer para pt-BR;
+[] Add "text-xl" in Select the mobileHeader;
 
 ## Header - NavLink
 
