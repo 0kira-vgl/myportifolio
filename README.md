@@ -30,6 +30,8 @@
 [] Por um padding no Header mobile;
 [] Trocar o Footer para pt-BR;
 [] Add "text-xl" in Select the mobileHeader;
+[] Add Title in AboutMe;
+[] Arrumar a largura do toggleMode;
 
 ## Header - NavLink
 

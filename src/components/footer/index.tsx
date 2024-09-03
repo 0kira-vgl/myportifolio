@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Separator } from "../ui/separator";
 import { SocialLinks } from "./socialLinks";
 import { buttonVariants } from "../ui/button";
@@ -13,11 +12,11 @@ export function Footer() {
   return (
     <section
       id="contact"
-      className="mx-auto flex h-full w-full flex-col lg:h-screen"
+      className="mx-auto flex h-full w-full flex-col space-y-14 lg:h-screen"
     >
       <FooterCard />
 
-      <main className="flex -translate-y-1/4 flex-col items-center justify-center space-y-10 text-center lg:-translate-y-5">
+      <main className="flex flex-col items-center justify-center space-y-10 text-center">
         <NameLogo />
 
         <span className="px-10 text-xl font-medium lg:max-w-sm lg:px-0">

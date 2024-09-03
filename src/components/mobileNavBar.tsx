@@ -1,4 +1,4 @@
-import { ModeToggle } from "./modeToggle";
+import { ToggleTheme } from "./toggleTheme";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NameLogo } from "./nameLogo";
@@ -26,9 +26,9 @@ export function MobileNavBar() {
             </div>
           </SheetTrigger>
 
-          <NameLogo />
+          <NameLogo className="text-3xl" />
 
-          <ModeToggle />
+          <ToggleTheme />
 
           <SheetContent side="left">
             <SheetHeader>

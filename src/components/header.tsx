@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NameLogo } from "./nameLogo";
-import { ModeToggle } from "./modeToggle";
+import { ToggleTheme } from "./toggleTheme";
 import { useTranslations } from "next-intl";
 import { LanguageToggle } from "./languageToggle";
 
@@ -8,7 +8,7 @@ export function Header() {
   const t = useTranslations("Header");
 
   return (
-    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center py-9 backdrop-blur-sm lg:flex lg:items-center lg:justify-center">
+    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center py-9 backdrop-blur-sm lg:flex">
       <main className="flex w-[92%] items-center justify-between">
         <div>
           <NameLogo />
@@ -41,7 +41,7 @@ export function Header() {
 
           <div className="w-px bg-zinc-200 dark:bg-zinc-500" />
 
-          <ModeToggle />
+          <ToggleTheme />
         </div>
       </main>
     </header>
