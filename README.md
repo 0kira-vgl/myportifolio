@@ -1,37 +1,21 @@
 ## Afazeres
 
-[X] Fazer o responsivo;
-[X] Deixar o Header com o efeito de blur (backdrop-blur);
-[X] Fazer com que o header suba e desça conforme a tela (fixa ao topo);
-[X] Botão do header responsivo;
-[X] Hover nos botões;
-[] Por animação no responsivo;
-[X] Colocar uma aba de certificados em "Habilidades";
-[X] Por uma setinha animada par a pessoa poder descer na página;
-[X] Metodos ageis;
-[X] Por o curriculo em Contato;
-[X] Trocar os links dentro do site de "a" para "Link" do NextJs;
 [] Add text animation;
-[X] Trocar cor do bg do Footer;
 [] Arrumar fundo do Header;
-[X] Arrumar ScrollTop no responsivo;
 [] Arrumar padding do Header;
-[X] Add bg do Footer;
-[] Melhorar a animação do darkMode and LightMode;
-[X] Trocar a cor dos cards de Projects;
 [] Arrumar bugs do responsivo (header and scrollopButton);
 [] Arrumar questão das imagens por link, melhor baixa-las;
 [X] Arrumar o "Deslize para baixo";
 [] Por uma setinha para baixo em Skiils para descer pros certificados;
 [] Por mais links no navBarMobile;
 [] Por os demais botoes (thema e idioma) do navBarMobile antes da navegação;
-[X] Talvez por os demais botoes (thema e idioma) a direita no proprio Header Mobile;
+[] Talvez por os demais botoes (thema e idioma) a direita no proprio Header Mobile;
 [] Fazer o sublinhado (hover) do Header desaparecer;
 [] Por um padding no Header mobile;
-[] Trocar o Footer para pt-BR;
-[] Add "text-xl" in Select the mobileHeader;
+[] Trocar o © para pt-BR;
 [] Add Title in AboutMe;
-[] Arrumar a largura do toggleMode;
+[] Arrumar a centralização do Header;
+[] Padronizar os espaços;
 
 ## Header - NavLink
 

@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "../ui/button";
 import { Cards } from "./cards";
 import { useTranslations } from "next-intl";
+import { Title, Subtitle } from "../titleAndSubtitle";
 
 export function Projects() {
   const t = useTranslations("Projects");
@@ -12,12 +13,8 @@ export function Projects() {
       className="mx-5 pb-24 lg:container lg:w-full lg:max-w-7xl lg:pb-28"
     >
       <header className="items-center justify-center pb-5">
-        <h2 className="pb-2 text-center text-4xl font-extrabold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
-          {t("title")}
-        </h2>
-        <p className="mx-auto mb-3 max-w-[17rem] text-center text-sm text-slate-800 dark:text-zinc-500">
-          {t("subtitle")}
-        </p>
+        <Title>{t("title")}</Title>
+        <Subtitle>{t("subtitle")}</Subtitle>
       </header>
 
       <Cards />

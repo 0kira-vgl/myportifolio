@@ -1,5 +1,6 @@
 import { FaCircle } from "react-icons/fa6";
 import { Separator } from "./ui/separator";
+import { Subtitle, Title } from "./titleAndSubtitle";
 
 export function AboutMe() {
   return (
@@ -7,6 +8,14 @@ export function AboutMe() {
       id="aboutMe"
       className="mx-5 space-y-4 pb-32 lg:container lg:w-full lg:max-w-7xl"
     >
+      <header className="items-center justify-center pb-5">
+        <Title>Sobre mim</Title>
+        <Subtitle className="max-w-[19rem]">
+          Conheça a história por trás do desenvolvedor, a essência por trás do
+          código.
+        </Subtitle>
+      </header>
+
       <h2 className="mb-2 text-xl lg:text-3xl">Olá, sou Matheus Tiburcio,</h2>
       <div className="mb-3 lg:text-xl">
         <p>

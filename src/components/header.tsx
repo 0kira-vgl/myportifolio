@@ -11,7 +11,7 @@ export function Header() {
     <header className="sticky top-0 z-50 hidden h-14 items-center justify-center py-9 backdrop-blur-sm lg:flex">
       <main className="flex w-[92%] items-center justify-between">
         <div>
-          <NameLogo />
+          <NameLogo className="text-3xl" />
         </div>
 
         <div className="flex items-center gap-x-8">
