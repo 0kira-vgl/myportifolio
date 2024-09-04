@@ -6,13 +6,12 @@ export function AboutMe() {
   return (
     <section
       id="aboutMe"
-      className="mx-5 space-y-4 pb-32 lg:container lg:w-full lg:max-w-7xl"
+      className="mx-5 space-y-4 pb-28 lg:container lg:w-full lg:max-w-7xl"
     >
       <header className="items-center justify-center pb-5">
         <Title>Sobre mim</Title>
-        <Subtitle className="max-w-[19rem]">
-          Conheça a história por trás do desenvolvedor, a essência por trás do
-          código.
+        <Subtitle>
+          Conheça a história por trás do desenvolvedor, a essência do código.
         </Subtitle>
       </header>
 

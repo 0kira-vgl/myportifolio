@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      className={`scroll-smooth antialiased ${inconsolata.variable}`}
+      className={`scroll-pt-24 scroll-smooth antialiased ${inconsolata.variable}`}
       lang={locale}
     >
       <body className={inter.className}>

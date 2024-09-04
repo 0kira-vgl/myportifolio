@@ -5,7 +5,7 @@
 [] Arrumar padding do Header;
 [] Arrumar bugs do responsivo (header and scrollopButton);
 [] Arrumar questão das imagens por link, melhor baixa-las;
-[X] Arrumar o "Deslize para baixo";
+[] Arrumar o "Deslize para baixo";
 [] Por uma setinha para baixo em Skiils para descer pros certificados;
 [] Por mais links no navBarMobile;
 [] Por os demais botoes (thema e idioma) do navBarMobile antes da navegação;
@@ -13,9 +13,7 @@
 [] Fazer o sublinhado (hover) do Header desaparecer;
 [] Por um padding no Header mobile;
 [] Trocar o © para pt-BR;
-[] Add Title in AboutMe;
 [] Arrumar a centralização do Header;
-[] Padronizar os espaços;
 
 ## Header - NavLink
 

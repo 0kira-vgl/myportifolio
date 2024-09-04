@@ -36,7 +36,7 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex gap-2.5">
           <LanguageToggle />
 
           <div className="w-px bg-zinc-200 dark:bg-zinc-500" />

@@ -10,7 +10,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="mx-5 pb-24 lg:container lg:w-full lg:max-w-7xl lg:pb-28"
+      className="mx-5 pb-28 lg:container lg:w-full lg:max-w-7xl"
     >
       <header className="items-center justify-center pb-5">
         <Title>{t("title")}</Title>
@@ -19,7 +19,7 @@ export function Projects() {
 
       <Cards />
 
-      <footer className="pt-12 text-center">
+      <footer className="pt-10 text-center lg:pt-12">
         <a
           href="https://github.com/0kira-vgl?tab=repositories"
           target="_blank"

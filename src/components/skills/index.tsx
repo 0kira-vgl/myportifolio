@@ -7,7 +7,7 @@ export function Skills() {
   const t = useTranslations("Skills");
 
   return (
-    <section id="skills" className="container mx-auto pb-20">
+    <section id="skills" className="container mx-auto pb-28">
       <header className="items-center justify-center pb-5">
         <Title className="pb-2 text-center text-4xl font-extrabold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
           {t("title")}
