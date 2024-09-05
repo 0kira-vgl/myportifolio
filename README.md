@@ -1,8 +1,6 @@
 ## Afazeres
 
 [] Add text animation;
-[] Arrumar fundo do Header;
-[] Arrumar padding do Header;
 [] Arrumar bugs do responsivo (header and scrollopButton);
 [] Arrumar questão das imagens por link, melhor baixa-las;
 [] Arrumar o "Deslize para baixo";
@@ -11,9 +9,11 @@
 [] Por os demais botoes (thema e idioma) do navBarMobile antes da navegação;
 [] Talvez por os demais botoes (thema e idioma) a direita no proprio Header Mobile;
 [] Fazer o sublinhado (hover) do Header desaparecer;
-[] Por um padding no Header mobile;
 [] Trocar o © para pt-BR;
 [] Arrumar a centralização do Header;
+[] Arrumar a linguagem do not-found;
+[] Arrumar a cor do header no responsivo (theme mode);
+[] Add gradient in titleAndSubtitle;
 
 ## Header - NavLink
 

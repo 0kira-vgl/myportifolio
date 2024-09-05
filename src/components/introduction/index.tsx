@@ -9,7 +9,7 @@ export function Introduction() {
   return (
     <section
       id="home"
-      className="h-screen w-full bg-white bg-pattern bg-center bg-no-repeat pt-8 dark:bg-zinc-950"
+      className="h-screen w-full bg-pattern bg-center bg-no-repeat pt-8"
     >
       <main className="flex-col items-center justify-center lg:flex lg:pt-16">
         <div className="space-y-2 text-center">

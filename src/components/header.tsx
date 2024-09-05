@@ -8,7 +8,7 @@ export function Header() {
   const t = useTranslations("Header");
 
   return (
-    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center py-9 backdrop-blur-sm lg:flex">
+    <header className="sticky top-0 z-50 hidden h-14 items-center justify-center py-9 text-zinc-600 backdrop-blur-sm dark:text-zinc-50 lg:flex">
       <main className="flex w-[92%] items-center justify-between">
         <div>
           <NameLogo className="text-3xl" />
