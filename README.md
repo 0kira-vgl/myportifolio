@@ -2,7 +2,6 @@
 
 [] Add text animation;
 [] Arrumar bugs do responsivo (header and scrollopButton);
-[] Arrumar questão das imagens por link, melhor baixa-las;
 [] Arrumar o "Deslize para baixo";
 [] Por uma setinha para baixo em Skiils para descer pros certificados;
 [] Por mais links no navBarMobile;
@@ -12,8 +11,11 @@
 [] Trocar o © para pt-BR;
 [] Arrumar a centralização do Header;
 [] Arrumar a linguagem do not-found;
+[] Arrumar padding header in mobileHeader;
 [] Arrumar a cor do header no responsivo (theme mode);
 [] Add gradient in titleAndSubtitle;
+[] Por um "../projects" no canto superior direito das sections;
+[] Trocar os socialLinks apenas pelos icons;
 
 ## Header - NavLink
 

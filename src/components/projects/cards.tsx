@@ -14,14 +14,23 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { SiShadcnui } from "react-icons/si";
+import * as motion from "framer-motion/client";
 
 import pic1 from "@public/thumbnailPlanner.png";
 
 export function Cards() {
   return (
     <main>
-      <div className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0">
-        <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
+      <motion.div
+        className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, staggerChildren: 0.3 }}
+      >
+        <motion.div
+          className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]"
+          whileHover={{ scale: 1.05 }}
+        >
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image
@@ -77,9 +86,12 @@ export function Cards() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
+        <motion.div
+          className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]"
+          whileHover={{ scale: 1.05 }}
+        >
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image
@@ -135,11 +147,19 @@ export function Cards() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="gap-8 space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0">
-        <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
+      <motion.div
+        className="gap-8 space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, staggerChildren: 0.3 }}
+      >
+        <motion.div
+          className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]"
+          whileHover={{ scale: 1.05 }}
+        >
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image src={pic1} placeholder="blur" alt="" />
@@ -180,9 +200,12 @@ export function Cards() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
+        <motion.div
+          className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]"
+          whileHover={{ scale: 1.05 }}
+        >
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image src={pic1} placeholder="blur" alt="" />
@@ -223,9 +246,12 @@ export function Cards() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
+        <motion.div
+          className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]"
+          whileHover={{ scale: 1.05 }}
+        >
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
               <Image src={pic1} placeholder="blur" alt="" />
@@ -266,8 +292,8 @@ export function Cards() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </main>
   );
 }

@@ -32,7 +32,7 @@ export function DescriptionCard(props: DescriptionCardProps) {
   return (
     <p
       {...props}
-      className="dark:text-description mb-3 text-sm text-neutral-500"
+      className="mb-3 text-sm text-neutral-500 dark:text-description"
     >
       {props.children}
     </p>
@@ -82,7 +82,7 @@ export function SiteButtonCard(props: ButtonsCardProps) {
 export function RepoButtonCard(props: ButtonsCardProps) {
   return (
     <Button className={buttonVariants()}>
-      <a href={props.hrefLink} target="_blank">
+      <a href={props.hrefLink} target="_blank" rel="noopener noreferrer">
         Repositório
       </a>
     </Button>

@@ -33,6 +33,7 @@ export function Footer() {
           <a
             href="/MatheusTiburcioCV.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className={buttonVariants({
               variant: "outline",
               className: "flex items-center justify-center gap-2",

@@ -4,6 +4,7 @@ export function IntroButtons() {
       <a
         href="https://github.com/0kira-vgl"
         target="_blank"
+        rel="noopener noreferrer"
         className="flex min-w-0 flex-1 items-center justify-center gap-3 rounded-full border border-gray-700 bg-gradient-to-r from-gray-800 to-black px-7 py-3 font-semibold text-white duration-200 hover:scale-105 hover:border-gray-800 hover:from-black hover:to-gray-900 hover:text-gray-300"
       >
         <svg
@@ -23,6 +24,7 @@ export function IntroButtons() {
       <a
         href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
         target="_blank"
+        rel="noopener noreferrer"
         className="flex min-w-0 flex-1 items-center justify-center gap-3 rounded-full border border-blue-600 bg-gradient-to-r from-blue-600 to-blue-800 px-7 py-3 font-semibold text-white duration-200 hover:scale-105 hover:border-blue-800 hover:from-blue-800 hover:to-blue-900 hover:text-gray-300"
       >
         <svg

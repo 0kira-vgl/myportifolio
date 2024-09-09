@@ -46,6 +46,7 @@ export default function Notfound() {
           <a
             href="https://github.com/0kira-vgl"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex justify-between gap-x-6 py-5 lg:items-center"
           >
             <div>
@@ -66,6 +67,7 @@ export default function Notfound() {
           <a
             href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex justify-between gap-x-6 py-5 lg:items-center"
           >
             <div>

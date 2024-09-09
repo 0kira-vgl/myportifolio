@@ -12,12 +12,18 @@ import {
 } from "@/components/ui/sheet";
 import { LanguageToggle } from "./languageToggle";
 import { useTranslations } from "next-intl";
+import * as motion from "framer-motion/client";
 
 export function MobileNavBar() {
   const t = useTranslations("Header");
 
   return (
-    <div className="sticky top-0 z-50 w-full bg-white/5 p-2 py-4 text-center backdrop-blur-sm dark:bg-black/5 lg:hidden">
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="sticky top-0 z-50 w-full p-2 py-4 text-center text-zinc-600 backdrop-blur-sm dark:text-zinc-50 lg:hidden"
+    >
       <div className="flex items-center justify-center gap-x-7">
         <Sheet>
           <SheetTrigger>
@@ -73,6 +79,6 @@ export function MobileNavBar() {
           </SheetContent>
         </Sheet>
       </div>
-    </div>
+    </motion.header>
   );
 }

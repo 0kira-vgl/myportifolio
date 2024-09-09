@@ -3,6 +3,7 @@ import { buttonVariants } from "../ui/button";
 import { Cards } from "./cards";
 import { useTranslations } from "next-intl";
 import { Title, Subtitle } from "../titleAndSubtitle";
+import * as motion from "framer-motion/client";
 
 export function Projects() {
   const t = useTranslations("Projects");
@@ -19,10 +20,16 @@ export function Projects() {
 
       <Cards />
 
-      <footer className="pt-10 text-center lg:pt-12">
+      <motion.footer
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="pt-10 text-center lg:pt-12"
+      >
         <a
           href="https://github.com/0kira-vgl?tab=repositories"
           target="_blank"
+          rel="noopener noreferrer"
           className={buttonVariants({
             className: "group flex items-center justify-center gap-5",
             variant: "outline",
@@ -31,7 +38,7 @@ export function Projects() {
           {t("button")}
           <ArrowRight className="group size-5 -translate-x-2 transition-all group-hover:translate-x-0" />
         </a>
-      </footer>
+      </motion.footer>
     </section>
   );
 }

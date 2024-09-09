@@ -11,9 +11,11 @@ import {
 } from "../ui/carousel";
 import Image from "next/image";
 
-import pic from "../../../public/thumbnailPlanner.png";
+import DiscoverPng from "public/certificates/discover.png";
 
 export function CertificatesCarousel() {
+  const discoverPDF = "/certificates/discover-pt.pdf";
+
   return (
     <Carousel
       opts={{
@@ -30,27 +32,29 @@ export function CertificatesCarousel() {
       <CarouselContent className="">
         <CarouselItem className="md:basis-1/2 lg:basis-3/4">
           <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-            <Image className="rounded-xl p-1.5" src={pic} alt="." />
+            <a href={discoverPDF} target="_blank" rel="noopener noreferrer">
+              <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
+            </a>
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-3/4">
           <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-            <Image className="rounded-xl p-1.5" src={pic} alt="." />
+            <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-3/4">
           <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-            <Image className="rounded-xl p-1.5" src={pic} alt="." />
+            <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-3/4">
           <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-            <Image className="rounded-xl p-1.5" src={pic} alt="." />
+            <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-3/4">
           <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-            <Image className="rounded-xl p-1.5" src={pic} alt="." />
+            <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
           </div>
         </CarouselItem>
       </CarouselContent>
