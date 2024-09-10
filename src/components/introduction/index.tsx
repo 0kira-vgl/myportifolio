@@ -1,6 +1,5 @@
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { IntroButtons } from "./introButtons";
-import { CiFilter } from "react-icons/ci";
 import { useTranslations } from "next-intl";
 import * as motion from "framer-motion/client";
 

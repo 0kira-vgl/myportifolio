@@ -16,7 +16,10 @@
     "down": "Swipe down..."
   },
 
-  "AboutMe": {},
+  "AboutMe": {
+    "title": "About Me",
+    "subtitle": "Get to know the story behind the developer, the essence of the code."
+  },
 
   "Skills": {
     "title": "Skills",
@@ -46,6 +49,7 @@
     "title": "Projects",
     "subtitle": "Check out the projects where I put my knowledge into practice.",
 
+    "repoButtonCard": "Repository",
     "button": "See more repositories"
   },
 

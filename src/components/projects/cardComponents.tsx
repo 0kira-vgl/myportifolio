@@ -8,6 +8,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface TitleCardProps extends ComponentProps<"h2"> {
   children?: ReactNode;
@@ -17,7 +18,7 @@ export function TitleCard(props: TitleCardProps) {
   return (
     <h2
       {...props}
-      className="text-lg font-bold text-slate-700 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-50 dark:text-transparent"
+      className="text-lg font-bold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-50 dark:text-transparent"
     >
       {props.children}
     </h2>
@@ -80,10 +81,12 @@ export function SiteButtonCard(props: ButtonsCardProps) {
 }
 
 export function RepoButtonCard(props: ButtonsCardProps) {
+  const t = useTranslations("Projects");
+
   return (
     <Button className={buttonVariants()}>
       <a href={props.hrefLink} target="_blank" rel="noopener noreferrer">
-        Repositório
+        {t("repoButtonCard")}
       </a>
     </Button>
   );
