@@ -6,12 +6,10 @@ import { Introduction } from "@/components/introduction";
 import { MobileNavBar } from "@/components/mobileNavBar";
 import { Skills } from "@/components/skills";
 import { AboutMe } from "@/components/aboutMe";
-import { Notice } from "@/components/notice";
 
 export default function Home() {
   return (
     <>
-      <Notice />
       <Header />
       <MobileNavBar />
       <Introduction />
