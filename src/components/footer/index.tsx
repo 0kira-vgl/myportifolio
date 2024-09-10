@@ -31,8 +31,8 @@ export function Footer() {
 
         <div>
           <a
-            href="/MatheusTiburcioCV.pdf"
-            target="_blank"
+            href="#"
+            // target="_blank"
             rel="noopener noreferrer"
             className={buttonVariants({
               variant: "outline",

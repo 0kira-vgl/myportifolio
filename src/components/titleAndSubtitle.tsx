@@ -17,7 +17,7 @@ const animProps = {
 
 const Title = (props: TitleProps) => {
   return (
-    <motion.div {...animProps} transition={{ duration: 0.4 }}>
+    <motion.div {...animProps} transition={{ duration: 0.8 }}>
       <h2
         {...props}
         className={twMerge(
