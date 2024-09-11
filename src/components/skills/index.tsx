@@ -2,6 +2,7 @@ import { CertificatesCarousel } from "./certificatesCarousel";
 import { SkillsCard } from "./skillsCard";
 import { useTranslations } from "next-intl";
 import { Title, Subtitle } from "../titleAndSubtitle";
+import * as motion from "framer-motion/client";
 
 export function Skills() {
   const t = useTranslations("Skills");
@@ -20,9 +21,14 @@ export function Skills() {
       <SkillsCard />
 
       <footer className="flex flex-col items-center justify-center pt-14">
-        <p className="mx-auto mb-3 max-w-[17rem] text-center text-sm text-slate-800 dark:text-zinc-500">
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
+          className="mx-auto mb-3 max-w-[17rem] text-center text-sm text-slate-800 dark:text-zinc-500"
+        >
           {t("certificatesSubtitle")}
-        </p>
+        </motion.p>
 
         <CertificatesCarousel />
       </footer>

@@ -141,11 +141,7 @@ export function SkillsCard() {
           </h2>
           <div className="flex flex-col text-center text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-100 dark:text-transparent">
             <span className="font-semibold">
-              <span className="font-extrabold">Português (Brasil) / </span>
-              fluente
-            </span>
-            <span className="font-semibold">
-              <span className="font-extrabold">Inglês / </span> Básico
+              <span className="font-extrabold">- Metodologia Scrum </span>
             </span>
           </div>
         </div>

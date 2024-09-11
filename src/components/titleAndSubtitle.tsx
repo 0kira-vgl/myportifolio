@@ -1,6 +1,8 @@
+"use client";
+
 import { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
-import * as motion from "framer-motion/client";
+import { motion } from "framer-motion";
 
 interface TitleProps extends ComponentProps<"h2"> {
   children: string;
