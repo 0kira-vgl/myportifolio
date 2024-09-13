@@ -75,9 +75,8 @@ const config = {
       },
 
       backgroundImage: {
-        linear: "url(/background.svg)",
-        pattern: "url(/pattern.svg)",
-        dotted: "url(/dotted.svg)",
+        pattern: "url(/backgrounds/pattern.svg)",
+        dotted: "url(/backgrounds/dotted.svg)",
         "gradient-light":
           "repeating-linear-gradient(90deg, #cf0c13 0, #ff0a95 50%, #ff5724)",
         "gradient-dark":

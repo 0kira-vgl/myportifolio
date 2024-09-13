@@ -19,16 +19,24 @@ import * as motion from "framer-motion/client";
 import pic1 from "@public/thumbnailPlanner.png";
 
 export function Cards() {
-  const animationProps = {
-    initial: { opacity: 0, y: 50 },
-    whileInView: { opacity: 1, y: 0 },
+  const animationVariants = {
+    doubleCards: {
+      initial: { opacity: 0, y: 50 },
+      whileInView: { opacity: 1, y: 0 },
+      transition: { duration: 0.4, delay: 0.4, ease: "easeOut" },
+    },
+
+    tripleCards: {
+      initial: { opacity: 0, y: 50 },
+      whileInView: { opacity: 1, y: 0 },
+      transition: { duration: 0.4, delay: 0.1, ease: "easeOut" },
+    },
   };
 
   return (
     <main>
       <motion.div
-        {...animationProps}
-        transition={{ duration: 0.4, ease: "easeOut", delay: 0.4 }}
+        {...animationVariants.doubleCards}
         className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0"
       >
         <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
@@ -149,8 +157,7 @@ export function Cards() {
       </motion.div>
 
       <motion.div
-        {...animationProps}
-        transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
+        {...animationVariants.tripleCards}
         className="gap-8 space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0"
       >
         <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">

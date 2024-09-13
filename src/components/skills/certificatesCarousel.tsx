@@ -19,9 +19,9 @@ export function CertificatesCarousel() {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 70 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
+      transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
     >
       <Carousel
         opts={{
