@@ -10,12 +10,24 @@ import {
   CarouselIndicators,
 } from "../ui/carousel";
 import Image from "next/image";
-
-import DiscoverPng from "public/certificates/discover.png";
 import * as motion from "framer-motion/client";
 
+// certificates images
+import DiscoverPng from "@/assets/certificates/discover.png";
+import IAPng from "@/assets/certificates/ia.png";
+import PocketPng from "@/assets/certificates/pocket.png";
+import ExpertPng from "@/assets/certificates/expert.png";
+import JourneyPng from "@/assets/certificates/journey.png";
+import UnitePng from "@/assets/certificates/unite.png";
+
 export function CertificatesCarousel() {
-  const discoverPDF = "/certificates/discover-pt.pdf";
+  // certificates PDFs
+  const DiscoverPdf = "/certificates/discover.pdf";
+  const IaPdf = "/certificates/ia.pdf";
+  const PocketPdf = "/certificates/pocket.pdf";
+  const ExpertPdf = "/certificates/expert.pdf";
+  const JourneyPdf = "/certificates/journey.pdf";
+  const UnitePdf = "/certificates/unite.pdf";
 
   return (
     <motion.div
@@ -38,29 +50,44 @@ export function CertificatesCarousel() {
         <CarouselContent className="">
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <a href={discoverPDF} target="_blank" rel="noopener noreferrer">
+              <a href={DiscoverPdf} target="_blank" rel="noopener noreferrer">
                 <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
               </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
+              <a href={IaPdf} target="_blank" rel="noopener noreferrer">
+                <Image className="rounded-xl p-1.5" src={IAPng} alt="." />
+              </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
+              <a href={PocketPdf} target="_blank" rel="noopener noreferrer">
+                <Image className="rounded-xl p-1.5" src={PocketPng} alt="." />
+              </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
+              <a href={ExpertPdf} target="_blank" rel="noopener noreferrer">
+                <Image className="rounded-xl p-1.5" src={ExpertPng} alt="." />
+              </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
+              <a href={JourneyPdf} target="_blank" rel="noopener noreferrer">
+                <Image className="rounded-xl p-1.5" src={JourneyPng} alt="." />
+              </a>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-3/4">
+            <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
+              <a href={UnitePdf} target="_blank" rel="noopener noreferrer">
+                <Image className="rounded-xl p-1.5" src={UnitePng} alt="." />
+              </a>
             </div>
           </CarouselItem>
         </CarouselContent>

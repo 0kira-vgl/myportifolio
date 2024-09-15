@@ -5,6 +5,7 @@ import { LuFileSpreadsheet } from "react-icons/lu";
 import { FooterCard } from "./footerCard";
 import { NameLogo } from "../nameLogo";
 import { useTranslations } from "next-intl";
+import * as motion from "framer-motion/client";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -30,7 +31,10 @@ export function Footer() {
         </div>
 
         <div>
-          <a
+          <motion.a
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
             href="#"
             // target="_blank"
             rel="noopener noreferrer"
@@ -41,7 +45,7 @@ export function Footer() {
           >
             {t("button")}
             <LuFileSpreadsheet className="size-4" />
-          </a>
+          </motion.a>
         </div>
       </main>
       <footer className="flex flex-col items-center justify-center text-center lg:mt-auto">

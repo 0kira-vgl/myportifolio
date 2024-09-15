@@ -17,6 +17,8 @@ import { SiShadcnui } from "react-icons/si";
 import * as motion from "framer-motion/client";
 
 import pic1 from "@public/thumbnailPlanner.png";
+import InOrbit from "@/assets/thumbnails/inOrbit.svg";
+import Planner from "@/assets/thumbnails/planner.svg";
 
 export function Cards() {
   const animationVariants = {
@@ -100,14 +102,10 @@ export function Cards() {
         <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image
-                src={pic1}
-                alt="ExplorerNotes Project"
-                placeholder="blur"
-              />
+              <Image src={InOrbit} alt="InOrbit Project" />
             </div>
             <div className="flex grow flex-col p-3">
-              <TitleCard>Explorer Notes</TitleCard>
+              <TitleCard>in.orbit</TitleCard>
               <DescriptionCard>
                 Expert Notes é um aplicativo de notas que permite ao usuário
                 criar e gerenciar notas de forma simples e eficiente.
@@ -206,7 +204,7 @@ export function Cards() {
         <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image src={pic1} placeholder="blur" alt="" />
+              <Image src={Planner} alt="Planner Project" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">

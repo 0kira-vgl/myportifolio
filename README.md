@@ -29,6 +29,7 @@
 
 - Notes: react, tailwindCSS, typescript, viteJS, radix UI;
 - PizzaShop: react, tailwindCSS, typescript, viteJS, shadcn IU;
+- in.orbit: react, tailwindCSS, typescript, viteJS, radixUI, Shadcn;
 - Planner: react, tailwindCSS, typescript, viteJS;
 - ToDoList: react, CSS, typescript, viteJS;
 - Pomodoro: typescript, viteJS, react, vercel;
