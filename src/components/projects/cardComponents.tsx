@@ -43,7 +43,7 @@ export function DescriptionCard(props: DescriptionCardProps) {
 interface IconsCardProps extends ImageProps {
   src: string;
   alt: string;
-  titleIcon?: ReactNode;
+  titleicon?: ReactNode;
 }
 
 export function IconsCard(props: IconsCardProps) {
@@ -51,10 +51,16 @@ export function IconsCard(props: IconsCardProps) {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger>
-          <Image {...props} width={25} height={25} alt={props.alt} />
+          <Image
+            {...props}
+            width={25}
+            height={25}
+            alt={props.alt}
+            loading="lazy"
+          />
         </TooltipTrigger>
         <TooltipContent side="top">
-          <span className="font-semibold">{props.titleIcon}</span>
+          <span className="font-semibold">{props.titleicon}</span>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

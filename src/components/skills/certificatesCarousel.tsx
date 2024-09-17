@@ -51,42 +51,72 @@ export function CertificatesCarousel() {
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
               <a href={DiscoverPdf} target="_blank" rel="noopener noreferrer">
-                <Image className="rounded-xl p-1.5" src={DiscoverPng} alt="." />
+                <Image
+                  className="rounded-xl p-1.5"
+                  src={DiscoverPng}
+                  loading="lazy"
+                  alt="certificate"
+                />
               </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
               <a href={IaPdf} target="_blank" rel="noopener noreferrer">
-                <Image className="rounded-xl p-1.5" src={IAPng} alt="." />
+                <Image
+                  className="rounded-xl p-1.5"
+                  src={IAPng}
+                  loading="lazy"
+                  alt="certificate"
+                />
               </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
               <a href={PocketPdf} target="_blank" rel="noopener noreferrer">
-                <Image className="rounded-xl p-1.5" src={PocketPng} alt="." />
+                <Image
+                  className="rounded-xl p-1.5"
+                  src={PocketPng}
+                  loading="lazy"
+                  alt="certificate"
+                />
               </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
               <a href={ExpertPdf} target="_blank" rel="noopener noreferrer">
-                <Image className="rounded-xl p-1.5" src={ExpertPng} alt="." />
+                <Image
+                  className="rounded-xl p-1.5"
+                  src={ExpertPng}
+                  loading="lazy"
+                  alt="certificate"
+                />
               </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
               <a href={JourneyPdf} target="_blank" rel="noopener noreferrer">
-                <Image className="rounded-xl p-1.5" src={JourneyPng} alt="." />
+                <Image
+                  className="rounded-xl p-1.5"
+                  src={JourneyPng}
+                  loading="lazy"
+                  alt="certificate"
+                />
               </a>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
               <a href={UnitePdf} target="_blank" rel="noopener noreferrer">
-                <Image className="rounded-xl p-1.5" src={UnitePng} alt="." />
+                <Image
+                  className="rounded-xl p-1.5"
+                  src={UnitePng}
+                  loading="lazy"
+                  alt="certificate"
+                />
               </a>
             </div>
           </CarouselItem>

@@ -44,11 +44,7 @@ export function Cards() {
         <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image
-                src={pic1}
-                alt="ExplorerNotes Project"
-                placeholder="blur"
-              />
+              <Image priority src={pic1} alt="ExplorerNotes Project" />
             </div>
             <div className="flex grow flex-col p-3">
               <TitleCard>Explorer Notes</TitleCard>
@@ -60,22 +56,22 @@ export function Cards() {
               <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
                 <div className="flex items-center gap-2">
                   <IconsCard
-                    titleIcon="ReactJs"
+                    titleicon="ReactJs"
                     alt="ReactJs Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                   />
                   <IconsCard
-                    titleIcon="TypeScript"
+                    titleicon="TypeScript"
                     alt="TypeScript Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                   />
                   <IconsCard
-                    titleIcon="TailwindCSS"
+                    titleicon="TailwindCSS"
                     alt="TailwindCSS Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                   />
                   <IconsCard
-                    titleIcon="ViteJs"
+                    titleicon="ViteJs"
                     alt="ViteJs Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
                   />
@@ -102,7 +98,7 @@ export function Cards() {
         <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image src={InOrbit} alt="InOrbit Project" />
+              <Image priority src={InOrbit} alt="InOrbit Project" />
             </div>
             <div className="flex grow flex-col p-3">
               <TitleCard>in.orbit</TitleCard>
@@ -114,22 +110,22 @@ export function Cards() {
               <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
                 <div className="flex items-center gap-2">
                   <IconsCard
-                    titleIcon="ReactJs"
+                    titleicon="ReactJs"
                     alt="ReactJs Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                   />
                   <IconsCard
-                    titleIcon="TypeScript"
+                    titleicon="TypeScript"
                     alt="TypeScript Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                   />
                   <IconsCard
-                    titleIcon="TailwindCSS"
+                    titleicon="TailwindCSS"
                     alt="TailwindCSS Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                   />
                   <IconsCard
-                    titleIcon="ViteJs"
+                    titleicon="ViteJs"
                     alt="ViteJs Icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
                   />
@@ -161,7 +157,7 @@ export function Cards() {
         <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image src={pic1} placeholder="blur" alt="" />
+              <Image priority src={pic1} alt="" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
@@ -173,22 +169,22 @@ export function Cards() {
             <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
               <div className="flex items-center gap-2">
                 <IconsCard
-                  titleIcon="ReactJs"
+                  titleicon="ReactJs"
                   alt="ReactJs Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                 />
                 <IconsCard
-                  titleIcon="TypeScript"
+                  titleicon="TypeScript"
                   alt="TypeScript Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                 />
                 <IconsCard
-                  titleIcon="TailwindCSS"
+                  titleicon="TailwindCSS"
                   alt="TailwindCSS Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                 />
                 <IconsCard
-                  titleIcon="ViteJs"
+                  titleicon="ViteJs"
                   alt="ViteJs Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
                 />
@@ -204,7 +200,7 @@ export function Cards() {
         <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image src={Planner} alt="Planner Project" />
+              <Image priority src={Planner} alt="Planner Project" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
@@ -216,22 +212,22 @@ export function Cards() {
             <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
               <div className="flex items-center gap-2">
                 <IconsCard
-                  titleIcon="ReactJs"
+                  titleicon="ReactJs"
                   alt="ReactJs Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                 />
                 <IconsCard
-                  titleIcon="TypeScript"
+                  titleicon="TypeScript"
                   alt="TypeScript Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                 />
                 <IconsCard
-                  titleIcon="TailwindCSS"
+                  titleicon="TailwindCSS"
                   alt="TailwindCSS Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                 />
                 <IconsCard
-                  titleIcon="ViteJs"
+                  titleicon="ViteJs"
                   alt="ViteJs Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
                 />
@@ -247,7 +243,7 @@ export function Cards() {
         <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image src={pic1} placeholder="blur" alt="" />
+              <Image priority src={pic1} alt="" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
@@ -259,22 +255,22 @@ export function Cards() {
             <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
               <div className="flex items-center gap-2">
                 <IconsCard
-                  titleIcon="ReactJs"
+                  titleicon="ReactJs"
                   alt="ReactJs Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                 />
                 <IconsCard
-                  titleIcon="TypeScript"
+                  titleicon="TypeScript"
                   alt="TypeScript Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                 />
                 <IconsCard
-                  titleIcon="TailwindCSS"
+                  titleicon="TailwindCSS"
                   alt="TailwindCSS Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                 />
                 <IconsCard
-                  titleIcon="ViteJs"
+                  titleicon="ViteJs"
                   alt="ViteJs Icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
                 />

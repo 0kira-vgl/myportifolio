@@ -41,37 +41,37 @@ export function SkillsCard() {
           <div className="flex items-center gap-2">
             <IconsCard
               className="size-14"
-              titleIcon="HTML5"
+              titleicon="HTML5"
               alt="HTML5 Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="CSS3"
+              titleicon="CSS3"
               alt="CSS3 Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="JavaScript"
+              titleicon="JavaScript"
               alt="JavaScript Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="TypeScript"
+              titleicon="TypeScript"
               alt="TypeScript Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="ReactJs"
+              titleicon="ReactJs"
               alt="ReactJs Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="NextJs"
+              titleicon="NextJs"
               alt="NextJs Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
             />
@@ -93,37 +93,37 @@ export function SkillsCard() {
           <div className="flex items-center gap-2">
             <IconsCard
               className="size-14"
-              titleIcon="Visual Studio Code"
+              titleicon="Visual Studio Code"
               alt="Visual Studio Code Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="Git"
+              titleicon="Git"
               alt="Git Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="GitHub"
+              titleicon="GitHub"
               alt="GitHub Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="Figma"
+              titleicon="Figma"
               alt="Figma Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="ViteJs"
+              titleicon="ViteJs"
               alt="ViteJs Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
             />
             <IconsCard
               className="size-14"
-              titleIcon="TailwindCSS"
+              titleicon="TailwindCSS"
               alt="TailwindCSS Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
             />
