@@ -21,14 +21,6 @@ import JourneyPng from "@/assets/certificates/journey.png";
 import UnitePng from "@/assets/certificates/unite.png";
 
 export function CertificatesCarousel() {
-  // certificates PDFs
-  const DiscoverPdf = "/certificates/discover.pdf";
-  const IaPdf = "/certificates/ia.pdf";
-  const PocketPdf = "/certificates/pocket.pdf";
-  const ExpertPdf = "/certificates/expert.pdf";
-  const JourneyPdf = "/certificates/journey.pdf";
-  const UnitePdf = "/certificates/unite.pdf";
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 70 }}
@@ -42,15 +34,19 @@ export function CertificatesCarousel() {
         }}
         plugins={[
           Autoplay({
-            delay: 2500,
+            delay: 3500,
           }),
         ]}
         className="w-full max-w-xl"
       >
-        <CarouselContent className="">
+        <CarouselContent>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <a href={DiscoverPdf} target="_blank" rel="noopener noreferrer">
+              <a
+                href="/certificates/discover.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   className="rounded-xl p-1.5"
                   src={DiscoverPng}
@@ -62,7 +58,11 @@ export function CertificatesCarousel() {
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <a href={IaPdf} target="_blank" rel="noopener noreferrer">
+              <a
+                href="/certificates/ia.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   className="rounded-xl p-1.5"
                   src={IAPng}
@@ -74,7 +74,11 @@ export function CertificatesCarousel() {
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <a href={PocketPdf} target="_blank" rel="noopener noreferrer">
+              <a
+                href="/certificates/pocket.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   className="rounded-xl p-1.5"
                   src={PocketPng}
@@ -86,7 +90,11 @@ export function CertificatesCarousel() {
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <a href={ExpertPdf} target="_blank" rel="noopener noreferrer">
+              <a
+                href="/certificates/expert.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   className="rounded-xl p-1.5"
                   src={ExpertPng}
@@ -98,7 +106,11 @@ export function CertificatesCarousel() {
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <a href={JourneyPdf} target="_blank" rel="noopener noreferrer">
+              <a
+                href="/certificates/journey.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   className="rounded-xl p-1.5"
                   src={JourneyPng}
@@ -110,7 +122,11 @@ export function CertificatesCarousel() {
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-3/4">
             <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
-              <a href={UnitePdf} target="_blank" rel="noopener noreferrer">
+              <a
+                href="/certificates/unite.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   className="rounded-xl p-1.5"
                   src={UnitePng}
