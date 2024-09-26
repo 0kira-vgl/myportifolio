@@ -53,8 +53,8 @@
     "button": "See more repositories"
   },
 
-  "Footer": {
-    "FooterCard": {
+  "Contact": {
+    "ContactCard": {
       "title": "Shall we make a difference?",
       "subtitle": "Together, let's create interfaces that set trends and shape the future!"
     },

@@ -1,21 +1,20 @@
-import { Separator } from "../ui/separator";
 import { SocialLinks } from "./socialLinks";
 import { buttonVariants } from "../ui/button";
 import { LuFileSpreadsheet } from "react-icons/lu";
-import { FooterCard } from "./footerCard";
 import { NameLogo } from "../nameLogo";
 import { useTranslations } from "next-intl";
-import * as motion from "framer-motion/client";
+import { ContactCard } from "./contactCard";
+import { Footer } from "../footer";
 
-export function Footer() {
-  const t = useTranslations("Footer");
+export function Contact() {
+  const t = useTranslations("Contact");
 
   return (
     <section
       id="contact"
       className="mx-auto flex h-full w-full flex-col space-y-14 lg:h-screen"
     >
-      <FooterCard />
+      <ContactCard />
 
       <main className="flex flex-col items-center justify-center space-y-10 text-center">
         <NameLogo />
@@ -31,10 +30,7 @@ export function Footer() {
         </div>
 
         <div>
-          <motion.a
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
+          <a
             href="#"
             // target="_blank"
             rel="noopener noreferrer"
@@ -45,16 +41,11 @@ export function Footer() {
           >
             {t("button")}
             <LuFileSpreadsheet className="size-4" />
-          </motion.a>
+          </a>
         </div>
       </main>
-      <footer className="flex flex-col items-center justify-center text-center lg:mt-auto">
-        <Separator />
 
-        <span className="py-3 font-code text-sm text-zinc-800 lg:text-lg">
-          © 2024 - Design and Code by Matheus Tiburcio.
-        </span>
-      </footer>
+      <Footer />
     </section>
   );
 }

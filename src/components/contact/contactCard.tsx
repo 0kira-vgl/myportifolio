@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import * as motion from "framer-motion/client";
 
-export function FooterCard() {
-  const t = useTranslations("Footer.FooterCard");
+export function ContactCard() {
+  const t = useTranslations("Contact.ContactCard");
 
   return (
     <motion.div
