@@ -15,9 +15,11 @@ import {
 } from "@/components/ui/tooltip";
 import { SiShadcnui } from "react-icons/si";
 
-import pic1 from "@public/thumbnailPlanner.png";
-import InOrbit from "@/assets/thumbnails/inOrbit.svg";
-import Planner from "@/assets/thumbnails/planner.svg";
+import Notes from "@/assets/thumbnails/notes.png";
+import PizzaShop from "@/assets/thumbnails/pizzaShop.png";
+import InOrbit from "@/assets/thumbnails/inOrbit.png";
+import Planner from "@/assets/thumbnails/planner.png";
+import ToDoApp from "@/assets/thumbnails/toDoApp.png";
 
 export function Cards() {
   return (
@@ -26,10 +28,10 @@ export function Cards() {
         <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image priority src={pic1} alt="ExplorerNotes Project" />
+              <Image priority src={Notes} alt="Notes Project" />
             </div>
             <div className="flex grow flex-col p-3">
-              <TitleCard>Explorer Notes</TitleCard>
+              <TitleCard>Notes</TitleCard>
               <DescriptionCard>
                 Expert Notes é um aplicativo de notas que permite ao usuário
                 criar e gerenciar notas de forma simples e eficiente.
@@ -69,8 +71,8 @@ export function Cards() {
                   </TooltipProvider>
                 </div>
                 <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
-                  <SiteButtonCard hrefLink="https://github.com/" />
-                  <RepoButtonCard hrefLink="https://github.com/0kira-vgl?tab=repositories" />
+                  <SiteButtonCard hrefLink="https://nlwnotes.vercel.app/" />
+                  <RepoButtonCard hrefLink="https://github.com/0kira-vgl/nlwNotes" />
                 </div>
               </div>
             </div>
@@ -80,10 +82,10 @@ export function Cards() {
         <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image priority src={InOrbit} alt="InOrbit Project" />
+              <Image priority src={PizzaShop} alt="PizzaShop Project" />
             </div>
             <div className="flex grow flex-col p-3">
-              <TitleCard>in.orbit</TitleCard>
+              <TitleCard>PizzaShop</TitleCard>
               <DescriptionCard>
                 Expert Notes é um aplicativo de notas que permite ao usuário
                 criar e gerenciar notas de forma simples e eficiente.
@@ -124,7 +126,7 @@ export function Cards() {
                 </div>
                 <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
                   <SiteButtonCard hrefLink="https://github.com/" />
-                  <RepoButtonCard hrefLink="https://github.com/0kira-vgl?tab=repositories" />
+                  <RepoButtonCard hrefLink="https://github.com/0kira-vgl/pizzashop" />
                 </div>
               </div>
             </div>
@@ -136,14 +138,14 @@ export function Cards() {
         <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image priority src={pic1} alt="" />
+              <Image priority src={InOrbit} alt="InOrbit Project" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
-            <TitleCard>Explorer Notes</TitleCard>
+            <TitleCard>In Orbit</TitleCard>
             <DescriptionCard>
-              Expert Notes é um aplicativo de notas que permite ao usuário criar
-              e gerenciar notas de forma simples e eficiente.
+              O projeto é um site desktop de registro de metas com progresso
+              semanal.
             </DescriptionCard>
             <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
               <div className="flex items-center gap-2">
@@ -169,8 +171,8 @@ export function Cards() {
                 />
               </div>
               <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-2 lg:space-y-0">
-                <SiteButtonCard hrefLink="https://github.com/" />
-                <RepoButtonCard hrefLink="https://github.com/0kira-vgl?tab=repositories" />
+                <SiteButtonCard hrefLink="https://inorbit-two.vercel.app/" />
+                <RepoButtonCard hrefLink="https://github.com/0kira-vgl/inorbit" />
               </div>
             </div>
           </div>
@@ -183,10 +185,10 @@ export function Cards() {
             </div>
           </div>
           <div className="flex grow flex-col p-3">
-            <TitleCard>Explorer Notes</TitleCard>
+            <TitleCard>Planner</TitleCard>
             <DescriptionCard>
-              Expert Notes é um aplicativo de notas que permite ao usuário criar
-              e gerenciar notas de forma simples e eficiente.
+              O projeto é um site desktop para montar planos de viagem com
+              amigos, registrar atividades e links úteis.
             </DescriptionCard>
             <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
               <div className="flex items-center gap-2">
@@ -213,7 +215,7 @@ export function Cards() {
               </div>
               <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-2 lg:space-y-0">
                 <SiteButtonCard hrefLink="https://github.com/" />
-                <RepoButtonCard hrefLink="https://github.com/0kira-vgl?tab=repositories" />
+                <RepoButtonCard hrefLink="https://github.com/0kira-vgl/planner" />
               </div>
             </div>
           </div>
@@ -222,14 +224,14 @@ export function Cards() {
         <div className="flex flex-col rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
           <div className="p-2">
             <div className="aspect-video overflow-hidden rounded-lg border-b-[3px] border-zinc-300">
-              <Image priority src={pic1} alt="" />
+              <Image priority src={ToDoApp} alt="ToDoApp Project" />
             </div>
           </div>
           <div className="flex grow flex-col p-3">
-            <TitleCard>Explorer Notes</TitleCard>
+            <TitleCard>ToDo App</TitleCard>
             <DescriptionCard>
-              Expert Notes é um aplicativo de notas que permite ao usuário criar
-              e gerenciar notas de forma simples e eficiente.
+              Uma de lista de tarefas onde os usuários podem adicionar, marcar
+              como concluídas e excluir tarefas.
             </DescriptionCard>
             <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
               <div className="flex items-center gap-2">
@@ -255,8 +257,8 @@ export function Cards() {
                 />
               </div>
               <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-2 lg:space-y-0">
-                <SiteButtonCard hrefLink="https://github.com/" />
-                <RepoButtonCard hrefLink="https://github.com/0kira-vgl?tab=repositories" />
+                <SiteButtonCard hrefLink="https://to-do-list-0kira-vgl.vercel.app/" />
+                <RepoButtonCard hrefLink="https://github.com/0kira-vgl/toDoList" />
               </div>
             </div>
           </div>
