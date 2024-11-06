@@ -5,7 +5,7 @@ import { Introduction } from "@/app/introduction";
 import { MobileNavBar } from "@/components/mobileNavBar";
 import { Skills } from "@/app/skills";
 import { AboutMe } from "@/app/aboutMe";
-import { BackToTop } from "@/components/BackToTop";
+import { BackToTop } from "@/components/backToTop";
 
 export default function Home() {
   return (
