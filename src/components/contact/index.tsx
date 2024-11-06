@@ -25,9 +25,7 @@ export function Contact() {
           <span>- Musashi Miyamoto</span>
         </span>
 
-        <div className="flex gap-8">
-          <SocialLinks />
-        </div>
+        <SocialLinks />
 
         <div>
           <a
