@@ -29,8 +29,8 @@ export function Contact() {
 
         <div>
           <a
-            href="#"
-            // target="_blank"
+            href="/Matheus Tiburcio - CV.pdf"
+            target="_blank"
             rel="noopener noreferrer"
             className={buttonVariants({
               variant: "outline",

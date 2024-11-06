@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Inconsolata } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const inconsolata = Inconsolata({
@@ -26,7 +26,7 @@ export default function RootLayout({
       lang={locale}
     >
       <body className={inter.className}>
-        <ThemeProvider attribute="class" enableSystem defaultTheme="light">
+        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           {children}
         </ThemeProvider>
       </body>
