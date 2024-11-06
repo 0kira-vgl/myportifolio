@@ -1,6 +1,6 @@
 import Image, { ImageProps } from "next/image";
 import { ComponentProps, ReactNode } from "react";
-import { buttonVariants } from "../ui/button";
+import { buttonVariants } from "../../components/ui/button";
 import {
   Tooltip,
   TooltipContent,

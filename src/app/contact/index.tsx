@@ -1,10 +1,10 @@
 import { SocialLinks } from "./socialLinks";
-import { buttonVariants } from "../ui/button";
+import { buttonVariants } from "../../components/ui/button";
 import { LuFileSpreadsheet } from "react-icons/lu";
-import { NameLogo } from "../nameLogo";
+import { NameLogo } from "../../components/nameLogo";
 import { useTranslations } from "next-intl";
 import { ContactCard } from "./contactCard";
-import { Footer } from "../footer";
+import { Footer } from "../../components/footer";
 
 export function Contact() {
   const t = useTranslations("Contact");

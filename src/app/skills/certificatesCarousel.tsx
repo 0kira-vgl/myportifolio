@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   CarouselIndicators,
-} from "../ui/carousel";
+} from "../../components/ui/carousel";
 import Image from "next/image";
 import * as motion from "framer-motion/client";
 

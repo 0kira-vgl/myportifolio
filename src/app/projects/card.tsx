@@ -12,7 +12,7 @@ import {
   IconsCard,
   RepositoryButton,
   TitleCard,
-} from "../projects/cardComponents";
+} from "./cardComponents";
 
 type BigCardsProps = ImageProps & {
   title: string;
@@ -21,7 +21,7 @@ type BigCardsProps = ImageProps & {
   repository: string;
 };
 
-export function BigCard({
+export function Card({
   title,
   description,
   demo,

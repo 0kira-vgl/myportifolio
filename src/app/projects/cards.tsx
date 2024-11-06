@@ -3,14 +3,13 @@ import PizzaShop from "@/assets/thumbnails/pizzaShop.png";
 import InOrbit from "@/assets/thumbnails/inOrbit.png";
 import Planner from "@/assets/thumbnails/planner.png";
 import ToDoApp from "@/assets/thumbnails/toDoApp.png";
-import { BigCard } from "../cards/bigCard";
-import { SmallCard } from "../cards/smallCard";
+import { Card } from "./card";
 
 export function Cards() {
   return (
     <main>
       <div className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0">
-        <BigCard
+        <Card
           title="Notes"
           description="Expert Notes é um aplicativo de notas que permite ao usuário criar e gerenciar notas de forma simples e eficiente."
           src={Notes}
@@ -19,7 +18,7 @@ export function Cards() {
           repository="https://github.com/0kira-vgl/nlwNotes"
         />
 
-        <BigCard
+        <Card
           title="PizzaShop"
           description="Expert Notes é um aplicativo de notas que permite ao usuário criar e gerenciar notas de forma simples e eficiente."
           src={PizzaShop}
@@ -30,7 +29,7 @@ export function Cards() {
       </div>
 
       <div className="gap-8 space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0">
-        <BigCard
+        <Card
           title="In Orbit"
           description="O projeto é um site desktop de registro de metas com progresso semanal."
           src={InOrbit}
@@ -39,7 +38,7 @@ export function Cards() {
           repository="https://github.com/0kira-vgl/inorbit"
         />
 
-        <BigCard
+        <Card
           title="Planner"
           description="O projeto é um site desktop para montar planos de viagem com amigos, registrar atividades e links úteis."
           src={Planner}
@@ -48,7 +47,7 @@ export function Cards() {
           repository="https://github.com/0kira-vgl/planner"
         />
 
-        <BigCard
+        <Card
           title="ToDo App"
           description="Uma de lista de tarefas onde os usuários podem adicionar, marcar como concluídas e excluir tarefas."
           src={ToDoApp}

@@ -1,8 +1,8 @@
 import { ArrowRight } from "lucide-react";
-import { buttonVariants } from "../ui/button";
+import { buttonVariants } from "../../components/ui/button";
 import { Cards } from "./cards";
 import { useTranslations } from "next-intl";
-import { Title, Subtitle } from "../titleAndSubtitle";
+import { Title, Subtitle } from "../../components/titleAndSubtitle";
 import * as motion from "framer-motion/client";
 
 export function Projects() {

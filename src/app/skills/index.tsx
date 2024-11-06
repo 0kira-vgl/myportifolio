@@ -1,7 +1,7 @@
 import { CertificatesCarousel } from "./certificatesCarousel";
 import { SkillsCard } from "./skillsCard";
 import { useTranslations } from "next-intl";
-import { Title, Subtitle } from "../titleAndSubtitle";
+import { Title, Subtitle } from "../../components/titleAndSubtitle";
 import * as motion from "framer-motion/client";
 
 export function Skills() {

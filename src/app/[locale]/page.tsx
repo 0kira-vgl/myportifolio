@@ -1,11 +1,11 @@
 import { Header } from "@/components/header";
-import { Projects } from "@/components/projects";
-import { Contact } from "@/components/contact";
+import { Projects } from "@/app/projects";
+import { Contact } from "@/app/contact";
 import { ScrollTopButton } from "@/components/scrollTopButton";
-import { Introduction } from "@/components/introduction";
+import { Introduction } from "@/app/introduction";
 import { MobileNavBar } from "@/components/mobileNavBar";
-import { Skills } from "@/components/skills";
-import { AboutMe } from "@/components/aboutMe";
+import { Skills } from "@/app/skills";
+import { AboutMe } from "@/app/aboutMe";
 
 export default function Home() {
   return (

@@ -32,7 +32,7 @@ export function SocialLinks() {
 
       <div>
         <a
-          href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
+          href="mailto:matheusgtiburcio@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="flex justify-between gap-x-6 py-5 lg:items-center"
