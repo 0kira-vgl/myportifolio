@@ -7,10 +7,10 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import {
+  DemoButton,
   DescriptionCard,
   IconsCard,
-  RepoButtonCard,
-  SiteButtonCard,
+  RepositoryButton,
   TitleCard,
 } from "../projects/cardComponents";
 
@@ -35,8 +35,8 @@ export function BigCard({
           <Image {...props} priority alt="Notes Project" />
         </div>
         <div className="flex grow flex-col p-3">
-          <TitleCard>{title}</TitleCard>
-          <DescriptionCard>{description}</DescriptionCard>
+          <TitleCard title={title} />
+          <DescriptionCard description={description} />
 
           <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
             <div className="flex items-center gap-2">
@@ -72,8 +72,8 @@ export function BigCard({
               </TooltipProvider>
             </div>
             <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
-              <SiteButtonCard hrefLink={demo} />
-              <RepoButtonCard hrefLink={repository} />
+              <DemoButton href={demo} />
+              <RepositoryButton href={repository} />
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ export function Cards() {
       </div>
 
       <div className="gap-8 space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0">
-        <SmallCard
+        <BigCard
           title="In Orbit"
           description="O projeto é um site desktop de registro de metas com progresso semanal."
           src={InOrbit}
@@ -39,7 +39,7 @@ export function Cards() {
           repository="https://github.com/0kira-vgl/inorbit"
         />
 
-        <SmallCard
+        <BigCard
           title="Planner"
           description="O projeto é um site desktop para montar planos de viagem com amigos, registrar atividades e links úteis."
           src={Planner}
@@ -48,7 +48,7 @@ export function Cards() {
           repository="https://github.com/0kira-vgl/planner"
         />
 
-        <SmallCard
+        <BigCard
           title="ToDo App"
           description="Uma de lista de tarefas onde os usuários podem adicionar, marcar como concluídas e excluir tarefas."
           src={ToDoApp}

@@ -1,9 +1,9 @@
 import Image, { ImageProps } from "next/image";
 import {
+  DemoButton,
   DescriptionCard,
   IconsCard,
-  RepoButtonCard,
-  SiteButtonCard,
+  RepositoryButton,
   TitleCard,
 } from "../projects/cardComponents";
 
@@ -54,8 +54,8 @@ export function SmallCard({
             />
           </div>
           <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-2 lg:space-y-0">
-            <SiteButtonCard hrefLink={demo} />
-            <RepoButtonCard hrefLink={repository} />
+            <DemoButton hrefLink={demo} />
+            <RepositoryButton hrefLink={repository} />
           </div>
         </div>
       </div>
