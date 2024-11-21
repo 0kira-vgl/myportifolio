@@ -10,30 +10,9 @@ import {
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-type TextCard = ComponentProps<"h2"> & {
-  title?: string;
-  description?: string;
-};
-
 type IconsCardProps = ImageProps & {
   alt: string;
   titleicon: ReactNode;
-};
-
-const TitleCard = ({ title }: TextCard) => {
-  return (
-    <h2 className="text-lg font-bold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-50 dark:text-transparent">
-      {title}
-    </h2>
-  );
-};
-
-const DescriptionCard = ({ description }: TextCard) => {
-  return (
-    <p className="mb-3 text-sm text-neutral-500 dark:text-description">
-      {description}
-    </p>
-  );
 };
 
 const IconsCard = ({ alt, titleicon, ...props }: IconsCardProps) => {
@@ -78,4 +57,4 @@ const RepositoryButton = ({ ...props }: ComponentProps<"a">) => {
   );
 };
 
-export { TitleCard, DescriptionCard, IconsCard, DemoButton, RepositoryButton };
+export { IconsCard, DemoButton, RepositoryButton };

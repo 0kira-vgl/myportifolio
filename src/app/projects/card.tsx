@@ -6,13 +6,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import {
-  DemoButton,
-  DescriptionCard,
-  IconsCard,
-  RepositoryButton,
-  TitleCard,
-} from "./cardComponents";
+import { DemoButton, IconsCard, RepositoryButton } from "./cardElements";
 
 type BigCardsProps = ImageProps & {
   title: string;
@@ -35,8 +29,12 @@ export function Card({
           <Image {...props} priority alt="Notes Project" />
         </div>
         <div className="flex grow flex-col p-3">
-          <TitleCard title={title} />
-          <DescriptionCard description={description} />
+          <h2 className="text-lg font-bold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-50 dark:text-transparent">
+            {title}
+          </h2>
+          <p className="mb-3 text-sm text-neutral-500 dark:text-description">
+            {description}
+          </p>
 
           <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
             <div className="flex items-center gap-2">

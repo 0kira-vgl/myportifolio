@@ -2,7 +2,7 @@ import { DiScrum } from "react-icons/di";
 import { LiaLanguageSolid } from "react-icons/lia";
 import { LuLanguages } from "react-icons/lu";
 import { VscTools } from "react-icons/vsc";
-import { IconsCard } from "../projects/cardComponents";
+import { IconsCard } from "../projects/cardElements";
 import { useTranslations } from "next-intl";
 import * as motion from "framer-motion/client";
 
