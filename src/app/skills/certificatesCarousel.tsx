@@ -19,6 +19,7 @@ import PocketPng from "@/assets/certificates/pocket.png";
 import ExpertPng from "@/assets/certificates/expert.png";
 import JourneyPng from "@/assets/certificates/journey.png";
 import UnitePng from "@/assets/certificates/unite.png";
+import PocketMobilePng from "@/assets/certificates/pocketMobile.png";
 
 export function CertificatesCarousel() {
   return (
@@ -130,6 +131,22 @@ export function CertificatesCarousel() {
                 <Image
                   className="rounded-xl p-1.5"
                   src={UnitePng}
+                  loading="lazy"
+                  alt="certificate"
+                />
+              </a>
+            </div>
+          </CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-3/4">
+            <div className="relative flex items-center justify-center overflow-hidden rounded-xl border bg-card text-card-foreground shadow">
+              <a
+                href="/certificates/pocketMobile.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className="rounded-xl p-1.5"
+                  src={PocketMobilePng}
                   loading="lazy"
                   alt="certificate"
                 />
