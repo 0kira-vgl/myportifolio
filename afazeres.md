@@ -8,3 +8,4 @@
 [] Arrumar a linguagem do not-found;
 [] Arrumar padding header in mobileHeader;
 [] Por um "../projects" no canto superior direito das sections;
+[] Deixar os botões dos projetos disabled;
