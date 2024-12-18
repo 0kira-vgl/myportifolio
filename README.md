@@ -35,7 +35,7 @@ If you want to get in touch, send an email to [matheusgtiburcio@gmail.com](mailt
 <div align="center">
  <br/>
 
-  <h3><em>Thank you for visiting my profile <em><h3>
+  <h3><em>Thank you for visiting my portfolio<em><h3>
 
 ![nyanCat](https://github.com/0kira-vgl/0kira-vgl/assets/125319244/14e56882-3974-4021-b790-3e839dca54a1)
 
