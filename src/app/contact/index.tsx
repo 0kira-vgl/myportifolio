@@ -29,9 +29,10 @@ export function Contact() {
 
         <div>
           <a
-            href="/Matheus Tiburcio - CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            // href="/Matheus Tiburcio - CV.pdf"
+            href="#"
+            // target="_blank"
+            // rel="noopener noreferrer"
             className={buttonVariants({
               variant: "outline",
               className: "flex items-center justify-center gap-2",

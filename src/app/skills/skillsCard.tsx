@@ -65,7 +65,7 @@ export function SkillsCard() {
             />
             <IconsCard
               className="size-14"
-              titleicon="ReactJs"
+              titleicon="ReactJs / React Native"
               alt="ReactJs Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             />

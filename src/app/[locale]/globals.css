@@ -107,7 +107,7 @@ body {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #814cc7;
+  background-color: #9333ea;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;

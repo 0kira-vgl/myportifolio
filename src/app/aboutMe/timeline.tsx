@@ -65,7 +65,7 @@ export function Timeline() {
               Avançando com React
             </h3>
             <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              Junho, 2023
+              Junho, 2024
             </time>
             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
               Após explorar JavaScript, comecei a usar React.js, criando
@@ -87,12 +87,12 @@ export function Timeline() {
               </span>
             </h3>
             <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              Janeiro - Atualmente, 2024
+              Janeiro - Atualmente, 2025
             </time>
             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
               Com o tempo, fui consolidando minhas habilidades em programação e
-              comecei a estudar Next.js, expandindo ainda mais meu conhecimento
-              no desenvolvimento web.
+              comecei a estudar Next.js e React Native, expandindo ainda mais
+              meu conhecimento no desenvolvimento web.
             </p>
           </li>
         </motion.div>

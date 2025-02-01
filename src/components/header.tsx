@@ -43,9 +43,9 @@ export function Header() {
         </div>
 
         <div className="flex gap-2.5">
-          <LanguageToggle />
+          {/* <LanguageToggle />
 
-          <div className="w-px bg-zinc-200 dark:bg-zinc-500" />
+          <div className="w-px bg-zinc-200 dark:bg-zinc-500" /> */}
 
           <ToggleTheme />
         </div>

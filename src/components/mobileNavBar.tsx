@@ -71,11 +71,11 @@ export function MobileNavBar() {
               </SheetClose>
             </div>
 
-            <SheetFooter className="mt-4 px-3">
+            {/* <SheetFooter className="mt-4 px-3">
               <div className="flex space-x-2">
                 <LanguageToggle />
               </div>
-            </SheetFooter>
+            </SheetFooter> */}
           </SheetContent>
         </Sheet>
       </div>
