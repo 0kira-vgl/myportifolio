@@ -30,14 +30,22 @@ const IconsCard = ({ alt, titleicon, ...props }: IconsCardProps) => {
   );
 };
 
-const DemoButton = ({ ...props }: ComponentProps<"a">) => {
+type DemoButtonProps = ComponentProps<"a"> & {
+  shortly?: boolean;
+};
+
+const DemoButton = ({ shortly = false, ...props }: DemoButtonProps) => {
   return (
     <a
       {...props}
       target="_blank"
-      className={buttonVariants({ className: "gap-1", variant: "outline" })}
+      className={buttonVariants({
+        className: `gap-1 ${shortly && "pointer-events-none opacity-50"}`,
+        variant: "outline",
+      })}
+      aria-disabled={shortly ? "true" : "false"}
     >
-      Demo
+      {shortly ? "Em breve" : "Demo"}
       <ArrowUpRight className="size-5" />
     </a>
   );

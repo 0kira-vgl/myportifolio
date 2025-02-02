@@ -1,18 +1,47 @@
-import { SiRadixui } from "react-icons/si";
 import Image, { ImageProps } from "next/image";
+import { ReactNode } from "react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { DemoButton, IconsCard, RepositoryButton } from "./cardElements";
+import { DemoButton, RepositoryButton } from "./cardElements";
+
+// Definindo o tipo de ícone para ser usado dinamicamente
+type Icon = {
+  titleicon: ReactNode;
+  alt: string;
+  src: string;
+};
+
+type IconsCardProps = ImageProps & {
+  alt: string;
+  titleicon: ReactNode;
+};
+
+const IconsCard = ({ alt, titleicon, ...props }: IconsCardProps) => {
+  return (
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger>
+          <Image {...props} width={25} height={25} alt={alt} loading="lazy" />
+        </TooltipTrigger>
+        <TooltipContent side="top">
+          <span className="font-semibold">{titleicon}</span>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  );
+};
 
 type BigCardsProps = ImageProps & {
   title: string;
   description: string;
   demo: string;
   repository: string;
+  shortly?: boolean;
+  icons: Icon[]; // Passando a lista de ícones aqui
 };
 
 export function Card({
@@ -20,6 +49,8 @@ export function Card({
   description,
   demo,
   repository,
+  shortly,
+  icons, // Recebe a lista de ícones
   ...props
 }: BigCardsProps) {
   return (
@@ -38,39 +69,18 @@ export function Card({
 
           <div className="mt-auto flex flex-col gap-3 space-y-1.5 lg:flex-row lg:justify-between lg:space-y-0">
             <div className="flex items-center gap-2">
-              <IconsCard
-                titleicon="ReactJs"
-                alt="ReactJs Icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-              />
-              <IconsCard
-                titleicon="TypeScript"
-                alt="TypeScript Icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-              />
-              <IconsCard
-                titleicon="TailwindCSS"
-                alt="TailwindCSS Icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-              />
-              <IconsCard
-                titleicon="ViteJs"
-                alt="ViteJs Icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
-              />
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <SiRadixui className="size-6" />
-                  </TooltipTrigger>
-                  <TooltipContent side="top">
-                    <span className="font-semibold">Radix UI</span>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+              {/* Renderiza os ícones dinamicamente */}
+              {icons.map((icon, index) => (
+                <IconsCard
+                  key={index}
+                  titleicon={icon.titleicon}
+                  alt={icon.alt}
+                  src={icon.src}
+                />
+              ))}
             </div>
             <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
-              <DemoButton href={demo} />
+              <DemoButton href={demo} shortly={shortly} />
               <RepositoryButton href={repository} />
             </div>
           </div>

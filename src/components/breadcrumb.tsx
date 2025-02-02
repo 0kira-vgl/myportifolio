@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 
-interface BreadcrumbProps {
+type BreadcrumbProps = {
   title: string;
-}
+};
 
 export function Breadcrumb({ title }: BreadcrumbProps) {
   return (

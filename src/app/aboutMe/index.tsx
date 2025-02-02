@@ -26,55 +26,57 @@ export function AboutMe() {
 
                 <h1 className="font-mono text-[13px] text-green-400 lg:text-base">
                   <span className="text-yellow-400">$</span> echo{" "}
-                  <span className="text-white">
+                  <span className="text-blue-800 dark:text-white">
                     "Olá, sou Matheus Tiburcio"
                     <span className="animate-pulse duration-700">_</span>
                   </span>
                 </h1>
               </div>
 
-              <div className="rounded-md bg-white p-4 font-mono text-[15px] text-green-400 shadow-lg dark:bg-zinc-950">
+              <div className="rounded-md bg-white p-4 font-mono text-[15px] text-zinc-800 shadow-lg dark:bg-zinc-950 dark:text-zinc-300">
                 Sou estudante do ensino médio e curso{" "}
-                <span className="text-yellow-400">
+                <span className="text-purple-600 dark:text-purple-400">
                   Técnico em Desenvolvimento de Sistemas{" "}
                 </span>
                 na{" "}
-                <span className="text-yellow-400">
+                <span className="text-purple-600 dark:text-purple-400">
                   ETEC Rubens de Faria e Souza
                 </span>
                 . Minha paixão por tecnologia me levou a me especializar no{" "}
-                <span className="text-yellow-400">
+                <span className="text-purple-600 dark:text-purple-400">
                   desenvolvimento front-end
                 </span>
                 , trabalhando com{" "}
-                <span className="text-yellow-400">
+                <span className="text-purple-600 dark:text-purple-400">
                   ReactJS, React Native, Next.js, Tailwind CSS
                 </span>{" "}
                 e outras tecnologias modernas.
                 <br />
                 <br />
                 Já tive a oportunidade de realizar{" "}
-                <span className="text-yellow-400">
+                <span className="text-purple-600 dark:text-purple-400">
                   freelances para o exterior
                 </span>{" "}
                 e construir meu próprio portfólio, um projeto do qual me orgulho
                 muito. No futuro, quero expandir ainda mais minhas habilidades e
                 crescer profissionalmente como desenvolvedor. O que me motiva é
                 a{" "}
-                <span className="text-yellow-400">
+                <span className="text-purple-600 dark:text-purple-400">
                   constante evolução da tecnologia
                 </span>{" "}
                 e as infinitas possibilidades que ela proporciona.
                 <br />
                 <br />
                 Além da programação, gosto de{" "}
-                <span className="text-yellow-400">
+                <span className="text-purple-600 dark:text-purple-400">
                   cozinhar, ler mangás e livros e ir à academia
                 </span>
                 . Meu pai foi uma{" "}
-                <span className="text-yellow-400">grande influência</span> para
-                eu entrar nessa área, e estou sempre em busca de novos desafios
-                e aprendizados.
+                <span className="text-purple-600 dark:text-purple-400">
+                  grande influência
+                </span>{" "}
+                para eu entrar nessa área, e estou sempre em busca de novos
+                desafios e aprendizados.
               </div>
             </div>
           </div>

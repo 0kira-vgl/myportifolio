@@ -4,13 +4,13 @@ import { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 
-interface TitleProps extends ComponentProps<"h2"> {
+type TitleProps = ComponentProps<"h2"> & {
   children: string;
-}
+};
 
-interface SubtitleProps extends ComponentProps<"p"> {
+type SubtitleProps = ComponentProps<"p"> & {
   children: string;
-}
+};
 
 const animProps = {
   initial: { opacity: 0, y: 20 },
