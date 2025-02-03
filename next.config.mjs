@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.jsdelivr.net",
       },
+      {
+        protocol: "https",
+        hostname: "static-00.iconduck.com",
+      },
     ],
   },
 };

@@ -5,7 +5,6 @@ import InOrbit from "@/assets/thumbnails/inOrbit.png";
 import ToDoApp from "@/assets/thumbnails/toDoApp.png";
 import { notes, dailyDiet, pizzaShop, inOrbit, toDoApp } from "./links.json";
 import { Card } from "./card";
-import { SiExpo } from "react-icons/si";
 
 export function Cards() {
   return (
@@ -55,6 +54,11 @@ export function Cards() {
               titleicon: "React Native",
               alt: "React Native Icon",
               src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+            },
+            {
+              titleicon: "Expo",
+              alt: "Expo Icon",
+              src: "https://static-00.iconduck.com/assets.00/expo-icon-512x462-3a87htea.png",
             },
             {
               titleicon: "TypeScript",
