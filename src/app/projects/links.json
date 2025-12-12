@@ -3,17 +3,17 @@
     "demo": "https://nlwnotes.vercel.app/",
     "repository": "https://github.com/0kira-vgl/nlwNotes"
   },
-  "pizzaShop": {
-    "demo": "https://github.com/0kira-vgl",
-    "repository": "https://github.com/0kira-vgl/pizzashop"
+  "readFy": {
+    "demo": "https://github.com/0kira-vgl/readFy",
+    "repository": "https://github.com/0kira-vgl/readFy"
   },
   "dailyDiet": {
     "demo": "https://github.com/0kira-vgl",
     "repository": "https://github.com/0kira-vgl/rnDailyDiet"
   },
-  "inOrbit": {
-    "demo": "https://inorbit-two.vercel.app/",
-    "repository": "https://github.com/0kira-vgl/inorbit"
+  "noteLy": {
+    "demo": "https://linkdrop-rho.vercel.app/",
+    "repository": "https://github.com/0kira-vgl/linkdrop"
   },
   "toDoApp": {
     "demo": "https://to-do-list-0kira-vgl.vercel.app",

@@ -34,7 +34,7 @@ export function AboutMe() {
               </div>
 
               <div className="rounded-md bg-white p-4 font-mono text-[15px] text-zinc-800 shadow-lg dark:bg-zinc-950 dark:text-zinc-300">
-                Sou estudante do ensino médio e curso{" "}
+                Concluí o ensino médio e o curso{" "}
                 <span className="text-purple-600 dark:text-purple-400">
                   Técnico em Desenvolvimento de Sistemas{" "}
                 </span>
@@ -42,7 +42,8 @@ export function AboutMe() {
                 <span className="text-purple-600 dark:text-purple-400">
                   ETEC Rubens de Faria e Souza
                 </span>
-                . Minha paixão por tecnologia me levou a me especializar no{" "}
+                . Desde então, minha paixão por tecnologia me levou a me
+                especializar no{" "}
                 <span className="text-purple-600 dark:text-purple-400">
                   desenvolvimento front-end
                 </span>

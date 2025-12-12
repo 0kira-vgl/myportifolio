@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/tooltip";
 import { DemoButton, RepositoryButton } from "./cardElements";
 
-// Definindo o tipo de ícone para ser usado dinamicamente
+// definindo o tipo de ícone para ser usado dinamicamente
 type Icon = {
   titleicon: ReactNode;
   alt: string;
@@ -41,7 +41,7 @@ type BigCardsProps = ImageProps & {
   demo: string;
   repository: string;
   shortly?: boolean;
-  icons: Icon[]; // Passando a lista de ícones aqui
+  icons: Icon[]; // passando a lista de ícones aqui
 };
 
 export function Card({

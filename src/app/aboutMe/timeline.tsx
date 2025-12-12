@@ -92,7 +92,7 @@ export function Timeline() {
             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
               Com o tempo, fui consolidando minhas habilidades em programação e
               comecei a estudar Next.js e React Native, expandindo ainda mais
-              meu conhecimento no desenvolvimento web.
+              meu conhecimento no desenvolvimento front end.
             </p>
           </li>
         </motion.div>

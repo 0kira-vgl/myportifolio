@@ -1,9 +1,9 @@
 import Notes from "@/assets/thumbnails/notes.png";
 import DailyDiet from "@/assets/thumbnails/dailyDiet.png";
-import PizzaShop from "@/assets/thumbnails/pizzaShop.png";
-import InOrbit from "@/assets/thumbnails/inOrbit.png";
+import ReadFy from "@/assets/thumbnails/readFy.png";
+import NoteLy from "@/assets/thumbnails/noteLy.png";
 import ToDoApp from "@/assets/thumbnails/toDoApp.png";
-import { notes, dailyDiet, pizzaShop, inOrbit, toDoApp } from "./links.json";
+import { notes, dailyDiet, readFy, noteLy, toDoApp } from "./links.json";
 import { Card } from "./card";
 
 export function Cards() {
@@ -58,7 +58,7 @@ export function Cards() {
             {
               titleicon: "Expo",
               alt: "Expo Icon",
-              src: "https://static-00.iconduck.com/assets.00/expo-icon-512x462-3a87htea.png",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
             },
             {
               titleicon: "TypeScript",
@@ -107,17 +107,48 @@ export function Cards() {
         />
 
         <Card
-          title="PizzaShop"
-          description="O Pizza Shop é um dashboard para lojistas de restaurantes, com métricas de pedidos, gráficos, acompanhar e gerenciar pedidos."
-          src={PizzaShop}
-          alt="PizzaShop Project Project"
-          demo={pizzaShop.demo}
+          title="ReadFy"
+          description="Este é o projeto do meu TCC, um app que visa incentivar a leitura por meio de metas, lista de livros, lembretes e mais!"
+          src={ReadFy}
+          alt="ReadFy Project"
+          demo={readFy.demo}
           shortly={true}
-          repository={pizzaShop.repository}
+          repository={readFy.repository}
+          icons={[
+            {
+              titleicon: "React Native",
+              alt: "React Native Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+            },
+            {
+              titleicon: "Expo",
+              alt: "Expo Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
+            },
+            {
+              titleicon: "TypeScript",
+              alt: "TypeScript Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+            },
+            {
+              titleicon: "TailwindCSS",
+              alt: "TailwindCSS Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+            },
+          ]}
+        />
+
+        <Card
+          title="NoteLy"
+          description="Um bloco de notas minimalista com login e proteção por senha para suas anotações. Ainda em desenvolvimento."
+          src={NoteLy}
+          alt="NoteLy Project"
+          demo={noteLy.demo}
+          repository={noteLy.repository}
           icons={[
             {
               titleicon: "NextJs",
-              alt: "React Icon",
+              alt: "NextJs Icon",
               src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
             },
             {
@@ -129,43 +160,6 @@ export function Cards() {
               titleicon: "TailwindCSS",
               alt: "TailwindCSS Icon",
               src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-            },
-            {
-              titleicon: "ViteJs",
-              alt: "ViteJs Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
-            },
-          ]}
-        />
-
-        <Card
-          title="In Orbit"
-          description="O NLW InOrbit permite criar e gerenciar desafios de diário, com interface interativa, integração com APIs e visualização do progresso do usuário."
-          src={InOrbit}
-          alt="InOrbit Project"
-          demo={inOrbit.demo}
-          shortly={true}
-          repository={inOrbit.repository}
-          icons={[
-            {
-              titleicon: "ReactJs",
-              alt: "React Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            },
-            {
-              titleicon: "TypeScript",
-              alt: "TypeScript Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-            },
-            {
-              titleicon: "TailwindCSS",
-              alt: "TailwindCSS Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-            },
-            {
-              titleicon: "ViteJs",
-              alt: "ViteJs Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
             },
           ]}
         />
