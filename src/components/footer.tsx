@@ -1,12 +1,14 @@
 import { Separator } from "./ui/separator";
 
 export function Footer() {
-  return (
-    <footer className="flex flex-col items-center justify-center text-center lg:mt-auto">
-      <Separator />
+  const currentYear = new Date().getFullYear();
 
-      <span className="py-3 font-code text-sm text-zinc-800 lg:text-lg">
-        © 2024 - Design and Code by Matheus Tiburcio.
+  return (
+    <footer className="mt-16 flex flex-col items-center justify-center text-center">
+      <Separator />
+      <span className="py-5 font-code text-sm text-zinc-600 dark:text-zinc-400 lg:text-base">
+        © 2024{currentYear > 2024 ? `–${currentYear}` : ""} - Design and Code
+        by Matheus Tiburcio.
       </span>
     </footer>
   );

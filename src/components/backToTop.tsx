@@ -10,6 +10,7 @@ export const BackToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   const handleScroll = useCallback(() => {
     if (!show && window.scrollY > 500) setShow(true);
     if (show && window.scrollY <= 500) setShow(false);
@@ -24,17 +25,19 @@ export const BackToTop = () => {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="fixed bottom-4 right-4 z-20"
-          initial={{ opacity: 0, right: -10 }}
-          animate={{ opacity: 1, right: 16 }}
-          exit={{ opacity: 0, right: -10 }}
+          className="fixed bottom-6 right-6 z-20"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 10 }}
+          transition={{ duration: 0.2 }}
         >
-          <div
+          <button
             onClick={scrollToTop}
-            className="flex cursor-pointer items-center justify-center rounded-full border bg-white p-1 shadow-sm dark:bg-zinc-950"
+            aria-label="Back to top"
+            className="flex size-10 cursor-pointer items-center justify-center rounded-full border border-zinc-200 bg-white shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
           >
-            <RxDoubleArrowUp className="size-8 text-slate-800 dark:text-zinc-50 lg:size-9" />
-          </div>
+            <RxDoubleArrowUp className="size-4 text-zinc-700 dark:text-zinc-200" />
+          </button>
         </motion.div>
       )}
     </AnimatePresence>

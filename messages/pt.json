@@ -18,7 +18,35 @@
 
   "AboutMe": {
     "title": "Sobre mim",
-    "subtitle": "Conheça a história por trás do desenvolvedor, a essência do código"
+    "subtitle": "Conheça a história por trás do desenvolvedor, a essência do código",
+    "terminalGreeting": "Olá, sou Matheus Tiburcio",
+    "bio1": "Tenho o curso <highlight>Técnico em Desenvolvimento de Sistemas</highlight> pela <highlight>ETEC Rubens de Faria e Souza</highlight> e estou cursando <highlight>Ciência da Computação</highlight>. Minha paixão por tecnologia me levou a me especializar no <highlight>desenvolvimento front-end</highlight>, trabalhando com <highlight>ReactJS, React Native, Next.js, Tailwind CSS</highlight> e outras tecnologias modernas.",
+    "bio2": "Já tive a oportunidade de realizar <highlight>freelances para o exterior</highlight> e atualmente trabalho como <highlight>estagiário em uma software house</highlight>. O que me motiva é a <highlight>constante evolução da tecnologia</highlight> e as infinitas possibilidades que ela proporciona.",
+    "bio3": "Além da programação, gosto de <highlight>cozinhar, ler mangás e livros e ir à academia</highlight>. Meu pai foi uma <highlight>grande influência</highlight> para eu entrar nessa área, e estou sempre em busca de novos desafios e aprendizados."
+  },
+
+  "Timeline": {
+    "item1": {
+      "title": "O Início",
+      "date": "Janeiro, 2023",
+      "description": "Comecei na programação com HTML e CSS, criando pequenas páginas e descobrindo a magia de dar vida às ideias na web."
+    },
+    "item2": {
+      "title": "Explorando o JavaScript",
+      "date": "Fevereiro, 2023",
+      "description": "Dei meus primeiros passos com JavaScript, evoluindo para o React e desenvolvendo aplicações cada vez mais dinâmicas e interativas."
+    },
+    "item3": {
+      "title": "Avançando com React",
+      "date": "Junho, 2024",
+      "description": "Aprofundei meus conhecimentos adotando Next.js, integração com APIs, deploy de aplicações e boas práticas como Clean Architecture e padrões de código mais robustos."
+    },
+    "item4": {
+      "title": "Novos Horizontes",
+      "date": "2024 — Atualmente",
+      "badge": "Atualmente",
+      "description": "Construindo minha carreira como estagiário em uma software house, realizando freelances para o exterior e aprimorando meu domínio em Next.js e arquiteturas modernas. Paralelamente, expando minha base técnica através do curso de Ciência da Computação."
+    }
   },
 
   "Skills": {

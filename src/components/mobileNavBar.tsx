@@ -1,3 +1,5 @@
+"use client";
+
 import { ToggleTheme } from "./toggleTheme";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -12,10 +14,23 @@ import {
 } from "@/components/ui/sheet";
 import { LanguageToggle } from "./languageToggle";
 import { useTranslations } from "next-intl";
+import { useActiveSection } from "@/hooks/useActiveSection";
+import { cn } from "@/lib/utils";
 import * as motion from "framer-motion/client";
+
+const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 
 export function MobileNavBar() {
   const t = useTranslations("Header");
+  const active = useActiveSection();
+
+  const links: { key: (typeof SECTIONS)[number]; label: string }[] = [
+    { key: "home", label: t("home") },
+    { key: "aboutMe", label: t("aboutMe") },
+    { key: "skills", label: t("skills") },
+    { key: "projects", label: t("projects") },
+    { key: "contact", label: t("contact") },
+  ];
 
   return (
     <motion.header
@@ -50,32 +65,28 @@ export function MobileNavBar() {
             </div>
 
             <div className="flex flex-col space-y-4 px-3 text-2xl">
-              <SheetClose asChild>
-                <Link href="#home">{t("home")}</Link>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <Link href="#aboutMe">{t("aboutMe")}</Link>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <Link href="#skills">{t("skills")}</Link>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <Link href="#projects">{t("projects")}</Link>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <Link href="#contact">{t("contact")}</Link>
-              </SheetClose>
+              {links.map(({ key, label }) => (
+                <SheetClose key={key} asChild>
+                  <Link
+                    href={`#${key}`}
+                    className={cn(
+                      "transition-colors duration-200",
+                      active === key
+                        ? "text-purple-500 dark:text-purple-400"
+                        : "text-zinc-600 dark:text-zinc-300",
+                    )}
+                  >
+                    {label}
+                  </Link>
+                </SheetClose>
+              ))}
             </div>
 
-            {/* <SheetFooter className="mt-4 px-3">
+            <SheetFooter className="mt-4 px-3">
               <div className="flex space-x-2">
                 <LanguageToggle />
               </div>
-            </SheetFooter> */}
+            </SheetFooter>
           </SheetContent>
         </Sheet>
       </div>
