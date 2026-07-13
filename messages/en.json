@@ -89,5 +89,11 @@
 
     "quote": "The mind should be as flexible as water, to adapt and overcome.",
     "button": "View my resume"
+  },
+
+  "Footer": {
+    "tagline": "Front-end developer dedicated to building fast, accessible interfaces with careful attention to detail.",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
   }
 }

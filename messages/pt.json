@@ -89,5 +89,11 @@
 
     "quote": "A mente deve ser flexível como a água, para se adaptar e superar.",
     "button": "Veja meu currículo"
+  },
+
+  "Footer": {
+    "tagline": "Desenvolvedor Front-end dedicado a construir interfaces rápidas, acessíveis e cuidadas nos detalhes.",
+    "contactTitle": "Contato",
+    "rights": "Todos os direitos reservados."
   }
 }
