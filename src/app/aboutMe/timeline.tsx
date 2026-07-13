@@ -13,6 +13,7 @@ export function Timeline() {
   const animationProps = {
     initial: { opacity: 0, y: 50 },
     whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
     transition: { duration: 0.5, ease: "easeInOut", delay: 0.1 },
   };
 
@@ -22,6 +23,7 @@ export function Timeline() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <li className="mb-10 ms-6">

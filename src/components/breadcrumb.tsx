@@ -12,6 +12,7 @@ export function Breadcrumb({ title }: BreadcrumbProps) {
       <motion.span
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.4, ease: "easeOut" }}
         className="font-mono text-sm text-slate-800 dark:text-zinc-500"
       >

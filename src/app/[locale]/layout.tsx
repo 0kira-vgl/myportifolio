@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Inconsolata } from "next/font/google";
 import { ThemeProvider } from "next-themes";
-import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { LocaleSwitchProvider } from "@/providers/localeSwitchProvider";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,9 +32,12 @@ export default async function RootLayout({
     >
       <body className={inter.className}>
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-          <NextIntlClientProvider messages={messages}>
+          <LocaleSwitchProvider
+            initialLocale={locale as "en" | "pt"}
+            initialMessages={messages}
+          >
             {children}
-          </NextIntlClientProvider>
+          </LocaleSwitchProvider>
         </ThemeProvider>
       </body>
     </html>

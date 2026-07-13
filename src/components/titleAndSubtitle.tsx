@@ -15,6 +15,7 @@ type SubtitleProps = ComponentProps<"p"> & {
 const animProps = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
 };
 
 const Title = (props: TitleProps) => {

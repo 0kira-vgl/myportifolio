@@ -1,17 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { usePathname, useRouter } from "@/routing";
-import { useLocale } from "next-intl";
+import { useLocaleSwitch } from "@/providers/localeSwitchProvider";
 
 export function LanguageToggle() {
-  const pathname = usePathname();
-  const router = useRouter();
-  const locale = useLocale();
+  const { locale, switchLocale } = useLocaleSwitch();
 
   const toggleLanguage = () => {
-    sessionStorage.setItem("scrollY", String(window.scrollY));
-    router.replace(pathname, { locale: locale === "pt" ? "en" : "pt" });
+    switchLocale(locale === "pt" ? "en" : "pt");
   };
 
   return (
