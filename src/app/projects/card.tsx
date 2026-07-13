@@ -41,6 +41,7 @@ type BigCardsProps = ImageProps & {
   demo: string;
   repository: string;
   shortly?: boolean;
+  priority?: boolean;
   icons: Icon[]; // passando a lista de ícones aqui
 };
 
@@ -50,6 +51,7 @@ export function Card({
   demo,
   repository,
   shortly,
+  priority,
   icons, // Recebe a lista de ícones
   ...props
 }: BigCardsProps) {
@@ -57,7 +59,7 @@ export function Card({
     <div className="flex rounded-xl border shadow-lg transition-transform duration-500 hover:scale-[1.03]">
       <div className="p-2">
         <div className="aspect-video overflow-hidden rounded-lg">
-          <Image {...props} priority alt="Notes Project" />
+          <Image {...props} priority={priority} alt="Notes Project" />
         </div>
         <div className="flex grow flex-col p-3">
           <h2 className="text-lg font-bold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-neutral-50 dark:text-transparent">

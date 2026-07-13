@@ -1,11 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 export type SectionId = (typeof SECTIONS)[number];
 
-export function useActiveSection() {
+const ActiveSectionContext = createContext<SectionId>("home");
+
+export function ActiveSectionProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [active, setActive] = useState<SectionId>("home");
 
   useEffect(() => {
@@ -39,5 +45,13 @@ export function useActiveSection() {
     return () => observers.forEach((o) => o?.disconnect());
   }, []);
 
-  return active;
+  return (
+    <ActiveSectionContext.Provider value={active}>
+      {children}
+    </ActiveSectionContext.Provider>
+  );
+}
+
+export function useActiveSection() {
+  return useContext(ActiveSectionContext);
 }

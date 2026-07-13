@@ -1,8 +1,12 @@
-import { CertificatesCarousel } from "./certificatesCarousel";
+import dynamic from "next/dynamic";
 import { SkillsCard } from "./skillsCard";
 import { useTranslations } from "next-intl";
 import { Title, Subtitle } from "../../components/titleAndSubtitle";
 import * as motion from "framer-motion/client";
+
+const CertificatesCarousel = dynamic(() =>
+  import("./certificatesCarousel").then((mod) => mod.CertificatesCarousel),
+);
 
 export function Skills() {
   const t = useTranslations("Skills");

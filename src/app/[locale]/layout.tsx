@@ -28,6 +28,7 @@ export default async function RootLayout({
     <html
       className={`scroll-pt-24 scroll-smooth antialiased ${inconsolata.variable}`}
       lang={locale}
+      suppressHydrationWarning
     >
       <body className={inter.className}>
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">

@@ -1,25 +1,34 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { RxDoubleArrowUp } from "react-icons/rx";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const BackToTop = () => {
   const [show, setShow] = useState(false);
+  const showRef = useRef(show);
+  showRef.current = show;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleScroll = useCallback(() => {
-    if (!show && window.scrollY > 500) setShow(true);
-    if (show && window.scrollY <= 500) setShow(false);
-  }, [show]);
-
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        if (!showRef.current && window.scrollY > 500) setShow(true);
+        if (showRef.current && window.scrollY <= 500) setShow(false);
+        ticking = false;
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+  }, []);
 
   return (
     <AnimatePresence>

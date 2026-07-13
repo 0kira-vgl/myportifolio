@@ -20,7 +20,14 @@ const IconsCard = ({ alt, titleicon, ...props }: IconsCardProps) => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger>
-          <Image {...props} width={25} height={25} alt={alt} loading="lazy" />
+          <Image
+            {...props}
+            width={25}
+            height={25}
+            alt={alt}
+            loading="lazy"
+            unoptimized
+          />
         </TooltipTrigger>
         <TooltipContent side="top">
           <span className="font-semibold">{titleicon}</span>

@@ -7,10 +7,11 @@ import { Skills } from "@/app/skills";
 import { AboutMe } from "@/app/aboutMe";
 import { BackToTop } from "@/components/backToTop";
 import { ScrollRestorer } from "@/components/scrollRestorer";
+import { ActiveSectionProvider } from "@/hooks/useActiveSection";
 
 export default function Home() {
   return (
-    <>
+    <ActiveSectionProvider>
       <ScrollRestorer />
       <Header />
       <MobileNavBar />
@@ -20,6 +21,6 @@ export default function Home() {
       <Projects />
       <Contact />
       <BackToTop />
-    </>
+    </ActiveSectionProvider>
   );
 }

@@ -17,6 +17,7 @@ export function Cards() {
           alt="Notes Project"
           demo={notes.demo}
           repository={notes.repository}
+          priority
           icons={[
             {
               titleicon: "ReactJs",
