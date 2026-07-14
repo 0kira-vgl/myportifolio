@@ -12,6 +12,8 @@ import {
 import Image from "next/image";
 import * as motion from "framer-motion/client";
 
+const AUTOPLAY_DELAY = 3500;
+
 // certificates images
 import DiscoverPng from "@/assets/certificates/discover.png";
 import IAPng from "@/assets/certificates/ia.png";
@@ -36,7 +38,7 @@ export function CertificatesCarousel() {
         }}
         plugins={[
           Autoplay({
-            delay: 3500,
+            delay: AUTOPLAY_DELAY,
           }),
         ]}
         className="w-full max-w-xl"
@@ -157,7 +159,7 @@ export function CertificatesCarousel() {
         </CarouselContent>
         <CarouselPrevious className="hidden lg:flex" />
         <CarouselNext className="hidden lg:flex" />
-        <CarouselIndicators />
+        <CarouselIndicators autoplayDelay={AUTOPLAY_DELAY} />
       </Carousel>
     </motion.div>
   );

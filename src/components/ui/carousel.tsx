@@ -31,6 +31,8 @@ type CarouselContextProps = {
   selectedIndex: number;
   scrollSnaps: number[];
   scrollTo: (index: number) => void;
+  isHovering: boolean;
+  autoplayResetKey: number;
 } & CarouselProps;
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);
@@ -72,6 +74,13 @@ const Carousel = React.forwardRef<
     const [canScrollNext, setCanScrollNext] = React.useState(false);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
     const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
+    const [isHovering, setIsHovering] = React.useState(false);
+    const [autoplayResetKey, setAutoplayResetKey] = React.useState(0);
+    const elapsedBeforePauseRef = React.useRef(0);
+    const resumedAtRef = React.useRef(Date.now());
+    const resumeTimeoutRef = React.useRef<ReturnType<typeof setTimeout> | null>(
+      null,
+    );
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -97,6 +106,32 @@ const Carousel = React.forwardRef<
       },
       [api],
     );
+
+    const handleMouseEnter = React.useCallback(() => {
+      if (resumeTimeoutRef.current) {
+        clearTimeout(resumeTimeoutRef.current);
+        resumeTimeoutRef.current = null;
+      }
+      elapsedBeforePauseRef.current += Date.now() - resumedAtRef.current;
+      setIsHovering(true);
+      api?.plugins().autoplay?.stop();
+    }, [api]);
+
+    const handleMouseLeave = React.useCallback(() => {
+      resumedAtRef.current = Date.now();
+      setIsHovering(false);
+
+      const autoplay = api?.plugins().autoplay;
+      const delay =
+        (autoplay?.options as { delay?: number } | undefined)?.delay ?? 3500;
+      const remaining = Math.max(delay - elapsedBeforePauseRef.current, 0);
+
+      resumeTimeoutRef.current = setTimeout(() => {
+        resumeTimeoutRef.current = null;
+        api?.scrollNext();
+        autoplay?.play();
+      }, remaining);
+    }, [api]);
 
     const handleKeyDown = React.useCallback(
       (event: React.KeyboardEvent<HTMLDivElement>) => {
@@ -134,6 +169,24 @@ const Carousel = React.forwardRef<
       };
     }, [api, onSelect]);
 
+    React.useEffect(() => {
+      if (resumeTimeoutRef.current) {
+        clearTimeout(resumeTimeoutRef.current);
+        resumeTimeoutRef.current = null;
+      }
+      elapsedBeforePauseRef.current = 0;
+      resumedAtRef.current = Date.now();
+      setAutoplayResetKey((key) => key + 1);
+    }, [selectedIndex]);
+
+    React.useEffect(() => {
+      return () => {
+        if (resumeTimeoutRef.current) {
+          clearTimeout(resumeTimeoutRef.current);
+        }
+      };
+    }, []);
+
     return (
       <CarouselContext.Provider
         value={{
@@ -149,11 +202,15 @@ const Carousel = React.forwardRef<
           selectedIndex,
           scrollSnaps,
           scrollTo,
+          isHovering,
+          autoplayResetKey,
         }}
       >
         <div
           ref={ref}
           onKeyDownCapture={handleKeyDown}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
           className={cn("relative", className)}
           role="region"
           aria-roledescription="carousel"
@@ -269,22 +326,37 @@ const CarouselNext = React.forwardRef<
 });
 CarouselNext.displayName = "CarouselNext";
 
-const CarouselIndicators = () => {
-  const { selectedIndex, scrollSnaps, scrollTo } = useCarousel();
+const CarouselIndicators = ({
+  autoplayDelay = 3500,
+}: {
+  autoplayDelay?: number;
+}) => {
+  const { selectedIndex, scrollSnaps, scrollTo, isHovering, autoplayResetKey } =
+    useCarousel();
 
   return (
-    <div className="mt-4 flex justify-center">
+    <div className="mt-4 flex items-center justify-center gap-2">
       {scrollSnaps.map((_, index) => (
         <button
           key={index}
-          className={`mx-1 h-3 w-3 rounded-full border-2 ${
-            index === selectedIndex
-              ? "border-primary bg-primary"
-              : "border-muted bg-muted"
-          }`}
+          className={cn(
+            "relative h-2 overflow-hidden rounded-full bg-muted transition-all duration-300",
+            index === selectedIndex ? "w-8" : "w-2",
+          )}
           onClick={() => scrollTo(index)}
           aria-label={`Go to slide ${index + 1}`}
-        />
+        >
+          {index === selectedIndex && (
+            <span
+              key={autoplayResetKey}
+              className="absolute inset-y-0 left-0 block rounded-full bg-primary animate-carousel-progress"
+              style={{
+                animationDuration: `${autoplayDelay}ms`,
+                animationPlayState: isHovering ? "paused" : "running",
+              }}
+            />
+          )}
+        </button>
       ))}
     </div>
   );
