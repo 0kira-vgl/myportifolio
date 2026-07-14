@@ -3,7 +3,13 @@
 import { Button } from "@/components/ui/button";
 import { useLocaleSwitch } from "@/providers/localeSwitchProvider";
 
-export function LanguageToggle() {
+import { cn } from "@/lib/utils";
+
+interface LanguageToggleProps {
+  className?: string;
+}
+
+export function LanguageToggle({ className }: LanguageToggleProps) {
   const { locale, switchLocale } = useLocaleSwitch();
 
   const toggleLanguage = () => {
@@ -11,7 +17,7 @@ export function LanguageToggle() {
   };
 
   return (
-    <Button variant="outline" size="icon" onClick={toggleLanguage}>
+    <Button variant="outline" size="icon" className={cn("rounded-full", className)} onClick={toggleLanguage}>
       <span className="text-xs font-bold transition-all">
         {locale === "pt" ? "EN" : "PT"}
       </span>

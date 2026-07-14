@@ -17,6 +17,7 @@ import { useTranslations } from "next-intl";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { cn } from "@/lib/utils";
 import * as motion from "framer-motion/client";
+import { Button } from "@/components/ui/button";
 
 const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 
@@ -37,58 +38,67 @@ export function MobileNavBar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.4 }}
-      className="sticky top-0 z-50 w-full p-2 py-4 text-center text-zinc-600 backdrop-blur-sm dark:text-zinc-50 lg:hidden"
+      className="fixed inset-x-0 top-4 z-50 flex justify-center px-4 lg:hidden"
     >
-      <div className="flex items-center justify-center gap-x-7">
-        <Sheet>
-          <SheetTrigger>
-            <div>
-              <RxHamburgerMenu className="size-9 cursor-pointer" />
-            </div>
-          </SheetTrigger>
+      <div className="flex w-full max-w-[480px] items-center justify-between rounded-full bg-white/70 dark:bg-zinc-950/60 py-1.5 pl-5 pr-1.5 border border-zinc-200/50 dark:border-zinc-800/50 shadow-lg backdrop-blur-lg">
+        <NameLogo className="text-xl" />
 
-          <NameLogo className="text-3xl" />
+        <div className="flex items-center gap-x-1.5">
+          <ToggleTheme className="border-none bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800" />
+          
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full h-9 w-9 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                aria-label="Menu"
+              >
+                <RxHamburgerMenu className="size-5 text-zinc-600 dark:text-zinc-300" />
+              </Button>
+            </SheetTrigger>
 
-          <ToggleTheme />
+            <SheetContent side="right" className="w-[80vw] max-w-[300px]">
+              <SheetHeader>
+                <div className="py-5 flex justify-center">
+                  <SheetClose asChild>
+                    <NameLogo className="text-2xl" />
+                  </SheetClose>
+                </div>
+              </SheetHeader>
 
-          <SheetContent side="left">
-            <SheetHeader>
-              <div className="py-5">
-                <SheetClose asChild>
-                  <NameLogo className="text-3xl" />
-                </SheetClose>
+              <div className="mb-6 px-3 text-center text-lg">
+                <h2 className="font-semibold text-zinc-500 dark:text-zinc-400">
+                  {t("navegationTitle")}
+                </h2>
               </div>
-            </SheetHeader>
 
-            <div className="mb-4 px-3 text-xl">
-              <h2 className="font-semibold">{t("navegationTitle")}</h2>
-            </div>
-
-            <div className="flex flex-col space-y-4 px-3 text-2xl">
-              {links.map(({ key, label }) => (
-                <SheetClose key={key} asChild>
-                  <Link
-                    href={`#${key}`}
-                    className={cn(
-                      "transition-colors duration-200",
-                      active === key
-                        ? "text-purple-500 dark:text-purple-400"
-                        : "text-zinc-600 dark:text-zinc-300",
-                    )}
-                  >
-                    {label}
-                  </Link>
-                </SheetClose>
-              ))}
-            </div>
-
-            <SheetFooter className="mt-4 px-3">
-              <div className="flex space-x-2">
-                <LanguageToggle />
+              <div className="flex flex-col items-center space-y-5 px-3 text-xl font-medium">
+                {links.map(({ key, label }) => (
+                  <SheetClose key={key} asChild>
+                    <Link
+                      href={`#${key}`}
+                      className={cn(
+                        "transition-colors duration-200 py-1.5 w-full text-center rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-900",
+                        active === key
+                          ? "text-purple-500 dark:text-purple-400 font-semibold"
+                          : "text-zinc-600 dark:text-zinc-300",
+                      )}
+                    >
+                      {label}
+                    </Link>
+                  </SheetClose>
+                ))}
               </div>
-            </SheetFooter>
-          </SheetContent>
-        </Sheet>
+
+              <SheetFooter className="mt-8 flex justify-center px-3">
+                <div className="flex justify-center w-full">
+                  <LanguageToggle />
+                </div>
+              </SheetFooter>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </motion.header>
   );
