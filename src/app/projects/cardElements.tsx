@@ -1,3 +1,5 @@
+"use client";
+
 import Image, { ImageProps } from "next/image";
 import { ComponentProps, ReactNode } from "react";
 import { buttonVariants } from "../../components/ui/button";

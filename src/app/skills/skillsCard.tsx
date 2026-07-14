@@ -1,3 +1,5 @@
+"use client";
+
 import { DiScrum } from "react-icons/di";
 import { LiaLanguageSolid } from "react-icons/lia";
 import { LuLanguages } from "react-icons/lu";

@@ -1,3 +1,5 @@
+"use client";
+
 import { Title, Subtitle } from "../../components/titleAndSubtitle";
 import { Timeline } from "./timeline";
 import { useTranslations } from "next-intl";

@@ -1,3 +1,5 @@
+"use client";
+
 import { SocialLinks } from "./socialLinks";
 import { buttonVariants } from "../../components/ui/button";
 import { LuFileSpreadsheet } from "react-icons/lu";

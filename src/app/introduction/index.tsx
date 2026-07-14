@@ -1,3 +1,5 @@
+"use client";
+
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { IntroButtons } from "./introButtons";
 import { useTranslations } from "next-intl";

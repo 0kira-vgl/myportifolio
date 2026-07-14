@@ -1,3 +1,5 @@
+"use client";
+
 import dynamic from "next/dynamic";
 import { SkillsCard } from "./skillsCard";
 import { useTranslations } from "next-intl";
