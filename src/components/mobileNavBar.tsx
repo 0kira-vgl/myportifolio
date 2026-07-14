@@ -18,6 +18,9 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import { cn } from "@/lib/utils";
 import * as motion from "framer-motion/client";
 import { Button } from "@/components/ui/button";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { LuFileSpreadsheet } from "react-icons/lu";
 
 const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 
@@ -44,8 +47,6 @@ export function MobileNavBar() {
         <NameLogo className="text-xl" />
 
         <div className="flex items-center gap-x-1.5">
-          <ToggleTheme className="border-none bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800" />
-          
           <Sheet>
             <SheetTrigger asChild>
               <Button
@@ -58,44 +59,100 @@ export function MobileNavBar() {
               </Button>
             </SheetTrigger>
 
-            <SheetContent side="right" className="w-[80vw] max-w-[300px]">
-              <SheetHeader>
-                <div className="py-5 flex justify-center">
-                  <SheetClose asChild>
-                    <NameLogo className="text-2xl" />
-                  </SheetClose>
+            <SheetContent
+              side="right"
+              className="w-[85vw] max-w-[360px] border-l border-zinc-200/40 dark:border-zinc-800/40 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-2xl flex flex-col justify-between p-6 pt-16 shadow-2xl h-full"
+            >
+              <div className="flex flex-col flex-1">
+                {/* Header */}
+                <div className="flex justify-between items-center mb-8 pb-4 border-b border-zinc-100 dark:border-zinc-900">
+                  <NameLogo className="text-xl" />
                 </div>
-              </SheetHeader>
 
-              <div className="mb-6 px-3 text-center text-lg">
-                <h2 className="font-semibold text-zinc-500 dark:text-zinc-400">
-                  {t("navegationTitle")}
-                </h2>
-              </div>
+                {/* Navigation Links */}
+                <div className="mb-6">
+                  <h4 className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-4">
+                    {t("navegationTitle")}
+                  </h4>
+                  <nav className="flex flex-col gap-y-1">
+                    {links.map(({ key, label }, index) => (
+                      <SheetClose key={key} asChild>
+                        <Link
+                          href={`#${key}`}
+                          className={cn(
+                            "group flex items-baseline gap-x-4 py-3 border-b border-zinc-100/50 dark:border-zinc-900/50 w-full text-left transition-all duration-300",
+                            active === key
+                              ? "text-purple-500 dark:text-purple-400 font-semibold"
+                              : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:pl-2"
+                          )}
+                        >
+                          <span className="font-mono text-xs text-zinc-300 dark:text-zinc-700 group-hover:text-purple-500 transition-colors">
+                            0{index + 1}
+                          </span>
+                          <span className="text-xl tracking-tight transition-transform">
+                            {label}
+                          </span>
+                        </Link>
+                      </SheetClose>
+                    ))}
+                  </nav>
+                </div>
 
-              <div className="flex flex-col items-center space-y-5 px-3 text-xl font-medium">
-                {links.map(({ key, label }) => (
-                  <SheetClose key={key} asChild>
-                    <Link
-                      href={`#${key}`}
-                      className={cn(
-                        "transition-colors duration-200 py-1.5 w-full text-center rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-900",
-                        active === key
-                          ? "text-purple-500 dark:text-purple-400 font-semibold"
-                          : "text-zinc-600 dark:text-zinc-300",
-                      )}
+                {/* Social Links */}
+                <div className="mt-auto">
+                  <h4 className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-4">
+                    Conectar / Connect
+                  </h4>
+                  <div className="flex gap-x-3 mb-4">
+                    <a
+                      href="https://github.com/0kira-vgl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
                     >
-                      {label}
-                    </Link>
-                  </SheetClose>
-                ))}
+                      <FaGithub className="size-4.5" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
+                    >
+                      <FaLinkedinIn className="size-4.5" />
+                    </a>
+                    <a
+                      href="mailto:matheusgtiburcio@gmail.com"
+                      aria-label="Email"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
+                    >
+                      <MdOutlineMailOutline className="size-4.5" />
+                    </a>
+                    <a
+                      href="/Matheus Tiburcio - CV.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Download CV"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
+                    >
+                      <LuFileSpreadsheet className="size-4.5" />
+                    </a>
+                  </div>
+                </div>
               </div>
 
-              <SheetFooter className="mt-8 flex justify-center px-3">
-                <div className="flex justify-center w-full">
-                  <LanguageToggle />
+              {/* Preferences Footer */}
+              <div className="mt-6 flex items-center justify-between rounded-2xl bg-zinc-50/80 dark:bg-zinc-900/50 p-4 border border-zinc-100 dark:border-zinc-800/80 w-full shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                  Preferências
+                </span>
+                <div className="flex items-center gap-x-2">
+                  <LanguageToggle className="bg-background border-zinc-200/50 dark:border-zinc-800/50 shadow-sm rounded-full" />
+                  <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-800" />
+                  <ToggleTheme className="bg-background border-zinc-200/50 dark:border-zinc-800/50 shadow-sm rounded-full" />
                 </div>
-              </SheetFooter>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
