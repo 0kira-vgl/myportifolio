@@ -62,11 +62,11 @@ function PortfolioMark({ className }: { className?: string }) {
   );
 }
 
-interface NameLogoProps extends ComponentProps<"h3"> {
-  children?: string;
+interface NameLogoProps extends ComponentProps<"a"> {
+  children?: never;
 }
 
-export function NameLogo(props: NameLogoProps) {
+export function NameLogo({ className, ...props }: NameLogoProps) {
   return (
     <a
       href="#home"
@@ -74,15 +74,10 @@ export function NameLogo(props: NameLogoProps) {
         e.preventDefault();
         scrollToSection("home");
       }}
-      className="group flex items-center gap-2.5"
+      {...props}
+      className={twMerge("group inline-flex items-center", className)}
     >
       <PortfolioMark className="h-8 w-8 shrink-0 transition-transform duration-300 ease-out group-hover:scale-105 md:h-9 md:w-9" />
-      <h3
-        {...props}
-        className={twMerge("text-shadow font-mono text-4xl", props.className)}
-      >
-        &lt;Matheus /&gt;
-      </h3>
     </a>
   );
 }

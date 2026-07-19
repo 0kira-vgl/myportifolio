@@ -3,6 +3,7 @@ import { Inter, Inconsolata } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { getMessages } from "next-intl/server";
 import { LocaleSwitchProvider } from "@/providers/localeSwitchProvider";
+import { FaviconSwitcher } from "@/components/faviconSwitcher";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,6 +14,9 @@ const inconsolata = Inconsolata({
 
 export const metadata: Metadata = {
   title: "Matheus Tiburcio | My Portfolio",
+  icons: {
+    icon: "/favicon-light.svg",
+  },
 };
 
 export default async function RootLayout({
@@ -32,6 +36,7 @@ export default async function RootLayout({
     >
       <body className={inter.className}>
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+          <FaviconSwitcher />
           <LocaleSwitchProvider
             initialLocale={locale as "en" | "pt"}
             initialMessages={messages}
