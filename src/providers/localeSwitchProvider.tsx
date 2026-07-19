@@ -49,11 +49,6 @@ export function LocaleSwitchProvider({
       setLocale(newLocale);
       setMessages(newMessages);
       document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000`;
-      const newPath = window.location.pathname.replace(
-        `/${locale}`,
-        `/${newLocale}`,
-      );
-      window.history.replaceState(null, "", newPath);
     });
   };
 

@@ -1,8 +1,8 @@
 "use client";
 
 import { ToggleTheme } from "./toggleTheme";
-import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { scrollToSection } from "@/lib/scrollToSection";
 import { NameLogo } from "./nameLogo";
 import {
   Sheet,
@@ -61,26 +61,30 @@ export function MobileNavBar() {
 
             <SheetContent
               side="right"
-              className="w-[85vw] max-w-[360px] border-l border-zinc-200/40 dark:border-zinc-800/40 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-2xl flex flex-col justify-between p-6 pt-16 shadow-2xl h-full"
+              className="w-[85vw] max-w-[360px] border-l border-zinc-200/40 dark:border-zinc-800/40 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-2xl flex flex-col justify-between p-5 pt-10 shadow-2xl h-full"
             >
               <div className="flex flex-col flex-1">
                 {/* Header */}
-                <div className="flex justify-between items-center mb-8 pb-4 border-b border-zinc-100 dark:border-zinc-900">
-                  <NameLogo className="text-xl" />
+                <div className="flex justify-between items-center mb-5 pb-3 border-b border-zinc-100 dark:border-zinc-900">
+                  <NameLogo className="text-lg" />
                 </div>
 
                 {/* Navigation Links */}
-                <div className="mb-6">
-                  <h4 className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-4">
+                <div className="mb-4">
+                  <h4 className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">
                     {t("navegationTitle")}
                   </h4>
-                  <nav className="flex flex-col gap-y-1">
+                  <nav className="flex flex-col gap-y-0.5">
                     {links.map(({ key, label }, index) => (
                       <SheetClose key={key} asChild>
-                        <Link
+                        <a
                           href={`#${key}`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            scrollToSection(key);
+                          }}
                           className={cn(
-                            "group flex items-baseline gap-x-4 py-3 border-b border-zinc-100/50 dark:border-zinc-900/50 w-full text-left transition-all duration-300",
+                            "group flex items-baseline gap-x-4 py-2 border-b border-zinc-100/50 dark:border-zinc-900/50 w-full text-left transition-all duration-300",
                             active === key
                               ? "text-purple-500 dark:text-purple-400 font-semibold"
                               : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:pl-2"
@@ -89,10 +93,10 @@ export function MobileNavBar() {
                           <span className="font-mono text-xs text-zinc-300 dark:text-zinc-700 group-hover:text-purple-500 transition-colors">
                             0{index + 1}
                           </span>
-                          <span className="text-xl tracking-tight transition-transform">
+                          <span className="text-lg tracking-tight transition-transform">
                             {label}
                           </span>
-                        </Link>
+                        </a>
                       </SheetClose>
                     ))}
                   </nav>
@@ -100,10 +104,10 @@ export function MobileNavBar() {
 
                 {/* Social Links */}
                 <div className="mt-auto">
-                  <h4 className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-4">
-                    Conectar / Connect
+                  <h4 className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-3">
+                    {t("connectTitle")}
                   </h4>
-                  <div className="flex gap-x-3 mb-4">
+                  <div className="flex gap-x-3">
                     <a
                       href="https://github.com/0kira-vgl"
                       target="_blank"
@@ -143,9 +147,9 @@ export function MobileNavBar() {
               </div>
 
               {/* Preferences Footer */}
-              <div className="mt-6 flex items-center justify-between rounded-2xl bg-zinc-50/80 dark:bg-zinc-900/50 p-4 border border-zinc-100 dark:border-zinc-800/80 w-full shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
+              <div className="mt-4 flex items-center justify-between rounded-2xl bg-zinc-50/80 dark:bg-zinc-900/50 p-3.5 border border-zinc-100 dark:border-zinc-800/80 w-full shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
                 <span className="text-[11px] font-mono uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-                  Preferências
+                  {t("preferencesTitle")}
                 </span>
                 <div className="flex items-center gap-x-2">
                   <LanguageToggle className="bg-background border-zinc-200/50 dark:border-zinc-800/50 shadow-sm rounded-full" />

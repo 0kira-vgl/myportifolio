@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import { scrollToSection } from "@/lib/scrollToSection";
 
 const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 
@@ -28,10 +28,14 @@ export function NavLinks({ className, linkClassName, onClick }: NavLinksProps) {
   return (
     <div className={className}>
       {links.map(({ key, label }) => (
-        <Link
+        <a
           key={key}
           href={`#${key}`}
-          onClick={onClick}
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection(key);
+            onClick?.();
+          }}
           className={cn(
             "nav transition-colors duration-200",
             linkClassName,
@@ -41,7 +45,7 @@ export function NavLinks({ className, linkClassName, onClick }: NavLinksProps) {
           )}
         >
           {label}
-        </Link>
+        </a>
       ))}
     </div>
   );
