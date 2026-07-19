@@ -40,7 +40,7 @@ export function NavLinks({ className, linkClassName, onClick }: NavLinksProps) {
             "nav transition-colors duration-200",
             linkClassName,
             active === key
-              ? "text-purple-500 dark:text-purple-400"
+              ? "text-violet-500 dark:text-violet-400"
               : "text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-50",
           )}
         >

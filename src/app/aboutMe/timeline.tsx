@@ -27,8 +27,8 @@ export function Timeline() {
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <li className="mb-10 ms-6">
-            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-4 ring-zinc-100 dark:bg-blue-900 dark:ring-gray-900">
-              <FaPlay className="size-3 text-blue-800 dark:text-blue-300" />
+            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-violet-100 ring-4 ring-zinc-100 dark:bg-violet-900 dark:ring-gray-900">
+              <FaPlay className="size-3 text-violet-800 dark:text-violet-300" />
             </span>
             <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-800 dark:text-neutral-50">
               {t("item1.title")}
@@ -44,8 +44,8 @@ export function Timeline() {
 
         <motion.div {...animationProps}>
           <li className="mb-10 ms-6">
-            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-4 ring-zinc-100 dark:bg-blue-900 dark:ring-gray-900">
-              <IoLogoJavascript className="size-3 text-blue-800 dark:text-blue-300" />
+            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-violet-100 ring-4 ring-zinc-100 dark:bg-violet-900 dark:ring-gray-900">
+              <IoLogoJavascript className="size-3 text-violet-800 dark:text-violet-300" />
             </span>
             <h3 className="mb-1 text-lg font-semibold text-gray-800 dark:text-neutral-50">
               {t("item2.title")}
@@ -61,8 +61,8 @@ export function Timeline() {
 
         <motion.div {...animationProps}>
           <li className="mb-10 ms-6">
-            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-4 ring-zinc-100 dark:bg-blue-900 dark:ring-gray-900">
-              <GrReactjs className="size-3 text-blue-800 dark:text-blue-300" />
+            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-violet-100 ring-4 ring-zinc-100 dark:bg-violet-900 dark:ring-gray-900">
+              <GrReactjs className="size-3 text-violet-800 dark:text-violet-300" />
             </span>
             <h3 className="mb-1 text-lg font-semibold text-gray-800 dark:text-neutral-50">
               {t("item3.title")}
@@ -78,12 +78,12 @@ export function Timeline() {
 
         <motion.div {...animationProps}>
           <li className="ms-6">
-            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-4 ring-zinc-100 dark:bg-blue-900 dark:ring-gray-900">
-              <FiCompass className="size-3 text-blue-800 dark:text-blue-300" />
+            <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-violet-100 ring-4 ring-zinc-100 dark:bg-violet-900 dark:ring-gray-900">
+              <FiCompass className="size-3 text-violet-800 dark:text-violet-300" />
             </span>
             <h3 className="mb-1 text-lg font-semibold text-gray-800 dark:text-neutral-50">
               {t("item4.title")}
-              <span className="me-2 ms-3 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+              <span className="me-2 ms-3 rounded bg-violet-100 px-2.5 py-0.5 text-sm font-medium text-violet-800 dark:bg-violet-900 dark:text-violet-300">
                 {t("item4.badge")}
               </span>
             </h3>

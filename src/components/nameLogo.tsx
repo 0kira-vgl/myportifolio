@@ -10,7 +10,7 @@ import { scrollToSection } from "@/lib/scrollToSection";
 function PortfolioMark({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 28 28" fill="none" aria-hidden="true" className={className}>
-      <g className="fill-purple-500 dark:fill-purple-400">
+      <g className="fill-violet-500 dark:fill-violet-400">
         <rect x="4" y="4" width="3" height="3" />
         <rect x="25" y="4" width="3" height="3" />
         <rect x="4" y="7" width="3" height="3" />

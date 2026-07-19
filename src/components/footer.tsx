@@ -11,10 +11,10 @@ import { scrollToSection } from "@/lib/scrollToSection";
 const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 
 const iconLinkClassName =
-  "flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 bg-zinc-50/50 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400";
+  "flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 bg-zinc-50/50 text-zinc-600 transition-all duration-200 hover:border-violet-400 hover:text-violet-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-400 dark:hover:border-violet-400 dark:hover:text-violet-400";
 
 const textLinkClassName =
-  "text-sm text-zinc-600 transition-colors duration-200 hover:text-purple-500 dark:text-zinc-400 dark:hover:text-purple-400";
+  "text-sm text-zinc-600 transition-colors duration-200 hover:text-violet-500 dark:text-zinc-400 dark:hover:text-violet-400";
 
 export function Footer() {
   const t = useTranslations();
@@ -95,7 +95,7 @@ export function Footer() {
               href="/Matheus Tiburcio - CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-sm font-medium text-zinc-700 transition-colors duration-200 hover:border-purple-400 hover:bg-purple-50 hover:text-purple-600 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:border-purple-400 dark:hover:bg-purple-950/40 dark:hover:text-purple-400"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-sm font-medium text-zinc-700 transition-colors duration-200 hover:border-violet-400 hover:bg-violet-50 hover:text-violet-600 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:border-violet-400 dark:hover:bg-violet-950/40 dark:hover:text-violet-400"
             >
               {t("Contact.button")}
               <LuFileSpreadsheet className="size-3.5" />

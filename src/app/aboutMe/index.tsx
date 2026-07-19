@@ -27,7 +27,7 @@ export function AboutMe() {
 
                 <h1 className="font-mono text-[13px] text-green-400 lg:text-base">
                   <span className="text-yellow-400">$</span> echo{" "}
-                  <span className="text-blue-800 dark:text-white">
+                  <span className="text-violet-800 dark:text-white">
                     &quot;{t("terminalGreeting")}&quot;
                     <span className="animate-pulse duration-700">_</span>
                   </span>
@@ -37,7 +37,7 @@ export function AboutMe() {
               <div className="rounded-md bg-white p-4 font-mono text-[15px] text-zinc-800 shadow-lg dark:bg-zinc-950 dark:text-zinc-300">
                 {t.rich("bio1", {
                   highlight: (chunks) => (
-                    <span className="text-purple-600 dark:text-purple-400">
+                    <span className="text-violet-600 dark:text-violet-400">
                       {chunks}
                     </span>
                   ),
@@ -46,7 +46,7 @@ export function AboutMe() {
                 <br />
                 {t.rich("bio2", {
                   highlight: (chunks) => (
-                    <span className="text-purple-600 dark:text-purple-400">
+                    <span className="text-violet-600 dark:text-violet-400">
                       {chunks}
                     </span>
                   ),
@@ -55,7 +55,7 @@ export function AboutMe() {
                 <br />
                 {t.rich("bio3", {
                   highlight: (chunks) => (
-                    <span className="text-purple-600 dark:text-purple-400">
+                    <span className="text-violet-600 dark:text-violet-400">
                       {chunks}
                     </span>
                   ),

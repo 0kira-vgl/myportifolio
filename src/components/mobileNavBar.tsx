@@ -86,11 +86,11 @@ export function MobileNavBar() {
                           className={cn(
                             "group flex items-baseline gap-x-4 py-2 border-b border-zinc-100/50 dark:border-zinc-900/50 w-full text-left transition-all duration-300",
                             active === key
-                              ? "text-purple-500 dark:text-purple-400 font-semibold"
+                              ? "text-violet-500 dark:text-violet-400 font-semibold"
                               : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:pl-2"
                           )}
                         >
-                          <span className="font-mono text-xs text-zinc-300 dark:text-zinc-700 group-hover:text-purple-500 transition-colors">
+                          <span className="font-mono text-xs text-zinc-300 dark:text-zinc-700 group-hover:text-violet-500 transition-colors">
                             0{index + 1}
                           </span>
                           <span className="text-lg tracking-tight transition-transform">
@@ -113,7 +113,7 @@ export function MobileNavBar() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="GitHub"
-                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-violet-400 hover:text-violet-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-violet-400 dark:hover:text-violet-400 bg-zinc-50/50 dark:bg-zinc-900/50"
                     >
                       <FaGithub className="size-4.5" />
                     </a>
@@ -122,14 +122,14 @@ export function MobileNavBar() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn"
-                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-violet-400 hover:text-violet-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-violet-400 dark:hover:text-violet-400 bg-zinc-50/50 dark:bg-zinc-900/50"
                     >
                       <FaLinkedinIn className="size-4.5" />
                     </a>
                     <a
                       href="mailto:matheusgtiburcio@gmail.com"
                       aria-label="Email"
-                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-violet-400 hover:text-violet-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-violet-400 dark:hover:text-violet-400 bg-zinc-50/50 dark:bg-zinc-900/50"
                     >
                       <MdOutlineMailOutline className="size-4.5" />
                     </a>
@@ -138,7 +138,7 @@ export function MobileNavBar() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Download CV"
-                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-purple-400 hover:text-purple-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-purple-400 dark:hover:text-purple-400 bg-zinc-50/50 dark:bg-zinc-900/50"
+                      className="flex size-9 items-center justify-center rounded-xl border border-zinc-200/60 text-zinc-600 transition-all duration-200 hover:border-violet-400 hover:text-violet-500 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:text-zinc-400 dark:hover:border-violet-400 dark:hover:text-violet-400 bg-zinc-50/50 dark:bg-zinc-900/50"
                     >
                       <LuFileSpreadsheet className="size-4.5" />
                     </a>
