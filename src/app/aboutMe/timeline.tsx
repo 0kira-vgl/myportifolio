@@ -91,7 +91,18 @@ export function Timeline() {
               {t("item4.date")}
             </time>
             <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-              {t("item4.description")}
+              {t.rich("item4.description", {
+                mindGroupLink: (chunks) => (
+                  <a
+                    href="https://www.linkedin.com/company/mind-tech/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative text-violet-600 after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full dark:text-violet-400"
+                  >
+                    {chunks}
+                  </a>
+                ),
+              })}
             </p>
           </li>
         </motion.div>

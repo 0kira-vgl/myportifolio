@@ -19,8 +19,8 @@
     "title": "About Me",
     "subtitle": "Get to know the story behind the developer, the essence of the code.",
     "terminalGreeting": "Hello, I'm Matheus Tiburcio",
-    "bio1": "I hold a <highlight>Technical Degree in Systems Development</highlight> from <highlight>ETEC Rubens de Faria e Souza</highlight> and I'm currently pursuing a <highlight>Computer Science</highlight> degree. My passion for technology led me to specialize in <highlight>front-end development</highlight>, working with <highlight>ReactJS, React Native, Next.js, Tailwind CSS</highlight> and other modern technologies.",
-    "bio2": "I've had the opportunity to work on <highlight>international freelance projects</highlight> and I'm currently working as an <highlight>intern at a software house</highlight>. What drives me is the <highlight>constant evolution of technology</highlight> and the endless possibilities it brings.",
+    "bio1": "I hold a <highlight>Technical Degree in Systems Development</highlight> from <highlight>ETEC Rubens de Faria e Souza</highlight> and I'm currently pursuing a <highlight>Computer Science</highlight> degree at UNIP. My passion for technology led me to work as a <highlight>full stack developer</highlight>, building with <highlight>ReactJS, React Native, Next.js and TypeScript</highlight> on the front-end, and <highlight>Node.js and NestJS</highlight> on the back-end.",
+    "bio2": "I've had the opportunity to work on <highlight>international freelance projects</highlight> and I'm currently working as a <highlight>Full Stack Developer</highlight> at <mindGroupLink>Mind Group</mindGroupLink>, a software house, on projects covering the whole stack. What drives me is the <highlight>constant evolution of technology</highlight> and the endless possibilities it brings.",
     "bio3": "Beyond coding, I enjoy <highlight>cooking, reading manga and books, and going to the gym</highlight>. My father was a <highlight>major influence</highlight> in my journey into this field, and I'm always seeking new challenges and growth."
   },
   "Timeline": {
@@ -41,9 +41,9 @@
     },
     "item4": {
       "title": "New Horizons",
-      "date": "2024 — Present",
+      "date": "2026 — Present",
       "badge": "Currently",
-      "description": "Building my career as an intern at a software house, delivering international freelance projects, and mastering Next.js and modern architectures. Alongside this, I'm broadening my technical foundations through a Computer Science degree."
+      "description": "Working as a Full Stack Developer at <mindGroupLink>Mind Group</mindGroupLink>, a software house, on projects covering the whole stack — from front-end to back-end with Node.js and NestJS. I've also delivered international freelance projects and continue to strengthen my technical foundations through a Computer Science degree."
     }
   },
   "Skills": {

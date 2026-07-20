@@ -108,7 +108,7 @@ export function SkillsCard() {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
             />
             <IconsCard
-              className="size-14"
+              className="size-14 dark:invert"
               titleicon="GitHub"
               alt="GitHub Icon"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"

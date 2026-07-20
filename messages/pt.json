@@ -19,8 +19,8 @@
     "title": "Sobre mim",
     "subtitle": "Conheça a história por trás do desenvolvedor, a essência do código",
     "terminalGreeting": "Olá, sou Matheus Tiburcio",
-    "bio1": "Tenho o curso <highlight>Técnico em Desenvolvimento de Sistemas</highlight> pela <highlight>ETEC Rubens de Faria e Souza</highlight> e estou cursando <highlight>Ciência da Computação</highlight>. Minha paixão por tecnologia me levou a me especializar no <highlight>desenvolvimento front-end</highlight>, trabalhando com <highlight>ReactJS, React Native, Next.js, Tailwind CSS</highlight> e outras tecnologias modernas.",
-    "bio2": "Já tive a oportunidade de realizar <highlight>freelances para o exterior</highlight> e atualmente trabalho como <highlight>estagiário em uma software house</highlight>. O que me motiva é a <highlight>constante evolução da tecnologia</highlight> e as infinitas possibilidades que ela proporciona.",
+    "bio1": "Tenho o curso <highlight>Técnico em Desenvolvimento de Sistemas</highlight> pela <highlight>ETEC Rubens de Faria e Souza</highlight> e estou cursando <highlight>Ciência da Computação</highlight> pela UNIP. Minha paixão por tecnologia me levou a atuar como <highlight>desenvolvedor full stack</highlight>, trabalhando com <highlight>ReactJS, React Native, Next.js e TypeScript</highlight> no front-end, e <highlight>Node.js e NestJS</highlight> no back-end.",
+    "bio2": "Já tive a oportunidade de realizar <highlight>freelances para o exterior</highlight> e atualmente trabalho como <highlight>Desenvolvedor Full Stack</highlight> na <mindGroupLink>Mind Group</mindGroupLink>, uma software house, atuando em projetos que cobrem toda a stack. O que me motiva é a <highlight>constante evolução da tecnologia</highlight> e as infinitas possibilidades que ela proporciona.",
     "bio3": "Além da programação, gosto de <highlight>cozinhar, ler mangás e livros e ir à academia</highlight>. Meu pai foi uma <highlight>grande influência</highlight> para eu entrar nessa área, e estou sempre em busca de novos desafios e aprendizados."
   },
   "Timeline": {
@@ -43,7 +43,7 @@
       "title": "Novos Horizontes",
       "date": "2026 — Atualmente",
       "badge": "Atualmente",
-      "description": "Construindo minha carreira como estagiário em uma software house, realizando freelances para o exterior e aprimorando meu domínio em Next.js e arquiteturas modernas. Paralelamente, expando minha base técnica através do curso de Ciência da Computação."
+      "description": "Atuando como Desenvolvedor Full Stack na <mindGroupLink>Mind Group</mindGroupLink>, uma software house, em projetos que cobrem toda a stack, do front-end ao back-end com Node.js e NestJS. Já realizei freelances para o exterior e sigo expandindo minha base técnica através do curso de Ciência da Computação."
     }
   },
   "Skills": {
@@ -58,7 +58,7 @@
         "en": "Inglês",
         "level": {
           "pt": "Fluente",
-          "en": "Leitura"
+          "en": "Iniciante"
         }
       }
     },

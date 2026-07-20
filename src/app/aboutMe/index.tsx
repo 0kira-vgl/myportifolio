@@ -50,6 +50,16 @@ export function AboutMe() {
                       {chunks}
                     </span>
                   ),
+                  mindGroupLink: (chunks) => (
+                    <a
+                      href="https://www.linkedin.com/company/mind-tech/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative text-violet-600 after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full dark:text-violet-400"
+                    >
+                      {chunks}
+                    </a>
+                  ),
                 })}
                 <br />
                 <br />
