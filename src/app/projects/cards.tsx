@@ -15,15 +15,15 @@ export function Cards() {
     <main>
       <div className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0">
         <Card
-          title="KORE"
+          title="Kore"
           description={t("kore")}
           src="/projects/kore-preview.png"
           width={1280}
           height={720}
-          alt="KORE Project"
+          alt="Kore Project"
           demo={kore.demo}
           repository={kore.repository}
-          repositoryShortly={true}
+          isPrivate
           priority
           icons={[
             {
@@ -67,6 +67,7 @@ export function Cards() {
               titleicon: "Expo",
               alt: "Expo Icon",
               src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
+              className: "dark:invert",
             },
             {
               titleicon: "TypeScript",
@@ -132,6 +133,7 @@ export function Cards() {
               titleicon: "Expo",
               alt: "Expo Icon",
               src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
+              className: "dark:invert",
             },
             {
               titleicon: "TypeScript",

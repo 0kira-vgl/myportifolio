@@ -9,7 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Lock } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 type IconsCardProps = ImageProps & {
@@ -84,4 +84,29 @@ const RepositoryButton = ({
   );
 };
 
-export { IconsCard, DemoButton, RepositoryButton };
+const PrivateButton = () => {
+  const t = useTranslations("Projects");
+
+  return (
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <span
+            className={buttonVariants({
+              variant: "outline",
+              className: "cursor-default gap-1.5",
+            })}
+          >
+            <Lock className="size-4" />
+            {t("privateButtonCard")}
+          </span>
+        </TooltipTrigger>
+        <TooltipContent side="top">
+          <span className="font-semibold">{t("privateTooltip")}</span>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  );
+};
+
+export { IconsCard, DemoButton, RepositoryButton, PrivateButton };

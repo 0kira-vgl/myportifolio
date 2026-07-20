@@ -68,6 +68,8 @@
     "title": "Projects",
     "subtitle": "Check out the projects where I put my knowledge into practice.",
     "repoButtonCard": "Repository",
+    "privateButtonCard": "Private",
+    "privateTooltip": "This is a closed-source SaaS project",
     "button": "See more repositories",
     "descriptions": {
       "notes": "Expert Notes is a note-taking app that lets the user create and manage notes simply and efficiently.",

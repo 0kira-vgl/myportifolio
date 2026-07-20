@@ -6,13 +6,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { DemoButton, RepositoryButton } from "./cardElements";
+import { DemoButton, RepositoryButton, PrivateButton } from "./cardElements";
 
 // definindo o tipo de ícone para ser usado dinamicamente
 type Icon = {
   titleicon: ReactNode;
   alt: string;
   src: string;
+  className?: string;
 };
 
 type IconsCardProps = ImageProps & {
@@ -42,6 +43,7 @@ type BigCardsProps = ImageProps & {
   repository: string;
   shortly?: boolean;
   repositoryShortly?: boolean;
+  isPrivate?: boolean;
   priority?: boolean;
   icons: Icon[]; // passando a lista de ícones aqui
 };
@@ -53,6 +55,7 @@ export function Card({
   repository,
   shortly,
   repositoryShortly,
+  isPrivate,
   priority,
   icons, // Recebe a lista de ícones
   ...props
@@ -80,12 +83,20 @@ export function Card({
                   titleicon={icon.titleicon}
                   alt={icon.alt}
                   src={icon.src}
+                  className={icon.className}
                 />
               ))}
             </div>
             <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
               <DemoButton href={demo} shortly={shortly} />
-              <RepositoryButton href={repository} shortly={repositoryShortly} />
+              {isPrivate ? (
+                <PrivateButton />
+              ) : (
+                <RepositoryButton
+                  href={repository}
+                  shortly={repositoryShortly}
+                />
+              )}
             </div>
           </div>
         </div>

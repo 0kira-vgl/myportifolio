@@ -31,17 +31,17 @@
     },
     "item2": {
       "title": "Explorando o JavaScript",
-      "date": "Fevereiro, 2023",
+      "date": "Fevereiro, 2024",
       "description": "Dei meus primeiros passos com JavaScript, evoluindo para o React e desenvolvendo aplicações cada vez mais dinâmicas e interativas."
     },
     "item3": {
       "title": "Avançando com React",
-      "date": "Junho, 2024",
+      "date": "Junho, 2025",
       "description": "Aprofundei meus conhecimentos adotando Next.js, integração com APIs, deploy de aplicações e boas práticas como Clean Architecture e padrões de código mais robustos."
     },
     "item4": {
       "title": "Novos Horizontes",
-      "date": "2024 — Atualmente",
+      "date": "2026 — Atualmente",
       "badge": "Atualmente",
       "description": "Construindo minha carreira como estagiário em uma software house, realizando freelances para o exterior e aprimorando meu domínio em Next.js e arquiteturas modernas. Paralelamente, expando minha base técnica através do curso de Ciência da Computação."
     }
@@ -68,6 +68,8 @@
     "title": "Projetos",
     "subtitle": "Veja os projetos onde coloquei meus conhecimentos em prática.",
     "repoButtonCard": "Repositório",
+    "privateButtonCard": "Privado",
+    "privateTooltip": "Este é um projeto SaaS com código-fonte fechado",
     "button": "Ver mais repositórios",
     "descriptions": {
       "notes": "Expert Notes é um aplicativo de notas que permite ao usuário criar e gerenciar notas de forma simples e eficiente.",
