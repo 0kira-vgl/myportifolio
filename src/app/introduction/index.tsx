@@ -11,9 +11,9 @@ export function Introduction() {
   return (
     <section
       id="home"
-      className="relative flex h-screen w-full flex-col bg-pattern bg-center bg-no-repeat pt-24 lg:pt-8"
+      className="relative flex h-dvh w-full flex-col bg-pattern bg-center bg-no-repeat pt-14 lg:pt-8"
     >
-      <main className="flex flex-1 flex-col items-center justify-center lg:flex">
+      <main className="flex flex-1 flex-col items-center justify-start pt-16 lg:flex lg:justify-center lg:pt-0">
         <div className="space-y-2 text-center">
           <motion.h3
             initial={{ opacity: 0, x: -50 }}
@@ -49,7 +49,7 @@ export function Introduction() {
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
           className="flex flex-col items-center justify-center pt-4 text-center"
         >
-          <p className="mx-8 mb-8 mt-2 max-w-[32rem] text-center text-base text-zinc-500 lg:mt-4 lg:text-xl">
+          <p className="mx-8 mb-4 mt-2 max-w-[32rem] text-center text-base text-zinc-500 lg:mb-8 lg:mt-4 lg:text-xl">
             {t("subtitle")}
           </p>
           <IntroButtons />
@@ -61,7 +61,7 @@ export function Introduction() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-        className="absolute inset-x-0 bottom-8 flex flex-col items-center justify-center space-y-2 font-light text-zinc-600 dark:text-zinc-500 lg:bottom-10"
+        className="absolute inset-x-0 bottom-4 flex flex-col items-center justify-center space-y-2 font-light text-zinc-600 dark:text-zinc-500 lg:bottom-10"
       >
         <span className="animate-bounce">{t("down")}</span>
         <RxDoubleArrowDown className="size-5 animate-bounce" />

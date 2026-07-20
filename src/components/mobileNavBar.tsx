@@ -65,7 +65,7 @@ export function MobileNavBar() {
             >
               <div className="flex flex-col flex-1">
                 {/* Header */}
-                <div className="flex justify-between items-center mb-5 pb-3 border-b border-zinc-100 dark:border-zinc-900">
+                <div className="flex justify-between items-center mb-5 pb-3 border-b border-zinc-300 dark:border-zinc-800">
                   <NameLogo className="text-lg" />
                 </div>
 
@@ -84,7 +84,7 @@ export function MobileNavBar() {
                             scrollToSection(key);
                           }}
                           className={cn(
-                            "group flex items-baseline gap-x-4 py-2 border-b border-zinc-100/50 dark:border-zinc-900/50 w-full text-left transition-all duration-300",
+                            "group flex items-baseline gap-x-4 py-2 border-b border-zinc-200 dark:border-zinc-800/70 w-full text-left transition-all duration-300",
                             active === key
                               ? "text-violet-500 dark:text-violet-400 font-semibold"
                               : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:pl-2"
@@ -153,7 +153,7 @@ export function MobileNavBar() {
                 </span>
                 <div className="flex items-center gap-x-2">
                   <LanguageToggle className="bg-background border-zinc-200/50 dark:border-zinc-800/50 shadow-sm rounded-full" />
-                  <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-800" />
+                  <div className="h-4 w-px bg-zinc-300 dark:bg-zinc-700" />
                   <ToggleTheme className="bg-background border-zinc-200/50 dark:border-zinc-800/50 shadow-sm rounded-full" />
                 </div>
               </div>

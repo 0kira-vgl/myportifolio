@@ -25,7 +25,7 @@ export function AboutMe() {
               <div className="flex items-center gap-2.5 border-b border-zinc-200 py-2.5 pl-4 dark:border-b-gray-700">
                 <FaTerminal className="size-4 text-zinc-500" />
 
-                <h1 className="font-mono text-[13px] text-green-400 lg:text-base">
+                <h1 className="whitespace-nowrap font-mono text-[10px] text-green-400 lg:text-base">
                   <span className="text-yellow-400">$</span> echo{" "}
                   <span className="text-violet-800 dark:text-white">
                     &quot;{t("terminalGreeting")}&quot;
