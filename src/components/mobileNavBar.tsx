@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { ToggleTheme } from "./toggleTheme";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { scrollToSection } from "@/lib/scrollToSection";
@@ -12,6 +13,21 @@ import {
   SheetFooter,
   SheetClose,
 } from "@/components/ui/sheet";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+  BreadcrumbEllipsis,
+} from "@/components/ui/breadcrumb";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 import { LanguageToggle } from "./languageToggle";
 import { useTranslations } from "next-intl";
 import { useActiveSection } from "@/hooks/useActiveSection";
@@ -20,7 +36,7 @@ import * as motion from "framer-motion/client";
 import { Button } from "@/components/ui/button";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { LuFileSpreadsheet } from "react-icons/lu";
+import { LuFileSpreadsheet, LuHome } from "react-icons/lu";
 
 const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 
@@ -36,6 +52,12 @@ export function MobileNavBar() {
     { key: "contact", label: t("contact") },
   ];
 
+  const activeIndex = SECTIONS.indexOf(active);
+  const trail = links.slice(0, activeIndex + 1);
+  const collapsed = trail.length > 3;
+  const hiddenCrumbs = collapsed ? trail.slice(1, -2) : [];
+  const tailCrumbs = collapsed ? trail.slice(-2) : trail.slice(1);
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -45,6 +67,86 @@ export function MobileNavBar() {
     >
       <div className="flex w-full max-w-[480px] items-center justify-between rounded-full bg-white/70 dark:bg-zinc-950/60 py-1.5 pl-5 pr-1.5 border border-zinc-200/50 dark:border-zinc-800/50 shadow-lg backdrop-blur-lg">
         <NameLogo className="text-xl" />
+
+        <div className="flex min-w-0 flex-1 items-center justify-center overflow-hidden px-2">
+          <Breadcrumb>
+            <BreadcrumbList className="flex-nowrap gap-1 text-[11px] tracking-wide sm:gap-1">
+              <BreadcrumbItem>
+                {activeIndex === 0 ? (
+                  <BreadcrumbPage
+                    aria-label={t("home")}
+                    className="flex items-center text-violet-500 dark:text-violet-400"
+                  >
+                    <LuHome className="size-3.5" />
+                  </BreadcrumbPage>
+                ) : (
+                  <BreadcrumbLink asChild>
+                    <button
+                      type="button"
+                      onClick={() => scrollToSection("home")}
+                      aria-label={t("home")}
+                      className="flex items-center text-zinc-400 hover:text-violet-500 dark:text-zinc-500 dark:hover:text-violet-400"
+                    >
+                      <LuHome className="size-3.5" />
+                    </button>
+                  </BreadcrumbLink>
+                )}
+              </BreadcrumbItem>
+
+              {hiddenCrumbs.length > 0 && (
+                <>
+                  <BreadcrumbSeparator />
+                  <BreadcrumbItem>
+                    <DropdownMenu>
+                      <DropdownMenuTrigger
+                        aria-label={t("navegationTitle")}
+                        className="flex items-center rounded-sm text-zinc-400 hover:text-violet-500 dark:text-zinc-500 dark:hover:text-violet-400"
+                      >
+                        <BreadcrumbEllipsis className="size-5" />
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent align="start">
+                        {hiddenCrumbs.map((link) => (
+                          <DropdownMenuItem
+                            key={link.key}
+                            onSelect={() => scrollToSection(link.key)}
+                          >
+                            {link.label}
+                          </DropdownMenuItem>
+                        ))}
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  </BreadcrumbItem>
+                </>
+              )}
+
+              {tailCrumbs.map((link, i) => {
+                const isLast = i === tailCrumbs.length - 1;
+                return (
+                  <Fragment key={link.key}>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                      {isLast ? (
+                        <BreadcrumbPage className="truncate font-medium text-violet-500 dark:text-violet-400">
+                          {link.label}
+                        </BreadcrumbPage>
+                      ) : (
+                        <BreadcrumbLink asChild>
+                          <button
+                            type="button"
+                            onClick={() => scrollToSection(link.key)}
+                            className="truncate text-zinc-400 hover:text-violet-500 dark:text-zinc-500 dark:hover:text-violet-400"
+                          >
+                            {link.label}
+                          </button>
+                        </BreadcrumbLink>
+                      )}
+                    </BreadcrumbItem>
+                  </Fragment>
+                );
+              })}
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
 
         <div className="flex items-center gap-x-1.5">
           <Sheet>
