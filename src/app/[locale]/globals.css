@@ -112,3 +112,57 @@ body {
   transition-duration: 400ms;
   transition-property: width, left;
 }
+
+/* shimmer text — a base layer keeps the text always fully visible; a second,
+   animated gradient layer sweeps a highlight on top of it. The base layer
+   matches the site's other headings (the gradient-text-dark tokens below)
+   so this heading doesn't read a different shade of gray than the one
+   above it; the highlight is derived from that same neutral gray rather
+   than currentColor, since currentColor here (slate-200) carries a cool
+   tint that clashed with the neutral heading gradient. */
+.shimmer-text {
+  --shimmer-highlight: color-mix(in oklab, currentColor, white 75%);
+  --shimmer-base-image: linear-gradient(currentColor, currentColor);
+
+  background-image:
+    linear-gradient(
+      100deg,
+      transparent 30%,
+      var(--shimmer-highlight) 50%,
+      transparent 70%
+    ),
+    var(--shimmer-base-image);
+  background-size:
+    250% 100%,
+    100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 3.5s ease-in-out infinite;
+}
+
+.dark .shimmer-text {
+  --shimmer-highlight: color-mix(in oklab, #d6d6d6, black 45%);
+  --shimmer-base-image: linear-gradient(to bottom, #e5e5e5, #c7c7c7);
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    background-position:
+      150% center,
+      0 0;
+  }
+  100% {
+    background-position:
+      -50% center,
+      0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-text {
+    animation: none;
+    background-position: 50% center;
+  }
+}

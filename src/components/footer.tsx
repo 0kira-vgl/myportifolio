@@ -7,6 +7,12 @@ import { LuFileSpreadsheet } from "react-icons/lu";
 import { NameLogo } from "./nameLogo";
 import { Separator } from "./ui/separator";
 import { scrollToSection } from "@/lib/scrollToSection";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 const SECTIONS = ["home", "aboutMe", "skills", "projects", "contact"] as const;
 
@@ -28,33 +34,56 @@ export function Footer() {
           <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
             {t("Footer.tagline")}
           </p>
-          <div className="flex gap-3">
-            <a
-              href="https://github.com/0kira-vgl"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className={iconLinkClassName}
-            >
-              <FaGithub className="size-4" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className={iconLinkClassName}
-            >
-              <FaLinkedinIn className="size-4" />
-            </a>
-            <a
-              href="mailto:matheusgtiburcio@gmail.com"
-              aria-label="Email"
-              className={iconLinkClassName}
-            >
-              <MdOutlineMailOutline className="size-4" />
-            </a>
-          </div>
+          <TooltipProvider>
+            <div className="flex gap-3">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="https://github.com/0kira-vgl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    className={iconLinkClassName}
+                  >
+                    <FaGithub className="size-4" />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent side="top">
+                  <span className="font-semibold">GitHub</span>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="https://www.linkedin.com/in/matheus-tiburcio-82a337276/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    className={iconLinkClassName}
+                  >
+                    <FaLinkedinIn className="size-4" />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent side="top">
+                  <span className="font-semibold">LinkedIn</span>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href="mailto:matheusgtiburcio@gmail.com"
+                    aria-label="Email"
+                    className={iconLinkClassName}
+                  >
+                    <MdOutlineMailOutline className="size-4" />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent side="top">
+                  <span className="font-semibold">Email</span>
+                </TooltipContent>
+              </Tooltip>
+            </div>
+          </TooltipProvider>
         </div>
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-16">

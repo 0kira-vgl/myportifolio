@@ -19,7 +19,7 @@ export function Header() {
 
         <NavLinks
           className="flex items-center gap-x-6"
-          linkClassName="text-sm font-medium"
+          linkClassName="text-base font-medium"
         />
 
         <div className="flex items-center gap-x-2">

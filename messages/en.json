@@ -5,19 +5,16 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-
     "navegationTitle": "Browse",
     "connectTitle": "Connect",
     "preferencesTitle": "Preferences"
   },
-
   "Introduction": {
     "titleName": "Hello, I'm Matheus...",
     "titleDev": "Your next developer",
     "subtitle": "My name is Matheus Tiburcio, a dedicated Front-end developer.",
     "down": "Swipe down..."
   },
-
   "AboutMe": {
     "title": "About Me",
     "subtitle": "Get to know the story behind the developer, the essence of the code.",
@@ -26,7 +23,6 @@
     "bio2": "I've had the opportunity to work on <highlight>international freelance projects</highlight> and I'm currently working as an <highlight>intern at a software house</highlight>. What drives me is the <highlight>constant evolution of technology</highlight> and the endless possibilities it brings.",
     "bio3": "Beyond coding, I enjoy <highlight>cooking, reading manga and books, and going to the gym</highlight>. My father was a <highlight>major influence</highlight> in my journey into this field, and I'm always seeking new challenges and growth."
   },
-
   "Timeline": {
     "item1": {
       "title": "The Beginning",
@@ -50,49 +46,45 @@
       "description": "Building my career as an intern at a software house, delivering international freelance projects, and mastering Next.js and modern architectures. Alongside this, I'm broadening my technical foundations through a Computer Science degree."
     }
   },
-
   "Skills": {
     "title": "Skills",
     "subtitle": "See the skills that bring my projects to life and make me stand out.",
-
     "SkillsCard": {
       "languagesAndFrameworks": "Languages and Frameworks",
       "devTools": "Development Tools",
-
       "languages": {
         "title": "Languages",
-
         "pt": "Portuguese (Brazil)",
         "en": "English",
-
         "level": {
           "pt": "Fluent",
           "en": "Intermediary"
         }
       }
     },
-
     "certificatesSubtitle": "Also check out some of my certificates..."
   },
-
   "Projects": {
     "title": "Projects",
     "subtitle": "Check out the projects where I put my knowledge into practice.",
-
     "repoButtonCard": "Repository",
-    "button": "See more repositories"
+    "button": "See more repositories",
+    "descriptions": {
+      "notes": "Expert Notes is a note-taking app that lets the user create and manage notes simply and efficiently.",
+      "dailyDiet": "DailyDiet tracks meals, monitors diet progress, and provides motivational feedback with an easy-to-use color-coded interface.",
+      "toDoApp": "A to-do list app where users can add, mark as completed, and delete tasks.",
+      "readFy": "This is my capstone project, an app that aims to encourage reading through goals, a book list, reminders, and more!",
+      "noteLy": "A minimalist notepad with login and password protection for your notes. Still under development."
+    }
   },
-
   "Contact": {
     "ContactCard": {
       "title": "Shall we make a difference?",
       "subtitle": "Together, let's create interfaces that set trends and shape the future!"
     },
-
     "quote": "The mind should be as flexible as water, to adapt and overcome.",
     "button": "View my resume"
   },
-
   "Footer": {
     "tagline": "Front-end developer dedicated to building fast, accessible interfaces with careful attention to detail.",
     "contactTitle": "Contact",

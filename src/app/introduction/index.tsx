@@ -11,16 +11,16 @@ export function Introduction() {
   return (
     <section
       id="home"
-      className="h-screen w-full bg-pattern bg-center bg-no-repeat pt-24 lg:pt-8"
+      className="relative flex h-screen w-full flex-col bg-pattern bg-center bg-no-repeat pt-24 lg:pt-8"
     >
-      <main className="flex-col items-center justify-center lg:flex lg:pt-16">
+      <main className="flex flex-1 flex-col items-center justify-center lg:flex">
         <div className="space-y-2 text-center">
           <motion.h3
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="hidden text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:block lg:text-left lg:text-2xl"
+            className="hidden font-code text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:block lg:text-left lg:text-2xl"
           >
             &lt;Hello World! /&gt;
           </motion.h3>
@@ -33,9 +33,9 @@ export function Introduction() {
             <h1 className="hidden font-semibold text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-transparent lg:block lg:text-7xl">
               {t("titleName")}
             </h1>
-            <h2 className="text-5xl font-semibold leading-tight text-slate-800 dark:bg-gradient-text-dark dark:bg-clip-text dark:text-slate-200 dark:text-transparent lg:text-6xl">
+            <h2 className="shimmer-text text-5xl font-semibold leading-tight text-slate-800 lg:text-6xl">
               {t("titleDev")}{" "}
-              <span className="bg-gradient-light bg-clip-text font-extrabold text-transparent dark:bg-gradient-dark">
+              <span className="bg-gradient-light bg-clip-text font-extrabold text-transparent dark:bg-gradient-dark lg:mt-2 lg:block">
                 Front-end ;&#41;
               </span>
             </h2>
@@ -61,7 +61,7 @@ export function Introduction() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-        className="flex flex-col items-center justify-center space-y-2 pt-16 font-light text-zinc-600 dark:text-zinc-500 lg:pt-14"
+        className="absolute inset-x-0 bottom-8 flex flex-col items-center justify-center space-y-2 font-light text-zinc-600 dark:text-zinc-500 lg:bottom-10"
       >
         <span className="animate-bounce">{t("down")}</span>
         <RxDoubleArrowDown className="size-5 animate-bounce" />

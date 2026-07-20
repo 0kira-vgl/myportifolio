@@ -1,3 +1,5 @@
+"use client";
+
 import Notes from "@/assets/thumbnails/notes.png";
 import DailyDiet from "@/assets/thumbnails/dailyDiet.png";
 import ReadFy from "@/assets/thumbnails/readFy.png";
@@ -5,14 +7,17 @@ import NoteLy from "@/assets/thumbnails/noteLy.png";
 import ToDoApp from "@/assets/thumbnails/toDoApp.png";
 import { notes, dailyDiet, readFy, noteLy, toDoApp } from "./links.json";
 import { Card } from "./card";
+import { useTranslations } from "next-intl";
 
 export function Cards() {
+  const t = useTranslations("Projects.descriptions");
+
   return (
     <main>
       <div className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0">
         <Card
           title="Notes"
-          description="Expert Notes é um aplicativo de notas que permite ao usuário criar e gerenciar notas de forma simples e eficiente."
+          description={t("notes")}
           src={Notes}
           alt="Notes Project"
           demo={notes.demo}
@@ -44,7 +49,7 @@ export function Cards() {
 
         <Card
           title="Daily Diet"
-          description="DailyDiet rastreia as refeições, monitora o progresso da dieta e fornece feedback motivacional com uma interface codificada por cores fácil de usar."
+          description={t("dailyDiet")}
           src={DailyDiet}
           alt="DailyDiet Project"
           demo={dailyDiet.demo}
@@ -78,7 +83,7 @@ export function Cards() {
       <div className="gap-8 space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0">
         <Card
           title="ToDo App"
-          description="Uma de lista de tarefas onde os usuários podem adicionar, marcar como concluídas e excluir tarefas."
+          description={t("toDoApp")}
           src={ToDoApp}
           alt="ToDoApp Project"
           demo={toDoApp.demo}
@@ -109,7 +114,7 @@ export function Cards() {
 
         <Card
           title="ReadFy"
-          description="Este é o projeto do meu TCC, um app que visa incentivar a leitura por meio de metas, lista de livros, lembretes e mais!"
+          description={t("readFy")}
           src={ReadFy}
           alt="ReadFy Project"
           demo={readFy.demo}
@@ -141,7 +146,7 @@ export function Cards() {
 
         <Card
           title="NoteLy"
-          description="Um bloco de notas minimalista com login e proteção por senha para suas anotações. Ainda em desenvolvimento."
+          description={t("noteLy")}
           src={NoteLy}
           alt="NoteLy Project"
           demo={noteLy.demo}
