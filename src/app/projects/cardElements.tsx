@@ -59,7 +59,14 @@ const DemoButton = ({ shortly = false, ...props }: DemoButtonProps) => {
     </a>
   );
 };
-const RepositoryButton = ({ ...props }: ComponentProps<"a">) => {
+type RepositoryButtonProps = ComponentProps<"a"> & {
+  shortly?: boolean;
+};
+
+const RepositoryButton = ({
+  shortly = false,
+  ...props
+}: RepositoryButtonProps) => {
   const t = useTranslations("Projects");
 
   return (
@@ -67,7 +74,10 @@ const RepositoryButton = ({ ...props }: ComponentProps<"a">) => {
       {...props}
       target="_blank"
       rel="noopener noreferrer"
-      className={buttonVariants()}
+      className={buttonVariants({
+        className: shortly ? "pointer-events-none opacity-50" : "",
+      })}
+      aria-disabled={shortly ? "true" : "false"}
     >
       {t("repoButtonCard")}
     </a>

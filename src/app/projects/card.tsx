@@ -41,6 +41,7 @@ type BigCardsProps = ImageProps & {
   demo: string;
   repository: string;
   shortly?: boolean;
+  repositoryShortly?: boolean;
   priority?: boolean;
   icons: Icon[]; // passando a lista de ícones aqui
 };
@@ -51,6 +52,7 @@ export function Card({
   demo,
   repository,
   shortly,
+  repositoryShortly,
   priority,
   icons, // Recebe a lista de ícones
   ...props
@@ -83,7 +85,7 @@ export function Card({
             </div>
             <div className="flex flex-col justify-center space-y-2 lg:flex-row lg:items-center lg:space-x-3 lg:space-y-0">
               <DemoButton href={demo} shortly={shortly} />
-              <RepositoryButton href={repository} />
+              <RepositoryButton href={repository} shortly={repositoryShortly} />
             </div>
           </div>
         </div>

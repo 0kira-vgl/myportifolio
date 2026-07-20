@@ -3,9 +3,8 @@
 import Notes from "@/assets/thumbnails/notes.png";
 import DailyDiet from "@/assets/thumbnails/dailyDiet.png";
 import ReadFy from "@/assets/thumbnails/readFy.png";
-import NoteLy from "@/assets/thumbnails/noteLy.png";
 import ToDoApp from "@/assets/thumbnails/toDoApp.png";
-import { notes, dailyDiet, readFy, noteLy, toDoApp } from "./links.json";
+import { notes, dailyDiet, readFy, kore, toDoApp } from "./links.json";
 import { Card } from "./card";
 import { useTranslations } from "next-intl";
 
@@ -16,18 +15,21 @@ export function Cards() {
     <main>
       <div className="mb-8 gap-8 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0">
         <Card
-          title="Notes"
-          description={t("notes")}
-          src={Notes}
-          alt="Notes Project"
-          demo={notes.demo}
-          repository={notes.repository}
+          title="KORE"
+          description={t("kore")}
+          src="/projects/kore-preview.png"
+          width={1280}
+          height={720}
+          alt="KORE Project"
+          demo={kore.demo}
+          repository={kore.repository}
+          repositoryShortly={true}
           priority
           icons={[
             {
-              titleicon: "ReactJs",
-              alt: "React Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+              titleicon: "NextJs",
+              alt: "NextJs Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
             },
             {
               titleicon: "TypeScript",
@@ -40,9 +42,9 @@ export function Cards() {
               src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
             },
             {
-              titleicon: "ViteJs",
-              alt: "ViteJs Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+              titleicon: "Firebase",
+              alt: "Firebase Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg",
             },
           ]}
         />
@@ -145,17 +147,17 @@ export function Cards() {
         />
 
         <Card
-          title="NoteLy"
-          description={t("noteLy")}
-          src={NoteLy}
-          alt="NoteLy Project"
-          demo={noteLy.demo}
-          repository={noteLy.repository}
+          title="Notes"
+          description={t("notes")}
+          src={Notes}
+          alt="Notes Project"
+          demo={notes.demo}
+          repository={notes.repository}
           icons={[
             {
-              titleicon: "NextJs",
-              alt: "NextJs Icon",
-              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+              titleicon: "ReactJs",
+              alt: "React Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
             },
             {
               titleicon: "TypeScript",
@@ -166,6 +168,11 @@ export function Cards() {
               titleicon: "TailwindCSS",
               alt: "TailwindCSS Icon",
               src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+            },
+            {
+              titleicon: "ViteJs",
+              alt: "ViteJs Icon",
+              src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
             },
           ]}
         />
